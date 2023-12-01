@@ -10,14 +10,14 @@
 
     <header class="page-header">
 
-      <a class="logo"  href="#">
+      <a class="logo"  href="index.html">
         <img src="#" width="#" height="#" alt="Логотип Седоны.">
       </a>
 
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <li class="navigation-item">
@@ -52,7 +52,9 @@
         </ul>
       </nav>
 
-      <a class="button button-want-come" href="#">Хочу сюда</a>
+      <a class="button button-want-come" href="#">
+        Хочу сюда
+      </a>
 
     </header>
 
@@ -133,12 +135,16 @@
       <section class="mailing">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
         <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="mailing-form">
+        <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="mailing-form-email">
             <label class="form-label" for="email"></label>
-            <input type="text" id="email" name="email" placeholder="Ваш e-mail">
+            <input type="email" id="email" name="email" placeholder="Ваш e-mail" required>
           </p>
-          <button class="button" type="submit">Подписаться</button>
+          <button class="button mailing-button" type="submit">
+            <span class="visually-hidden">
+              Подписаться
+            </span>
+          </button>
         </form>
       </section>
 
@@ -150,25 +156,33 @@
         <h2 class="visually-hidden">Социальные каналы</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Канал в Vkontakte</span>
+            <a class="social-link button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">
+                Канал в Vkontakte
+              </span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Канал в Telegram</span>
+            <a class="social-link button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">
+                Канал в Telegram
+              </span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Канал в Youtube</span>
+            <a class="social-link button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">
+                Канал в Youtube
+              </span>
             </a>
           </li>
         </ul>
       </section>
 
       <address>
-        <a class="phone" href="+78128121212">+7 (812) 812-12-12</a>
+        <a class="phone" href="+78128121212">
+          +7 (812) 812-12-12
+        </a>
       </address>
 
       <div>
