@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Оксана Арефьева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2288781).
-* Наставник: `Неизвестно`.
+* Наставник: `Оксана Вайнруб` (https://htmlacademy.ru/profile/id166797).
 
 ---
 
