@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #242424;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+
+.page-header {
+  color: #000000;
+  background: #ffffff;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-link-current {
+
+}
+
+.navigation-statistics {
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  padding: 4px 5px 5px 5px;
+  border-radius: 10px;
+}
+
+.button-want-come {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  width: 160px;
+  height: 36px;
+  border-radius: 4px;
+  padding: 8px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Main */
+
+.main-index {
+  text-align: center;
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+/* Main - Hero */
+
+.hero {
+  background-image: url("../images/divider.png"), url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+/* Main - Advantages */
+
+.advantages-connotation {
+  background-color: #ffffff;
+  padding: 69px 0;
+  color: #000000;
+}
+
+.advantages-lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  bottom: 25px;
+}
+
+.advantages-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.main-first-row,
+.main-third-row {
+  color: #ffffff;
+}
+
+
+/* Main - Services */
+
+.services {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.services-connotation {
+  background-color: #ffffff;
+  padding: 64px 0;
+  color: #000000;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  bottom: 20px;
+}
+
+.page-footer {
+  color: #000000;
+  background: #ffffff;
+}
