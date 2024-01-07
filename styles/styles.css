@@ -16,16 +16,16 @@
 
 html {
   width: 1280px;
-  margin: auto;
-  padding: 0 40px;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
+
   max-width: 1200px;
   margin: auto 0;
+  
   background-color: #f2f2f2;
   color: #333333;
 
