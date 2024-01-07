@@ -16,19 +16,28 @@
 
 html {
   width: 1280px;
+  margin: 0 auto;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-
-  max-width: 1200px;
-  margin: auto 0;
-  
   background-color: #f2f2f2;
   color: #333333;
+}
 
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
 }
 
 .visually-hidden {
@@ -44,28 +53,27 @@ body {
   overflow: hidden;
 }
 
-.button {
-  font-size: 16px;
-  line-height: 16px;
+.heading {
+  width: auto;
+  height: auto;
   font-weight: 700;
-  text-align: center;
-  color: #ffffff;
-  background-color: #000000;
-  text-decoration: none;
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
+
 
 /* Header */
 
 .page-header {
   color: #000000;
   background: #ffffff;
-  max-width: 1200px;
+  width: 1200px;
   padding: 0 70px;
 }
 
 .logo {
-  position: relative;
   margin-right: 30px;
 }
 
@@ -80,10 +88,11 @@ body {
 }
 
 .navigation-link {
+  width: auto;
+  height: auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-decoration: none;
 }
 
 .navigation-link-current {
@@ -97,14 +106,16 @@ body {
 .navigation-search {
   background-image: url("../images/header-icon/search-icon.svg");
   background-repeat: no-repeat;
-  max-width: 20px;
+  width: 20px;
+  height: 20px;
   margin: 22px 12px;
+  padding: 1px, 0px, 0px, 1px;
 }
 
 .navigation-favourites {
   background-image: url("../images/header-icon/heart-icon.svg");
   background-repeat: no-repeat;
-  max-width: 20px;
+  width: 20px;
   margin-left: 24px;
   margin-right: 0;
   margin-top: 16px;
@@ -140,6 +151,10 @@ a.button.button-want-come {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+
+
 
 /* Main */
 
@@ -177,23 +192,7 @@ a.button.button-want-come {
   bottom: 21px;
 }
 
-.advantages-lead {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-left: 290px;
-}
 
-p.advantages-lead {
-  width: 620px;
-}
-
-p.advantages-lead-description {
-  margin-left: 274.5px;
-  top: 25px;
-}
 
 div.advantages-second-row {
   color: #000000;
