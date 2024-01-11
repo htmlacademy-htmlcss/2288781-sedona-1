@@ -114,11 +114,7 @@ p {
 
 /* Базовая стилизация - конец */
 
-
 /* Header=Шапка */
-
-
-
 .logo {
   margin-right: 30px;
 }
@@ -159,7 +155,7 @@ p {
 .navigation-statistics {
   font-size: 10px;
   line-height: 10px;
-  color: #000000;
+  color: #ffffff;
   background-color: #7DB54F;
   padding: 4px 5px 5px 5px;
   border-radius: 10px;
@@ -172,17 +168,15 @@ p {
   text-align: center;
   color: #ffffff;
   background-color: #756157;
-  width: 160px;
-  height: 36px;
+  width: auto;
+  height: auto;
   border-radius: 4px;
   padding: 8px 50px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-
 /* Main */
-
 .main-index {
   color: #ffffff;
   background-color: #82B3D3;
@@ -190,9 +184,7 @@ p {
   margin: 0 auto;
 }
 
-
 /* Main - Hero */
-
 .hero {
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
@@ -206,9 +198,7 @@ p {
   margin-bottom: 25.23px;
 }
 
-
 /* Main - Advantages */
-
 .advantages {
   width: 1200px;
   background-color: #ffffff;
@@ -221,6 +211,11 @@ p {
   color: #000000;
   padding-top: 69px;
   padding-bottom: 69px;
+}
+
+.advantages-lead {
+  width: 605px;
+  text-align: center;
 }
 
 .advantages-lead-description {
