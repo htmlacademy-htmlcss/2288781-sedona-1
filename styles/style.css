@@ -144,12 +144,9 @@ h4 {
 }
 /* Базовая стилизация - конец */
 
+/* Header=Шапка */
 
-/* Header=Шапка - начало*/
-.navigation {
-  width: 1200px;
-  text-align: left;
-}
+
 
 .logo {
   margin-right: 30px;
@@ -235,13 +232,23 @@ a.navigation-want-come {
   border: none;
   border-radius: 4px;
   padding: 8px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
-/* Header=Шапка - конец*/
 
 
-/* Main=Основное содержание - начало*/
+/* Main */
 
-/* Main -> Hero */
+.main-index {
+  color: #ffffff;
+  background-color: #82B3D3;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Main - Hero */
+
 .hero {
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
@@ -256,7 +263,9 @@ a.navigation-want-come {
   margin-bottom: 25.23px;
 }
 
-/* Main -> Advantages */
+
+/* Main - Advantages */
+
 .advantages {
   max-width: 1200px;
   background-color: #ffffff;
@@ -274,6 +283,11 @@ p.advantages-lead.heading {
   height: 72px;
   margin: 0 auto;
   margin-bottom: 25px;
+  text-align: center;
+}
+
+.advantages-lead {
+  width: 605px;
   text-align: center;
 }
 
@@ -426,6 +440,7 @@ p.services-description {
   height: 406px;
   background-color: #ffffff;
   color: #000000;
+  margin: 0 auto;
 }
 
 .search-connotation {
@@ -442,21 +457,22 @@ p.services-description {
 
 .search-lead-description {
   width: 592px;
-  height: 52px;
   text-align: center;
-  padding-bottom: 54px;
   margin: 0 auto;
 }
 
 .search-button {
   width: 276px;
   border-radius: 4px;
-  border-color: #756157;
+  background-color:  #756157;
+  color: #ffffff;
   padding: 8px 50px;
-
+  margin: 54px 412px 96px;
 }
 
 /* Main -> Interest */
+
+
 
 
 /* Main=Основное содержание - конец*/
