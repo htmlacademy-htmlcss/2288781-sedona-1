@@ -605,6 +605,9 @@ p.subscribe-lead {
 
 /* Страница каталога
 ============================================ */
+
+/* Фильтр */
+
 .main-inner {
   background-color: #83B3D333;
   color: #000000;
@@ -631,6 +634,33 @@ p.subscribe-lead {
   margin-top: 35px;
   width: 494,4px;
   height: 78px;
+}
+
+/* Фильтр -> хлебные крошки */
+.breadcrubs-list {
+  width: 114px;
+  height: 21px;
+  margin-left: 70px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.breadcrubs-home {
+  background-image: url("../images/breadcrubs/filter-home.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrubs-arrow {
+  background-image: url("../images/breadcrubs/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrubs-arrow-text {
+  color: #ffffff;
+  width: 73px;
+  height: 21px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .subscribe-catalog {
