@@ -71,7 +71,7 @@ body {
   padding: 0 70px;
   margin: 0 40px;
   max-width: 1200px;
-  height: 64px;
+  /* height: 64px; */
 }
 
 .main-index {
@@ -605,6 +605,34 @@ p.subscribe-lead {
 
 /* Страница каталога
 ============================================ */
+.main-inner {
+  background-color: #83B3D333;
+  color: #000000;
+  margin: 0 40px;
+  max-width: 1200px;
+}
+
+.main-inner-filter {
+  background-image: url("../images/background-images/filter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #82B3D3;
+  color: #000000;
+}
+
+.inner-filter-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  text-align: left;
+  margin-left: 70px;
+  margin-top: 35px;
+  width: 494,4px;
+  height: 78px;
+}
+
 .subscribe-catalog {
   background-image: none;
   max-width: 1200px;
