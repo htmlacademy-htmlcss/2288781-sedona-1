@@ -146,8 +146,6 @@ h4 {
 
 /* Header=Шапка */
 
-
-
 .logo {
   margin-right: 30px;
 }
@@ -358,6 +356,7 @@ p.advantages-description {
   padding-top: 30px;
 }
 
+
 /* Main -> Services */
 .services {
   max-width: 1200px;
@@ -434,6 +433,7 @@ p.services-description {
   margin: 0px auto;
 }
 
+
 /* Main -> Search */
 .search {
   max-width: 1200px;
@@ -470,8 +470,34 @@ p.services-description {
   margin: 54px 412px 96px;
 }
 
-/* Main -> Interest */
 
+/* Main -> Subscribe */
+
+.subscribe {
+  background-image: url("../images/background-images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  max-width: 1200px;
+  max-height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 96px;
+}
+
+p.subscribe-lead {
+  color: #ffffff;
+}
+
+.subscribe-lead-description {
+  padding-top: 20px;
+  padding-bottom: 54px;
+}
+
+.subscribe-form-label {
+  width: 87px;
+  height: 24px;
+  padding: 14px 345px 14px 20px;
+}
 
 
 
