@@ -65,10 +65,14 @@ body {
 .page-header {
   background-color: #ffffff;
   color: #000000;
-  margin: 0px 40px;
   padding: 0px 70px;
+  margin: 0px 40px;
   max-width: 1200px;
-  /* height: 64px; */
+  height: 64px;
+}
+
+nav {
+  display: inline-block;
 }
 
 .main-index {
@@ -79,12 +83,11 @@ body {
 }
 
 .page-footer {
-  width: 1200px;
+  max-width: 1200px;
   height: 120px;
   background-color: #ffffff;
   color: #000000;
   margin: 0px 40px;
-  max-width: 1200px;
 }
 
 a {
@@ -138,16 +141,22 @@ h4 {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  text-decoration: none;
   font-family: inherit;
-  margin: 0;
-  overflow: visible;
+  margin: 0 auto;
+  padding: 8px 50px;
 }
 /* Базовая стилизация - конец */
 
 /* Header=Шапка */
-
 .logo {
   margin-right: 30px;
+  padding: 0;
+}
+
+.navigation-list,
+.navigation-user-list {
+  display: inline-block;
 }
 
 .navigation-link {
@@ -229,19 +238,14 @@ a.navigation-want-come {
   height: 36px;
   border: none;
   border-radius: 4px;
-  padding: 8px 50px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 
-/* Main */
-
+/* Main=Основное содержание */
 .main-index {
   color: #ffffff;
   background-color: #82B3D3;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 
@@ -296,8 +300,12 @@ p.advantages-lead-description {
   text-align: center;
 }
 
+.advantages-list {
+  display: inline-block;
+}
+
 .advantages-item {
-  max-width: 400px;
+  width: 400px;
   height: 385px;
   text-align: left;
   margin: 0;
@@ -356,6 +364,11 @@ p.advantages-description {
   padding-top: 30px;
 }
 
+.advantages-photo {
+  width: 800px;
+  height: 385px;
+}
+
 
 /* Main -> Services */
 .services {
@@ -389,6 +402,7 @@ p.services-lead-description {
   width: 400px;
   height: 385px;
   padding-top: 80px;
+  display: inline-block;
 }
 
 .services-item-grey {
@@ -440,7 +454,9 @@ p.services-description {
   height: 406px;
   background-color: #ffffff;
   color: #000000;
-  margin: 0 auto;
+  margin: 0;
+  text-align: center;
+
 }
 
 .search-connotation {
@@ -462,26 +478,25 @@ p.services-description {
 }
 
 .search-button {
-  width: 276px;
+  max-width: 276px;
   border-radius: 4px;
-  background-color:  #756157;
+  background-color: #756157;
   color: #ffffff;
-  padding: 8px 50px;
-  margin: 54px 412px 96px;
 }
 
 
 /* Main -> Subscribe */
-
 .subscribe {
   background-image: url("../images/background-images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: cover;
   max-width: 1200px;
-  max-height: 100%;
-  text-align: center;
+  height: 100%;
   margin: 0 auto;
+  text-align: center;
   padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 p.subscribe-lead {
@@ -493,17 +508,88 @@ p.subscribe-lead {
   padding-bottom: 54px;
 }
 
-.subscribe-form-label {
-  width: 87px;
-  height: 24px;
-  padding: 14px 345px 14px 20px;
+.subscribe-form-email {
+  text-align: center;
+  display: inline-block;
 }
 
+.subscribe-form-email-label {
+  min-width: 452px;
+  min-height: 52px;
+  padding: 12px 20px;
+  radius: 4px 0px 0px 4px;
+  color: #f2f2f2;
+  margin: 0px auto;
+}
 
+.subscribe-form-email-label-text {
+  opacity: 60%;
+  padding: 14px 345px 14px 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
 
+.subscribe-button {
+  max-width: 232px;
+  min-height: 52px;
+  radius: 0px 4px 4px 0px;
+  border-color: none;
+  background-color: #82B3D3;
+  color: #ffffff;
+  margin: 0 auto;
+}
 /* Main=Основное содержание - конец*/
 
-.page-footer {
-  color: #000000;
-  background: #ffffff;
+
+/* Footer=Подвал - начало*/
+.page-footer-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display:inline-block;
 }
+
+.social-list {
+  width: 142px;
+  height: 40px;
+  padding: 0 10px;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  margin-left: 70px;
+  display:inline-block;
+}
+
+.social-vk {
+  background-image: url("../images/social-icon/vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24.001px;
+  height: 14px;
+  padding-top: ;
+}
+
+.social-tm {
+  background-image: url("../images/social-icon/telegramm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 16px;
+}
+
+.social-youtube {
+  background-image: url("../images/social-icon/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 17px;
+}
+
+.phone-link {
+  color: #000;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Footer=Подвал - конец*/
