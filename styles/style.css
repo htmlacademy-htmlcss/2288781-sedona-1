@@ -606,5 +606,12 @@ p.subscribe-lead {
 /* Страница каталога
 ============================================ */
 .subscribe-catalog {
-  list-style: none;
+  background-image: none;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 104px;
+  color: #000000;
 }
