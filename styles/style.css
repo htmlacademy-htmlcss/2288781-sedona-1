@@ -1,3 +1,6 @@
+/* Главная страница
+============================================ */
+
 /* Загрузка шрифтов - начало */
 @font-face {
   font-family: "PT Sans";
@@ -32,8 +35,8 @@
 }
 
 html, body {
-  margin: 0px auto;
-  padding: 0px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 body {
@@ -49,7 +52,7 @@ body {
 }
 
 .body-page {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   margin: 0 40px;
 }
 
@@ -65,20 +68,16 @@ body {
 .page-header {
   background-color: #ffffff;
   color: #000000;
-  padding: 0px 70px;
-  margin: 0px 40px;
+  padding: 0 70px;
+  margin: 0 40px;
   max-width: 1200px;
   height: 64px;
-}
-
-nav {
-  display: inline-block;
 }
 
 .main-index {
   background-color: #83B3D333;
   color: #000000;
-  margin: 0px 40px;
+  margin: 0 40px;
   max-width: 1200px;
 }
 
@@ -87,7 +86,7 @@ nav {
   height: 120px;
   background-color: #ffffff;
   color: #000000;
-  margin: 0px 40px;
+  margin: 0 40px;
 }
 
 a {
@@ -103,8 +102,8 @@ img {
 }
 
 ul {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -148,15 +147,21 @@ h4 {
 }
 /* Базовая стилизация - конец */
 
+
 /* Header=Шапка */
 .logo {
   margin-right: 30px;
   padding: 0;
 }
 
-.navigation-list,
+.navigation-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .navigation-user-list {
-  display: inline-block;
+  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .navigation-link {
@@ -183,7 +188,7 @@ h4 {
   color: #000000;
   width: 18px;
   height: 18px;
-  margin: 22px 0px;
+  margin: 22px 0;
 }
 
 .navigation-user-favourites {
@@ -192,7 +197,7 @@ h4 {
   color: #000000;
   width: 18px;
   height: 17px;
-  margin: 22px 0px;
+  margin: 22px 0;
 }
 
 .navigation-user-search,
@@ -414,7 +419,7 @@ p.services-lead-description {
   background-repeat: no-repeat;
   width: 75px;
   height: 72px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-bottom: 30px;
 }
 
@@ -423,7 +428,7 @@ p.services-lead-description {
   background-repeat: no-repeat;
   width: 75px;
   height: 72px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-bottom: 30px;
 }
 
@@ -432,7 +437,7 @@ p.services-lead-description {
   background-repeat: no-repeat;
   width: 75px;
   height: 72px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding-bottom: 30px;
 }
 
@@ -444,7 +449,7 @@ p.services-description {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 
@@ -517,9 +522,9 @@ p.subscribe-lead {
   min-width: 452px;
   min-height: 52px;
   padding: 12px 20px;
-  radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   color: #f2f2f2;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .subscribe-form-email-label-text {
@@ -532,7 +537,7 @@ p.subscribe-lead {
 .subscribe-button {
   max-width: 232px;
   min-height: 52px;
-  radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   border-color: none;
   background-color: #82B3D3;
   color: #ffffff;
@@ -542,36 +547,38 @@ p.subscribe-lead {
 
 
 /* Footer=Подвал - начало*/
+.page-footer-frame {
+  width: 1060px;
+  height: 50px;
+  margin: 40px 70px 30px 70px;
+  display: inline-block;
+}
+
 .page-footer-social {
   list-style: none;
   margin: 0;
   padding: 0;
-  display:inline-block;
+  width: 142px;
+  height: 40px;
 }
 
 .social-list {
-  width: 142px;
-  height: 40px;
   padding: 0 10px;
   margin-top: 45px;
   margin-bottom: 35px;
   margin-left: 70px;
-  display:inline-block;
 }
 
 .social-vk {
   background-image: url("../images/social-icon/vk.svg");
   background-repeat: no-repeat;
-  background-position: center;
   width: 24.001px;
   height: 14px;
-  padding-top: ;
 }
 
 .social-tm {
   background-image: url("../images/social-icon/telegramm.svg");
   background-repeat: no-repeat;
-  background-position: center;
   width: 18px;
   height: 16px;
 }
@@ -579,17 +586,28 @@ p.subscribe-lead {
 .social-youtube {
   background-image: url("../images/social-icon/youtube.svg");
   background-repeat: no-repeat;
-  background-position: center;
   width: 22px;
   height: 17px;
 }
 
 .phone-link {
   color: #000;
+  font-style: normal;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  margin: 45px 194px 35px 195px;
 }
-
 /* Footer=Подвал - конец*/
+
+
+/* Страница каталога
+============================================ */
+.subscribe-catalog {
+  list-style: none;
+  
+
+
+}
