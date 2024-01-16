@@ -706,7 +706,7 @@ input {
 }
 
 fieldset {
-  border: none;
+  border-color: none;
 }
 
 .subscribe-catalog {
@@ -718,4 +718,5 @@ fieldset {
   padding-top: 96px;
   padding-bottom: 104px;
   color: #000000;
+
 }
