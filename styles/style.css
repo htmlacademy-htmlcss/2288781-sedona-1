@@ -706,7 +706,7 @@ input {
 }
 
 fieldset {
-  border: none;
+  border-color: none;
 }
 
 .subscribe-catalog {
