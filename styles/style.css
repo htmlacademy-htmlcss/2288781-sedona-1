@@ -286,7 +286,7 @@ a.navigation-want-come {
   margin-bottom: 21px;
 }
 
-p.advantages-lead.heading {
+.advantages-lead.heading {
   width: 620px;
   height: 72px;
   margin: 0 auto;
@@ -692,7 +692,7 @@ label {
   margin-bottom: 36px;
 }
 
-#value {
+value {
   color: #000000;
   font-size: 18px;
   line-height: 24px;
