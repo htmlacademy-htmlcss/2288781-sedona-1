@@ -37,9 +37,7 @@
 html, body {
   margin: 0 auto;
   padding: 0;
-}
 
-html {
   height: 100%;
 }
 
@@ -49,9 +47,16 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+
   color: #333333;
   background: #f2f2f2;
+
   max-width: 1280px;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
 .body-page {
@@ -134,55 +139,78 @@ h4 {
   background-color: #ffffff;
   color: #000000;
 
+  max-width: 1200px;
+  height: 64px;
+
   margin: 0 40px;
   padding: 0 70px;
 
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  flex-shrink: 0;
 }
 
 .logo {
   padding-left: 0;
   padding-top: 0;
   margin-right: 30px;
+
+  position: absolute;
 }
 
 .navigation {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+
 }
 
 .navigation-list {
-  list-style: none;
   margin: 0;
-  padding: 20px 16px;
+  padding: auto;
+  position: relative;
 
-  max-width: 1200px;
+  max-width: auto;
   height: 64px;
 
   display: flex;
-  align-items: center;
 }
 
 .navigation-user-list {
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-left: 285px;
+  position: relative;
+
+  max-width: auto;
+  height: 64px;
 
   display: flex;
-  align-items: center;
 }
 
 .navigation-item,
 .navigation-user {
+  position: relative;
+
+  display: flex;
+}
+
+.navigation-primary {
   width: 100px;
   height: 64px;
+
   padding: 20px 16px;
 
   display: flex;
-  align-items: center;
+    flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  align-self: start;
+}
+
+.navigation-about {
+  width: 114px;
+  height: 64px;
+}
+
+.navigation-hotel {
+  width: 125px;
+  height: 64px;
 }
 
 .navigation-link {
@@ -272,6 +300,10 @@ h4 {
   background-color: #82B3D3;
   margin: 0 40px;
   max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
 /* Main - Hero */
@@ -303,6 +335,12 @@ h4 {
   margin-bottom: 21px;
 }
 
+.advantages-first-row,
+.advantages-second-row,
+.advantages-third-row {
+  display: flex;
+}
+
 .advantages-lead {
   width: 605px;
   text-align: center;
@@ -320,6 +358,8 @@ p.advantages-lead-description {
   height: 26px;
   margin: 0 auto;
   text-align: center;
+
+  display: flex;
 }
 
 .advantages-list {
@@ -423,6 +463,10 @@ p.services-lead-description {
   margin: 0 auto;
 }
 
+.services-row {
+  display: flex;
+}
+
 .services-item {
   width: 400px;
   height: 385px;
@@ -514,14 +558,19 @@ p.services-description {
   background-image: url("../images/background-images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover;
+  background-size: auto;
+
   max-width: 1200px;
-  height: 100%;
   margin: 0 auto;
+}
+
+.subscribe-connotation {
   text-align: center;
+
   padding-top: 96px;
   padding-bottom: 104px;
 }
+
 
 p.subscribe-lead {
   color: #ffffff;
