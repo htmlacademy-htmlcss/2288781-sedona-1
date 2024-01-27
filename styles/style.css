@@ -37,7 +37,6 @@
 html, body {
   margin: 0 auto;
   padding: 0;
-
   height: 100%;
 }
 
@@ -53,15 +52,13 @@ body {
 
   max-width: 1280px;
   min-height: 100%;
-
-  display: flex;
-  flex-direction: column;
-
 }
 
 .body-page {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   margin: 0 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .heading {
@@ -134,43 +131,31 @@ h4 {
 /* Базовая стилизация - конец */
 
 
-/* Header=Шапка */
+/* Header=Шапка - начало*/
 .page-header {
   background-color: #ffffff;
   color: #000000;
-
   max-width: 1200px;
   height: 64px;
-
   margin: 0 40px;
   padding: 0 70px;
+}
 
+.page-header nav {
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
 }
 
 .logo {
   padding-left: 0;
   padding-top: 0;
   margin-right: 30px;
-
   position: absolute;
-}
-
-.navigation {
-  display: flex;
-
 }
 
 .navigation-list {
   margin: 0;
   padding: auto;
-  position: relative;
-
-  max-width: auto;
-  height: 64px;
-
-  display: flex;
 }
 
 .navigation-user-list {
@@ -179,15 +164,21 @@ h4 {
 
   max-width: auto;
   height: 64px;
-
-  display: flex;
 }
 
 .navigation-item,
 .navigation-user {
   position: relative;
 
-  display: flex;
+
+}
+
+.navigation-item a {
+
+}
+
+.navigation-user-item a:nth-child(2) {
+
 }
 
 .navigation-primary {
@@ -196,11 +187,7 @@ h4 {
 
   padding: 20px 16px;
 
-  display: flex;
-    flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  align-self: start;
+
 }
 
 .navigation-about {
@@ -303,8 +290,8 @@ h4 {
 
   display: flex;
   flex-direction: column;
-
 }
+/* Header=Шапка - конец*/
 
 /* Main - Hero */
 .hero {
@@ -647,7 +634,6 @@ p.subscribe-lead {
   height: 40px;
 
   display: flex;
-  align-items: center;
 }
 
 .social-list {
@@ -694,8 +680,6 @@ p.subscribe-lead {
   text-align: center;
   margin: 45px 194px 35px 195px;
 }
-
-
 /* Footer=Подвал - конец*/
 
 
@@ -703,7 +687,6 @@ p.subscribe-lead {
 ============================================ */
 
 /* Фильтр */
-
 .main-inner {
   background-color: #83B3D333;
   color: #000000;
@@ -807,8 +790,4 @@ fieldset {
   padding-top: 96px;
   padding-bottom: 104px;
   color: #000000;
-}
-
-.pagination {
-
 }
