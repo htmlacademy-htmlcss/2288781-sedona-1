@@ -562,13 +562,12 @@ p.services-description {
 
   max-width: 1200px;
   margin: 0 auto;
-}
 
-.subscribe-connotation {
   text-align: center;
 
   padding-top: 96px;
   padding-bottom: 104px;
+  vertical-align: middle;
 }
 
 
@@ -616,9 +615,16 @@ p.subscribe-lead {
 
 /* Footer=Подвал - начало*/
 .page-footer {
-  width: 1060px;
   height: 0;
   margin: 0 auto;
+
+  max-width: 1200px;
+  height: 120px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 40px;
+
+  display: flex;
 }
 
 .page-footer-frame {
@@ -639,6 +645,9 @@ p.subscribe-lead {
   padding: 0;
   width: 142px;
   height: 40px;
+
+  display: flex;
+  align-items: center;
 }
 
 .social-list {
@@ -653,6 +662,8 @@ p.subscribe-lead {
   background-repeat: no-repeat;
   width: 24.001px;
   height: 14px;
+
+  display: flex;
 }
 
 .social-tm {
@@ -660,6 +671,8 @@ p.subscribe-lead {
   background-repeat: no-repeat;
   width: 18px;
   height: 16px;
+
+  display: flex;
 }
 
 .social-youtube {
@@ -667,6 +680,8 @@ p.subscribe-lead {
   background-repeat: no-repeat;
   width: 22px;
   height: 17px;
+
+  display: flex;
 }
 
 .phone-link {
@@ -679,6 +694,8 @@ p.subscribe-lead {
   text-align: center;
   margin: 45px 194px 35px 195px;
 }
+
+
 /* Footer=Подвал - конец*/
 
 
@@ -686,13 +703,6 @@ p.subscribe-lead {
 ============================================ */
 
 /* Фильтр */
-.page-footer {
-  max-width: 1200px;
-  height: 120px;
-  background-color: #ffffff;
-  color: #000000;
-  margin: 0 40px;
-}
 
 .main-inner {
   background-color: #83B3D333;
