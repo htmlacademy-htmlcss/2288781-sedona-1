@@ -34,9 +34,7 @@
   overflow: hidden;
 }
 
-html, body {
-  margin: 0 auto;
-  padding: 0;
+html {
   height: 100%;
 }
 
@@ -46,19 +44,18 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-
   color: #333333;
   background: #f2f2f2;
-
   max-width: 1280px;
   min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .body-page {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   margin: 0 40px;
-  display: flex;
-  flex-direction: column;
 }
 
 .heading {
@@ -115,19 +112,6 @@ h4 {
   line-height: 24px;
   text-align: center;
 }
-
-.button {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-
-  margin: 0 auto;
-  padding: 8px 50px;
-}
 /* Базовая стилизация - конец */
 
 
@@ -141,21 +125,19 @@ h4 {
   padding: 0 70px;
 }
 
-.page-header nav {
+.navigation {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
+  margin-right: 30px;
+  display: flex;
+  position: absolute;
   padding-left: 0;
   padding-top: 0;
-  margin-right: 30px;
-  position: absolute;
-}
-
-.navigation-list {
   margin: 0;
-  padding: auto;
 }
 
 .navigation-user-list {
@@ -169,25 +151,12 @@ h4 {
 .navigation-item,
 .navigation-user {
   position: relative;
-
-
-}
-
-.navigation-item a {
-
-}
-
-.navigation-user-item a:nth-child(2) {
-
 }
 
 .navigation-primary {
   width: 100px;
   height: 64px;
-
   padding: 20px 16px;
-
-
 }
 
 .navigation-about {
@@ -280,8 +249,26 @@ h4 {
   text-decoration: none;
 }
 
+.button-navigation {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  margin: 0 auto;
+  padding: 8px 50px;
+  border-color: none;
+}
+/* Header=Шапка - конец*/
 
-/* Main=Основное содержание */
+
+/* Main=Основное содержание - начало*/
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #ffffff;
   background-color: #82B3D3;
@@ -291,9 +278,8 @@ h4 {
   display: flex;
   flex-direction: column;
 }
-/* Header=Шапка - конец*/
 
-/* Main - Hero */
+/* Main - Hero*/
 .hero {
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
@@ -309,7 +295,7 @@ h4 {
   margin-bottom: 25.23px;
 }
 
-/* Main - Advantages */
+/* Main - Advantages*/
 .advantages {
   max-width: 1200px;
   background-color: #ffffff;
@@ -420,7 +406,6 @@ p.advantages-description {
   height: 385px;
 }
 
-
 /* Main -> Services */
 .services {
   max-width: 1200px;
@@ -442,7 +427,7 @@ p.services-lead {
   margin: 0 auto;
 }
 
-p.services-lead-description {
+.services-lead-description p {
   width: 490px;
   height: 26px;
   padding-bottom: 64px;
@@ -492,7 +477,7 @@ p.services-lead-description {
   padding-bottom: 30px;
 }
 
-p.services-description {
+.services-description p {
   width: 230px;
   height: 63px;
   text-align: center;
@@ -558,7 +543,7 @@ p.services-description {
 }
 
 
-p.subscribe-lead {
+.subscribe-lead p {
   color: #ffffff;
 }
 
