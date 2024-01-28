@@ -34,10 +34,7 @@
   overflow: hidden;
 }
 
-html, body {
-  margin: 0 auto;
-  padding: 0;
-
+html {
   height: 100%;
 }
 
@@ -47,16 +44,13 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-
   color: #333333;
   background: #f2f2f2;
-
   max-width: 1280px;
   min-height: 100%;
-
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-
 }
 
 .body-page {
@@ -118,59 +112,32 @@ h4 {
   line-height: 24px;
   text-align: center;
 }
-
-.button {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  font-family: inherit;
-
-  margin: 0 auto;
-  padding: 8px 50px;
-}
 /* Базовая стилизация - конец */
 
 
-/* Header=Шапка */
+/* Header=Шапка - начало*/
 .page-header {
   background-color: #ffffff;
   color: #000000;
-
   max-width: 1200px;
   height: 64px;
-
   margin: 0 40px;
   padding: 0 70px;
-
-  display: flex;
-  align-items: flex-start;
-}
-
-.logo {
-  padding-left: 0;
-  padding-top: 0;
-  margin-right: 30px;
-
-  position: absolute;
 }
 
 .navigation {
   display: flex;
-
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navigation-list {
-  margin: 0;
-  padding: auto;
-  position: relative;
-
-  max-width: auto;
-  height: 64px;
-
+.logo {
+  margin-right: 30px;
   display: flex;
+  position: absolute;
+  padding-left: 0;
+  padding-top: 0;
+  margin: 0;
 }
 
 .navigation-user-list {
@@ -179,28 +146,17 @@ h4 {
 
   max-width: auto;
   height: 64px;
-
-  display: flex;
 }
 
 .navigation-item,
 .navigation-user {
   position: relative;
-
-  display: flex;
 }
 
 .navigation-primary {
   width: 100px;
   height: 64px;
-
   padding: 20px 16px;
-
-  display: flex;
-    flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  align-self: start;
 }
 
 .navigation-about {
@@ -293,8 +249,26 @@ h4 {
   text-decoration: none;
 }
 
+.button-navigation {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  font-family: inherit;
+  margin: 0 auto;
+  padding: 8px 50px;
+  border-color: none;
+}
+/* Header=Шапка - конец*/
 
-/* Main=Основное содержание */
+
+/* Main=Основное содержание - начало*/
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #ffffff;
   background-color: #82B3D3;
@@ -303,10 +277,9 @@ h4 {
 
   display: flex;
   flex-direction: column;
-
 }
 
-/* Main - Hero */
+/* Main - Hero*/
 .hero {
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
@@ -322,7 +295,7 @@ h4 {
   margin-bottom: 25.23px;
 }
 
-/* Main - Advantages */
+/* Main - Advantages*/
 .advantages {
   max-width: 1200px;
   background-color: #ffffff;
@@ -433,7 +406,6 @@ p.advantages-description {
   height: 385px;
 }
 
-
 /* Main -> Services */
 .services {
   max-width: 1200px;
@@ -455,7 +427,7 @@ p.services-lead {
   margin: 0 auto;
 }
 
-p.services-lead-description {
+.services-lead-description p {
   width: 490px;
   height: 26px;
   padding-bottom: 64px;
@@ -505,7 +477,7 @@ p.services-lead-description {
   padding-bottom: 30px;
 }
 
-p.services-description {
+.services-description p {
   width: 230px;
   height: 63px;
   text-align: center;
@@ -562,17 +534,16 @@ p.services-description {
 
   max-width: 1200px;
   margin: 0 auto;
-}
 
-.subscribe-connotation {
   text-align: center;
 
   padding-top: 96px;
   padding-bottom: 104px;
+  vertical-align: middle;
 }
 
 
-p.subscribe-lead {
+.subscribe-lead p {
   color: #ffffff;
 }
 
@@ -616,9 +587,16 @@ p.subscribe-lead {
 
 /* Footer=Подвал - начало*/
 .page-footer {
-  width: 1060px;
   height: 0;
   margin: 0 auto;
+
+  max-width: 1200px;
+  height: 120px;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0 40px;
+
+  display: flex;
 }
 
 .page-footer-frame {
@@ -639,6 +617,8 @@ p.subscribe-lead {
   padding: 0;
   width: 142px;
   height: 40px;
+
+  display: flex;
 }
 
 .social-list {
@@ -653,6 +633,8 @@ p.subscribe-lead {
   background-repeat: no-repeat;
   width: 24.001px;
   height: 14px;
+
+  display: flex;
 }
 
 .social-tm {
@@ -660,6 +642,8 @@ p.subscribe-lead {
   background-repeat: no-repeat;
   width: 18px;
   height: 16px;
+
+  display: flex;
 }
 
 .social-youtube {
@@ -667,6 +651,8 @@ p.subscribe-lead {
   background-repeat: no-repeat;
   width: 22px;
   height: 17px;
+
+  display: flex;
 }
 
 .phone-link {
@@ -686,14 +672,6 @@ p.subscribe-lead {
 ============================================ */
 
 /* Фильтр */
-.page-footer {
-  max-width: 1200px;
-  height: 120px;
-  background-color: #ffffff;
-  color: #000000;
-  margin: 0 40px;
-}
-
 .main-inner {
   background-color: #83B3D333;
   color: #000000;
@@ -797,8 +775,4 @@ fieldset {
   padding-top: 96px;
   padding-bottom: 104px;
   color: #000000;
-}
-
-.pagination {
-
 }
