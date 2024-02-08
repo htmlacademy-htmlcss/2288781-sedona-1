@@ -36,6 +36,21 @@
 
 html {
   height: 100%;
+  margin: 0 auto;
+}
+
+.body-page {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  padding: 0 40px;
+  background: tomato;
+  margin: 0 auto;
+  max-width: 1280px;
+
+  display: inline-flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 body {
@@ -46,17 +61,18 @@ body {
   line-height: 26px;
   color: #333333;
   background: #f2f2f2;
-  max-width: 1280px;
+  max-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
-  display: flex;
+
+  display: inline-flex;
+  overflow: hidden;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.body-page {
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
-  margin: 0 40px;
-}
+
 
 .heading {
   color: #000000;
@@ -133,15 +149,20 @@ h4 {
 
 .logo {
   margin-right: 30px;
-  display: flex;
   position: absolute;
-  padding-left: 0;
-  padding-top: 0;
-  margin: 0;
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0 285px;
+  position: relative;
+
+  max-width: auto;
+  height: 64px;
 }
 
 .navigation-user-list {
-  margin-left: 285px;
+  margin: 0 285px;
   position: relative;
 
   max-width: auto;
