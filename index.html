@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/normalize.css">
   </head>
   <body>
 
@@ -16,23 +15,23 @@
       <h1 class="visually-hidden">Городок Седона в Аризоне и его достопримечательности</h1>
 
       <!-- Шапка = Header -->
-      <header class="page-header" data-test="header">
+      <header class="container page-header" data-test="header">
 
         <nav class="navigation">
 
           <a class="logo" aria-current="page">
-            <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
+            <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
           </a>
 
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-primary navigation-link-current" aria-current="page">Главная</a>
+              <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
             </li>
             <li class="navigation-item">
-                <a class="navigation-link navigation-about" href="#">О Седоне</a>
+                <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-                <a class="navigation-link navigation-hotel" href="catalog.html">Гостиницы</a>
+                <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
@@ -50,14 +49,14 @@
             </li>
           </ul>
 
-          <a class="button-navigation navigation-want-come" href="#">Хочу сюда</a>
+          <a class="button navigation-button" href="#">Хочу сюда!</a>
 
         </nav>
 
       </header>
 
       <!-- Основное содержание -->
-      <main class="main-container main-index" data-test="main">
+      <main class="container main-index" data-test="main">
 
         <!-- Hero -->
         <section class="hero" data-test="hero">
@@ -71,8 +70,8 @@
           <h2 class="visually-hidden">Преимущества в Седоне</h2>
 
           <div class="advantages-connotation">
-            <p class="advantages-lead heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-            <p class="advantages-lead-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            <p class="advantages-lead-subtitle subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="advantages-lead-description description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
 
           <div class="advantages-first-row">
@@ -115,8 +114,8 @@
           </div>
 
           <div class="advantages-third-row">
+            <img class="advantages-photo" src="images/main-page/photo-2.jpg" width="800" height="384" alt="Мост Дьявола в окружении гор.">
             <ul class="advantages-list">
-              <img class="advantages-photo" src="images/main-page/photo-2.jpg" width="800" height="384" alt="Мост Дьявола в окружении гор.">
               <li class="advantages-item advantages-bridge">
                 <h3 class="advantages-subtitle">Там есть мост Дьявола</h3>
                 <div class="advantages-strips advantages-bridge-strips">
@@ -135,34 +134,52 @@
           <h2 class="visually-hidden">Сервис в Седоне</h2>
 
           <div class="services-connotation">
-            <p class="services-lead heading">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-            <p class="services-lead-description">Опытный персонал и качественное обслуживание!</p>
+            <p class="services-lead-subtitle subtitle">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+            <p class="services-lead-description description">Опытный персонал и качественное обслуживание!</p>
           </div>
 
           <div class="services-row">
+
             <ul class="services-list">
+
               <li class="services-item services-item-grey">
-                <div class="services-item-home">
-                  <span class="visually-hidden">Домик</span>
+
+                <div class="services-item-wrapper">
+                  <div class="services-item-home">
+                    <span class="visually-hidden">Домик</span>
+                  </div>
+                  <h3 class="services-subtitle">Жильё</h3>
+                  <p class="services-description-home">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </div>
-                <h3 class="services-subtitle">Жильё</h3>
-                <p class="services-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+
               </li>
+
               <li class="services-item">
-                <div class="services-item-food">
-                  <span class="visually-hidden">Бургер</span>
+
+                <div class="services-item-wrapper">
+                  <div class="services-item-food">
+                    <span class="visually-hidden">Бургер</span>
+                  </div>
+                  <h3 class="services-subtitle">Еда</h3>
+                  <p class="services-description-food">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
                 </div>
-                <h3 class="services-subtitle">Еда</h3>
-                <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+
               </li>
+
               <li class="services-item services-item-grey">
-                <div class="services-item-souvenirs">
-                  <span class="visually-hidden">Подарок</span>
+
+                <div class="services-item-wrapper">
+                  <div class="services-item-souvenirs">
+                    <span class="visually-hidden">Подарок</span>
+                  </div>
+                  <h3 class="services-subtitle">Сувениры</h3>
+                  <p class="services-description-souvenirs">Не только китайского,< но и настоящего местного производства!</p>
                 </div>
-                <h3 class="services-subtitle">Сувениры</h3>
-                <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
+
               </li>
+
             </ul>
+
           </div>
 
         </section>
@@ -172,45 +189,52 @@
 
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-          <div class="search-connotation">
-            <p class="search-lead heading">Заинтересовались?</h2>
-            <p class="search-lead-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="search-wrapper">
+
+            <div class="search-connotation">
+              <p class="search-lead-subtitle subtitle">Заинтересовались?</h2>
+              <p class="search-lead-description description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            </div>
+
+            <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
+
           </div>
 
-          <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
-
         </section>
-
 
         <!-- Секция "Рассылка" -->
         <section class="subscribe" data-test="subscribe">
 
           <h2 class="visually-hidden">Рассылка</h2>
 
-          <div class="subscribe-connotation">
-            <p class="subscribe-lead heading">Подпишитесь на рассылку</p>
-            <p class="subscribe-lead subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <div class="subscribe-wrapper">
+
+            <div class="subscribe-connotation">
+              <p class="subscribe-lead-subtitle subtitle">Подпишитесь на рассылку</p>
+              <p class="subscribe-lead-description description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            </div>
+
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <p class="subscribe-form-email">
+                <label class="subscribe-form-email-label" for="email"></label>
+                <input class="subscribe-form-email-label-text" type="text" id="email" name="email" placeholder="Ваш e-mail" required>
+              </p>
+
+              <button class="button subscribe-button" type="submit">
+                <span class="subscribe-button-mail">Подписаться</span>
+              </button>
+
+            </form>
+
           </div>
-
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-
-            <p class="subscribe-form-email">
-              <label class="subscribe-form-email-label" for="email"></label>
-              <input class="subscribe-form-email-label-text" type="text" id="email" name="email" placeholder="Ваш e-mail" required>
-            </p>
-
-            <button class="button subscribe-button" type="submit">
-              <span class="subscribe-button-mail">Подписаться</span>
-            </button>
-
-          </form>
 
         </section>
 
       </main>
 
       <!-- Подвал -->
-      <footer class="page-footer">
+      <footer class="container page-footer">
 
         <div class="page-footer-frame">
 
