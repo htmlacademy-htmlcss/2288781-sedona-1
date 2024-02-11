@@ -973,12 +973,6 @@ fieldset {
   border-color: none;
 }
 
-input {
-  /* Блочная модель */
-  margin-bottom: 16px;
-  margin-right: 16px;
-}
-
 /* Фильтр */
 .main-inner {
   /* Блочная модель */
@@ -1111,6 +1105,8 @@ input {
 
   /* Блочная модель */
   display: inline-block;
+  max-width: 1060px;
+  height: 160px;
   margin-top: 40px;
 }
 
@@ -1125,6 +1121,12 @@ input {
   height: 157px;
   margin: 0 70px 0 0;
   padding: 0;
+}
+
+.inner-infrastructure input {
+  /* Блочная модель */
+  margin-bottom: 16px;
+  margin-right: 16px;
 }
 
 .infrastructure-title,
@@ -1163,21 +1165,26 @@ input {
   /* Позиционирование */
   position: relative;
   left: 225px;
+  bottom: 16px;
 
   /* Блочная модель */
   display: inline-block;
   width: 150.43px;
   height: 157px;
-  margin-right: 70px;
   padding: 0;
   margin: 0 140px 0 0;
+}
+
+.inner-type-housing input {
+  /* Блочная модель */
+  margin-bottom: 16px;
+  margin-right: 16px;
 }
 
 .inner-price {
   /* Позиционирование */
   position: relative;
-  left: 520px;
-  bottom: 160px;
+  left: 218px;
 
   /* Блочная модель */
   display: inline-block;
@@ -1187,12 +1194,17 @@ input {
   margin: 0 70px 0 0;
 }
 
+.inner-price input {
+  /* Блочная модель */
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
 .price-title {
     /* Блочная модель */
     display: inline-block;
     max-width: 288px;
     height: auto;
-    margin-bottom: 32px;
 
     /* Типографика */
     font-size: 20px;
@@ -1205,6 +1217,22 @@ input {
 .inner-price-wrapper {
   /* Оформление */
   text-align: center;
+}
+
+.price-input-min {
+  /* Типографика */
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.price-range input [placeholder="до"] {
+  /* Типографика */
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .price-range {
@@ -1224,6 +1252,51 @@ input {
   line-height: 23px;
   color: #ffffff;
 }
+
+.inner-button {
+  /* Блочная модель */
+  width: 191px;
+  height: 104px;
+}
+
+.inner-button-submit button {
+  /* Блочная модель */
+  width: 191px;
+  height: 36px;
+
+  /* Оформление */
+  background-color: none;
+
+}
+
+.inner-button-reset button {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  /* Оформление */
+  color: #ffffff;
+}
+
+.inner-button-reset button {
+  /* Блочная модель */
+  width: 191px;
+  height: 36px;
+
+  /* Типографика */
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  /* Оформление */
+  color: #ffffff;
+}
+
 
 value {
   /* Типографика */
