@@ -250,7 +250,7 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.navigation-user-favourites {
+.navigation-user-favorites {
   /* Позиционирование */
   position: relative;
 
@@ -1028,7 +1028,7 @@ input {
 }
 
 /* Фильтр -> хлебные крошки */
-.breadcrubs-list {
+.breadcrumbs-list {
   /* Позиционирование */
   position: relative;
   bottom: 11px;
@@ -1040,7 +1040,7 @@ input {
   padding: 0;
 }
 
-.breadcrubs-list ul {
+.breadcrumbs-list ul {
   /* Блочная модель */
   margin: 0;
   padding: 0;
@@ -1049,7 +1049,7 @@ input {
   list-style: none;
 }
 
-.breadcrubs-item {
+.breadcrumbs-item {
   /* Позиционирование */
   position: relative;
   bottom: 11px;
@@ -1058,7 +1058,7 @@ input {
   display: inline-block;
 }
 
-.breadcrubs-home {
+.breadcrumbs-home {
   /* Позиционирование */
   position: relative;
 
@@ -1069,12 +1069,12 @@ input {
   margin: 0 10px 0 0;
 
   /* Оформление */
-  background-image: url("../images/breadcrubs/filter-home.svg");
+  background-image: url("../images/breadcrumbs/filter-home.svg");
   background-repeat: no-repeat;
   text-align: left;
 }
 
-.breadcrubs-arrow {
+.breadcrumbs-arrow {
   /* Позиционирование */
   position: relative;
   top: 8px;
@@ -1087,11 +1087,11 @@ input {
   padding: 0;
 
   /* Оформление */
-  background-image: url("../images/breadcrubs/arrow.svg");
+  background-image: url("../images/breadcrumbs/arrow.svg");
   background-repeat: no-repeat;
 }
 
-.breadcrubs-arrow-text {
+.breadcrumbs-arrow-text {
   /* Позиционирование */
   position: relative;
   top: -8px;
@@ -1163,7 +1163,6 @@ input {
   /* Позиционирование */
   position: relative;
   left: 225px;
-  b
 
   /* Блочная модель */
   display: inline-block;
