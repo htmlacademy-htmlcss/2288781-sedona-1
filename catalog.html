@@ -80,9 +80,11 @@
             <form class="inner-form" action="https://echo.htmlacademy.ru/" method="get">
 
               <fieldset class="inner-infrastructure">
+
                 <legend class="infrastructure-title">
                   Инфраструктура:
                 </legend>
+
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
                     <label class="infrastructure-control" for="swimming-pool">
@@ -117,12 +119,15 @@
                     </label>
                   </li>
                 </ul>
+
               </fieldset>
 
               <fieldset class="inner-type-housing">
+
                 <legend class="type-housing-title">
                   Тип жилья:
                 </legend>
+
                 <ul class="type-housing-list">
                   <li class="type-housing-item">
                     <label class="type-housing-control" for="hotel">
@@ -156,12 +161,16 @@
                     </label>
                   </li>
                 </ul>
+
               </fieldset>
 
-                <fieldset class="inner-price">
-                  <legend class="price-title">
-                    Стоимость, <span>₽:</span>
-                  </legend>
+              <fieldset class="inner-price">
+
+                <legend class="price-title">
+                  Стоимость, <span>₽:</span>
+                </legend>
+
+                <div class="inner-price-wrapper">
                   <label class="price-range" for="price-range-min">
                     <input
                       class="price-input-min"
@@ -169,6 +178,7 @@
                       type="text"
                       value="0"
                       placeholder="от">
+                    <span class="text-price">от</span>
                   </label>
                   <label class="price-range" for="price-range-max">
                     <input
@@ -177,20 +187,23 @@
                       type="text"
                       value="9000"
                       placeholder="до">
+                    <span class="text-price">до</span>
                   </label><br>
                   <label class="progress-range" for="progress">
                     <input type="range" id="progress" name="progress" min="0" max="9000" step="10" value="7000">
                   </label>
-                </fieldset>
-
-                <div class="inner-button">
-                  <p class="inner-button-submit">
-                    <button class="button" type="submit">Применить</button>
-                  </p>
-                  <p class="inner-button-reset">
-                    <button class="button" type="reset">Сбросить</button>
-                  </p>
                 </div>
+
+              </fieldset>
+
+              <div class="inner-button">
+                <p class="inner-button-submit">
+                  <button class="button" type="submit">Применить</button>
+                </p>
+                <p class="inner-button-reset">
+                  <button class="button" type="reset">Сбросить</button>
+                </p>
+              </div>
 
             </form>
 
@@ -333,34 +346,34 @@
 
           </section>
 
-        <!-- Секция "Рассылка" -->
-        <section class="subscribe subscribe-catalog" data-test="subscribe">
+          <!-- Секция "Рассылка" -->
+          <section class="subscribe subscribe-catalog" data-test="subscribe">
 
-          <h2 class="visually-hidden">Рассылка</h2>
+            <h2 class="visually-hidden">Рассылка</h2>
 
-          <div class="subscribe-wrapper">
+            <div class="subscribe-wrapper">
 
-            <div class="subscribe-connotation subscribe-connotation-catalog">
-              <p class="subscribe-lead-subtitle subtitle">Подпишитесь на рассылку</p>
-              <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <div class="subscribe-connotation subscribe-connotation-catalog">
+                <p class="subscribe-lead-subtitle subtitle">Подпишитесь на рассылку</p>
+                <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+              </div>
+
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+
+                <p class="subscribe-form-email subscribe-form-email-catalog">
+                  <label for="email"></label>
+                  <input type="text" id="email" name="email" placeholder="Ваш e-mail" required>
+                </p>
+
+                <button class="button subscribe-button" type="submit">
+                  <span class="subscribe-button-mail">Подписаться</span>
+                </button>
+
+              </form>
+
             </div>
 
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-
-              <p class="subscribe-form-email">
-                <label for="email"></label>
-                <input type="text" id="email" name="email" placeholder="Ваш e-mail" required>
-              </p>
-
-              <button class="button subscribe-button" type="submit">
-                <span class="subscribe-button-mail">Подписаться</span>
-              </button>
-
-            </form>
-
-          </div>
-
-        </section>
+          </section>
 
         </div>
 

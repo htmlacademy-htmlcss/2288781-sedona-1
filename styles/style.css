@@ -968,6 +968,16 @@ ____________________________________________ */
 /* Страница каталога
 ============================================
 ============================================ */
+fieldset {
+  /* Оформление */
+  border-color: none;
+}
+
+input {
+  /* Блочная модель */
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
 
 /* Фильтр */
 .main-inner {
@@ -989,9 +999,8 @@ ____________________________________________ */
 .main-inner-filter {
   /* Блочная модель */
   max-width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  height: 412px;
+  padding: 35px 70px 70px;
 
   /* Оформление */
   background-image: url("../images/background-images/filter.jpg");
@@ -1006,29 +1015,12 @@ ____________________________________________ */
   /* Блочная модель */
   width: 494.40px;
   height: 78px;
-  margin: 35px 0 0 70px;
+  margin: 0 0 8px;
 
   /* Типографика */
   font-size: 60px;
   line-height: 78px;
   text-transform: capitalize;
-  color: #ffffff;
-
-  /* Оформление */
-  text-align: left;
-}
-
-.inner-filter-title {
-  /* Блочная модель */
-  width: 494,4px;
-  height: 78px;
-  margin-left: 70px;
-  margin-top: 35px;
-
-  /* Типографика */
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: 700;
   color: #ffffff;
 
   /* Оформление */
@@ -1037,27 +1029,74 @@ ____________________________________________ */
 
 /* Фильтр -> хлебные крошки */
 .breadcrubs-list {
+  /* Позиционирование */
+  position: relative;
+  bottom: 11px;
+
+  /* Блочная модель */
+  min-width: 114px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrubs-list ul {
+  /* Блочная модель */
+  margin: 0;
+  padding: 0;
+
+  /* Оформление */
+  list-style: none;
+}
+
+.breadcrubs-item {
+  /* Позиционирование */
+  position: relative;
+  bottom: 11px;
+
   /* Блочная модель */
   display: inline-block;
-  width: 114px;
-  height: 21px;
-  margin-left: 70px;
-  margin-top: 8px;
 }
 
 .breadcrubs-home {
+  /* Позиционирование */
+  position: relative;
+
+  /* Блочная модель */
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin: 0 10px 0 0;
+
   /* Оформление */
   background-image: url("../images/breadcrubs/filter-home.svg");
   background-repeat: no-repeat;
+  text-align: left;
 }
 
 .breadcrubs-arrow {
+  /* Позиционирование */
+  position: relative;
+  top: 8px;
+
+  /* Блочная модель */
+  display: inline-block;
+  width: 6.39px;
+  height: 9.94px;
+  margin: 0;
+  padding: 0;
+
   /* Оформление */
   background-image: url("../images/breadcrubs/arrow.svg");
   background-repeat: no-repeat;
 }
 
 .breadcrubs-arrow-text {
+  /* Позиционирование */
+  position: relative;
+  top: -8px;
+  left: 20px;
+
   /* Типографика */
   font-size: 16px;
   line-height: 21px;
@@ -1066,18 +1105,34 @@ ____________________________________________ */
 }
 
 .inner-form {
+  /* Позиционирование */
+  position: absolute;
+  z-index: 1;
+
   /* Блочная модель */
+  display: inline-block;
   margin-top: 40px;
 }
 
-.inner-infrastructure,
-.inner-price {
+.inner-infrastructure {
+  /* Позиционирование */
+  position: absolute;
+  z-index: 0;
+
   /* Блочная модель */
-  margin-right: 70px;
+  display: inline-block;
+  width: 150.43px;
+  height: 157px;
+  margin: 0 70px 0 0;
+  padding: 0;
 }
 
-legend {
+.infrastructure-title,
+.type-housing-title {
   /* Блочная модель */
+  display: inline-block;
+  max-width: 150.43px;
+  height: auto;
   margin-bottom: 32px;
 
   /* Типографика */
@@ -1088,19 +1143,87 @@ legend {
   color: #ffffff;
 }
 
-label {
+.infrastructure-list,
+.type-housing-list {
+  /* Блочная модель */
+  margin: 0;
+  padding: 0;
+
   /* Типографика */
   font-size: 18px;
   line-height: 23px;
+  text-transform: capitalize;
   color: #ffffff;
+
+  /* Оформление */
+  list-style: none;
+}
+
+.inner-type-housing {
+  /* Позиционирование */
+  position: relative;
+  left: 225px;
+  b
+
+  /* Блочная модель */
+  display: inline-block;
+  width: 150.43px;
+  height: 157px;
+  margin-right: 70px;
+  padding: 0;
+  margin: 0 140px 0 0;
+}
+
+.inner-price {
+  /* Позиционирование */
+  position: relative;
+  left: 520px;
+  bottom: 160px;
+
+  /* Блочная модель */
+  display: inline-block;
+  width: 288px;
+  height: 160px;
+  padding: 0;
+  margin: 0 70px 0 0;
+}
+
+.price-title {
+    /* Блочная модель */
+    display: inline-block;
+    max-width: 288px;
+    height: auto;
+    margin-bottom: 32px;
+
+    /* Типографика */
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.inner-price-wrapper {
+  /* Оформление */
+  text-align: center;
 }
 
 .price-range {
   /* Блочная модель */
-  width: 143px;
-  height: 48px;
+  width: 103px;
+  height: 24px;
   padding: 12px 20px;
   margin-bottom: 36px;
+
+  /* Оформление */
+  border: 4px;
+}
+
+.price-range label {
+  /* Типографика */
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
 }
 
 value {
@@ -1109,17 +1232,6 @@ value {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-}
-
-input {
-  /* Блочная модель */
-  margin-bottom: 16px;
-  margin-right: 16px;
-}
-
-fieldset {
-  /* Оформление */
-  border-color: none;
 }
 
 .subscribe-catalog {
@@ -1131,5 +1243,9 @@ fieldset {
 .subscribe-connotation-catalog p {
   /* Оформление */
   color: #000000;
-  
+}
+
+.subscribe-form-email-catalog input {
+  /* Оформление */
+  border-color: #ffffff;
 }
