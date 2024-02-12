@@ -172,27 +172,26 @@
                 </legend>
 
                 <div class="inner-price-wrapper">
-                  <label class="price-range" for="price-range-min">
+                  <label class="price-range price-range-min" for="price-range-min">
                     <input
                       class="price-input-min"
                       id="price-range-min"
                       type="text"
                       value="0"
                       placeholder="от">
-                    <span class="text-price">от</span>
+                    <span class="text-price-from">от</span>
                   </label>
-                  <label class="price-range" for="price-range-max">
+                  <label class="price-range price-range-max" for="price-range-max">
                     <input
                       class="price-input-max"
                       id="price-range-max"
                       type="text"
                       value="9000"
                       placeholder="до">
-                    <span class="text-price">до</span>
+                    <span class="text-price-before">до</span>
                   </label><br>
-                  <label class="progress-range" for="progress">
-                    <input type="range" id="progress" name="progress" min="0" max="9000" step="10" value="7000">
-                  </label>
+                  <progress class="progress-range-line" min="0" max="100" value="70">
+                  </progress>
                 </div>
 
               </fieldset>
