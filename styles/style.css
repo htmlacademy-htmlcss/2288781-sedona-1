@@ -968,11 +968,6 @@ ____________________________________________ */
 /* Страница каталога
 ============================================
 ============================================ */
-fieldset {
-  /* Оформление */
-  border-color: none;
-}
-
 /* Фильтр */
 .main-inner {
   /* Блочная модель */
@@ -988,6 +983,10 @@ fieldset {
   /* Блочная модель */
   margin: 0 auto;
   padding: 0;
+
+  /* Оформление */
+  background-color: #82B3D3;
+  color: #000000;
 }
 
 .main-inner-filter {
@@ -1099,27 +1098,17 @@ fieldset {
 }
 
 .inner-form {
-  /* Позиционирование */
-  position: absolute;
-  z-index: 1;
-
   /* Блочная модель */
   display: inline-block;
-  max-width: 1060px;
+  width: 1060px;
   height: 160px;
-  margin-top: 40px;
 }
 
 .inner-infrastructure {
-  /* Позиционирование */
-  position: absolute;
-  z-index: 0;
-
   /* Блочная модель */
-  display: inline-block;
   width: 150.43px;
   height: 157px;
-  margin: 0 70px 0 0;
+  margin: 40px 70px 0 0;
   padding: 0;
 }
 
@@ -1165,14 +1154,14 @@ fieldset {
   /* Позиционирование */
   position: relative;
   left: 225px;
-  bottom: 16px;
+  bottom: 200px;
 
   /* Блочная модель */
   display: inline-block;
   width: 150.43px;
   height: 157px;
   padding: 0;
-  margin: 0 140px 0 0;
+  margin: 40px 140px 0 0;
 }
 
 .inner-type-housing input {
@@ -1185,41 +1174,48 @@ fieldset {
   /* Позиционирование */
   position: relative;
   left: 218px;
+  bottom: 270px;
 
   /* Блочная модель */
   display: inline-block;
   width: 288px;
   height: 160px;
+  margin: 0;
   padding: 0;
-  margin: 0 70px 0 0;
 }
 
-.inner-price input {
+.inner-price fieldset {
   /* Блочная модель */
-  margin-bottom: 16px;
-  margin-right: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .price-title {
-    /* Блочная модель */
-    display: inline-block;
-    max-width: 288px;
-    height: auto;
+  /* Блочная модель */
+  display: inline-block;
+  max-width: 288px;
+  height: auto;
 
-    /* Типографика */
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: capitalize;
-    color: #ffffff;
+  /* Типографика */
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #ffffff;
 }
 
 .inner-price-wrapper {
+  /* Блочная модель */
+  margin: 0;
+  margin-top: 32px;
+  padding: 0;
+
   /* Оформление */
   text-align: center;
 }
 
-.price-input-min {
+.price-input-min,
+.price-input-max {
   /* Типографика */
   font-size: 18px;
   line-height: 24px;
@@ -1227,23 +1223,41 @@ fieldset {
   color: #000000;
 }
 
-.price-range input [placeholder="до"] {
+.text-price-from {
+  /* Позиционирование */
+  position: relative;
+  left: -50px;
+
   /* Типографика */
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
   color: #000000;
 }
 
-.price-range {
+.text-price-before {
+  /* Позиционирование */
+  position: relative;
+  left: 100px;
+  bottom: 3px;
+  left: -35px;
+
+  /* Типографика */
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.price-range input {
   /* Блочная модель */
   width: 103px;
   height: 24px;
-  padding: 12px 20px;
   margin-bottom: 36px;
 
-  /* Оформление */
-  border: 4px;
+  /* Типографика */
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .price-range label {
@@ -1253,57 +1267,34 @@ fieldset {
   color: #ffffff;
 }
 
-.inner-button {
+.progress-range-line {
   /* Блочная модель */
-  width: 191px;
-  height: 104px;
+  width: 287px;
+
+  /* Оформление */
+  opacity: 0.30;
+  border: 4px white solid;
 }
 
-.inner-button-submit button {
+.inner-button-submit {
   /* Блочная модель */
-  width: 191px;
+  max-width: 191px;
   height: 36px;
 
   /* Оформление */
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.inner-button-reset {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 20px;
+
+  /* Оформление */
+  color: #ffffff;
   background-color: none;
-
-}
-
-.inner-button-reset button {
-  /* Типографика */
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  /* Оформление */
-  color: #ffffff;
-}
-
-.inner-button-reset button {
-  /* Блочная модель */
-  width: 191px;
-  height: 36px;
-
-  /* Типографика */
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  /* Оформление */
-  color: #ffffff;
-}
-
-
-value {
-  /* Типографика */
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
+  border-radius: 4px;
 }
 
 .subscribe-catalog {
