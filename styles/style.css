@@ -93,7 +93,7 @@ h3 {
   text-align: center;
 }
 
-.button {
+.btn {
   /* Блочная модель */
   margin: 0;
   padding: 8px 50px;
@@ -107,7 +107,7 @@ h3 {
   text-decoration: none;
 
   /* Оформление */
-  color: #000000;
+  color: black;
   background-color: greenyellow;
   border: none;
 }
@@ -169,6 +169,9 @@ h3 {
 }
 
 .navigation-list {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
@@ -189,4 +192,54 @@ h3 {
   display: flex;
   width: auto;
   height: 100%;
+}
+
+
+.navigation-link {
+  /* Позиционирование */
+  position: relative;
+
+  /* Блочная модель */
+  padding: 22px 16px;
+
+  /* Типографика */
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: capitalize;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navigation-link-current {
+  /* Позиционирование */
+  position: relative;
+
+  /* Оформление */
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 20px;
+  text-underline-position: under;
+}
+
+.navigation-user-list {
+  /* Позиционирование */
+  position: absolute;
+  left: 538px;
+  z-index: 0;
+
+  /* Блочная модель */
+  display: inline-block;
+  padding: 0 0 0 320px;
+}
+
+.navigation-user-item {
+  /* Позиционирование */
+  position: relative;
+
+  /* Блочная модель */
+  display: inline-block;
+  margin: 0 12px;
 }
