@@ -142,9 +142,6 @@ h3 {
 /* Header=Шапка - начало
 ============================================ */
 .page-header {
-  /* Блочная модель */
-  margin: 0 auto;
-
   /* Оформление */
   background-color: #ffffff;
   color: #000000;
@@ -157,7 +154,6 @@ h3 {
   /* Блочная модель */
   display: flex;
   align-items: center;
-  max-width: 1200px;
   height: 64px;
   padding: 0 70px;
 }
@@ -178,10 +174,19 @@ h3 {
   flex-wrap: wrap;
 
   width: 339px;
-  height: 64px;
   padding: 0;
   margin: 0 auto 0 170px;
 
   /* Оформление */
-  list-style-type: none;
+  list-style: none;
+}
+
+.navigation-item {
+  /* Позиционирование */
+  position: relative;
+
+  /* Блочная модель */
+  display: flex;
+  width: auto;
+  height: 100%;
 }

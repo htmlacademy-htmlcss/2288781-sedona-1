@@ -3,13 +3,7 @@
 
 
 
-.navigation-item {
-  /* Позиционирование */
-  position: relative;
 
-  /* Блочная модель */
-  display: inline-block;
-}
 
 .navigation-link {
   /* Позиционирование */
