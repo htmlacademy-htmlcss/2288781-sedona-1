@@ -126,7 +126,8 @@ ul {
 
 .container {
   /* Блочная модель */
-
+  display: flex;
+  flex-direction: column;
 
   width: 1200px;
   min-height: 100%;
