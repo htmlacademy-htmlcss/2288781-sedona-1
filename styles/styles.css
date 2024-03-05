@@ -298,8 +298,6 @@ a {
 .navigation-user-statistics {
   /* Позиционирование */
   position: absolute;
-  z-index: -1;
-  left: 905px;
   top: 14px;
 
   /* Типографика */
@@ -319,13 +317,6 @@ a {
 }
 
 .navigation-btn {
-  /* Типографика */
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-
   /* Блочная модель */
   display: flex;
   justify-content: flex-end;
