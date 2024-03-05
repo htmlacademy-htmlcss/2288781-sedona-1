@@ -244,16 +244,9 @@ a {
   position: relative;
 
   /* Блочная модель */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-
   max-width: 268px;
   max-height: 64px;
-  margin: 0;
   margin-left: auto;
-  padding: 0;
 }
 
 .navigation-user-item {
