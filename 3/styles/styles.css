@@ -244,16 +244,9 @@ a {
   position: relative;
 
   /* Блочная модель */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-
   max-width: 268px;
   max-height: 64px;
-  margin: 0;
   margin-left: auto;
-  padding: 0;
 }
 
 .navigation-user-item {
@@ -298,8 +291,6 @@ a {
 .navigation-user-statistics {
   /* Позиционирование */
   position: absolute;
-  z-index: -1;
-  left: 905px;
   top: 14px;
 
   /* Типографика */
@@ -319,13 +310,6 @@ a {
 }
 
 .navigation-btn {
-  /* Типографика */
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-
   /* Блочная модель */
   display: flex;
   justify-content: flex-end;
