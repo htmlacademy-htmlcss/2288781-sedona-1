@@ -116,13 +116,20 @@ h3 {
 }
 
 ul {
+  /* Блочная модель */
   padding: 0;
   margin: 0;
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+  /* Оформление */
   list-style-type: none;
 }
 
 .container {
   /* Блочная модель */
+  display: flex;
   width: 1200px;
   min-height: 100%;
   margin: 0 auto;
@@ -149,6 +156,11 @@ a {
   text-decoration: none;
 }
 
+li {
+  /* Оформление */
+  text-align: center;
+}
+
 
 /* Главная страница
 ============================================
@@ -171,10 +183,9 @@ a {
   justify-content: space-between;
   align-items: flex-start;
 
-  max-width: 1200px;
-  max-height: 64px;
+  width: 1200px;
+  height: 64px;
   padding: 0 70px;
-  margin: 0 auto;
 }
 
 .navigation-logo {
@@ -183,11 +194,9 @@ a {
   z-index: 1;
 
   /* Блочная модель */
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: block;
 
-  min-height: 70px;
+  max-height: 70px;
   margin: 0 auto;
   margin-right: 30px;
 }
@@ -199,22 +208,19 @@ a {
   /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
 
   max-height: 64px;
-  margin: 0;
   margin-left: 170px;
-  padding: 0;
 }
 
 .navigation-item {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
 
   padding: 20px 16px;
 }
@@ -244,18 +250,21 @@ a {
   position: relative;
 
   /* Блочная модель */
-  max-width: 268px;
+  display: flex;
+  flex-wrap: wrap;
+
   max-height: 64px;
   margin-left: auto;
 }
 
 .navigation-user-item {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
 
   width: 20px;
   height: 20px;
@@ -263,11 +272,10 @@ a {
 }
 
 .navigation-user-search {
-  /* Блочная модель */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* Позиционирование */
+  position: absolute;
 
+  /* Блочная модель */
   padding-top: 1px;
   padding-left: 1px;
 
@@ -278,7 +286,7 @@ a {
 
 .navigation-user-favorites {
   /* Позиционирование */
-  position: relative;
+  position: absolute;
 
   /* Блочная модель */
   padding: 2px 1px 1px;
@@ -335,8 +343,11 @@ a {
 
 /* Main=Основное содержание - начало
 ============================================ */
-.main-index {
+.main-index,
+.main-inner {
   /* Блочная модель */
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
