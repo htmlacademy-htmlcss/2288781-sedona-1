@@ -319,7 +319,8 @@ img {
 .navigation-user-statistics {
   /* Позиционирование */
   position: absolute;
-  top: 14px;
+  top: 11px;
+  left: 20px;
 
   /* Типографика */
   font-size: 10px;
@@ -327,6 +328,7 @@ img {
   color: #ffffff;
 
   /* Блочная модель */
+  display: block;
   max-width: 20px;
   max-height: 20px;
   padding: 5px 5px 5px 4px;
