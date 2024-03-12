@@ -894,20 +894,12 @@ ____________________________________________ */
 /* Footer=Подвал - начало
 ============================================ */
 .page-footer {
-  /* Позиционирование */
-  position: relative;
-
   /* Блочная модель */
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 
-  max-width: 1200px;
-
-
-
-  margin: 0 auto;
-  padding: 0 70px;
+  height: 120px;
 
   /* Оформление */
   background-color: #ffffff;
@@ -915,23 +907,12 @@ ____________________________________________ */
 }
 
 .page-footer-frame {
-  /* Позиционирование */
-  position: absolute;
-
   /* Блочная модель */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
   justify-content: space-between;
+  align-items: center;
 
-  max-width: 100%;
-  height: 50px;
-  margin: 0;
-  padding: 0;
-
-  /* Оформление */
-  text-align: left;
+  width: 1060px;
 }
 
 .page-footer-social {
@@ -1022,14 +1003,12 @@ ____________________________________________ */
 
 .phone-item {
   /* Блочная модель */
-  display: inline-block;
-  width: 331px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  /* Оформление */
-  vertical-align: baseline;
+  width: 720px;
+  height: 50px;
 }
 
 .phone-link {
