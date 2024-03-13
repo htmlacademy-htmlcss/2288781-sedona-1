@@ -16,8 +16,8 @@
   font-display: swap;
 }
 
-
-html {
+html,
+body {
   /* Блочная модель */
   height: 100%;
 }
@@ -44,10 +44,6 @@ html {
 
 body {
   /* Блочная модель */
-  display: flex;
-  flex-direction: column;
-
-  min-height: 100%;
   margin: 0;
   padding: 0;
 
@@ -61,8 +57,11 @@ body {
 
 .body-page {
   /* Блочная модель */
+  display: flex;
+  flex-direction: column;
+
   width: 1280px;
-  min-height: 100%;
+  min-height: 100%; /*стик-футор*/
   margin: 0 auto;
 
   /* Оформление */
@@ -79,6 +78,10 @@ h1 {
   line-height: 78px;
   font-weight: 700;
   text-transform: uppercase;
+
+  /* Оформление */
+  color: #000000;
+  text-align: center;
 }
 
 h2 {
@@ -90,6 +93,10 @@ h2 {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+
+  /* Оформление */
+  color: #000000;
+  text-align: center;
 }
 
 h3 {
@@ -101,10 +108,22 @@ h3 {
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
+
+  /* Оформление */
+  color: #000000;
+  text-align: center;
+}
+
+p {
+  /* Блочная модель */
+  margin: 0;
 }
 
 .btn {
   /* Блочная модель */
+  display: block;
+
+  width: max-content;
   margin: 0;
   padding: 8px 50px;
 
@@ -117,11 +136,13 @@ h3 {
   text-decoration: none;
 
   /* Оформление */
-  color: black;
-  background-color: pink;
+  color: #000000;
+  background-color: #ffc0c0;
   border: none;
   border-radius: 4px;
   text-align: center;
+
+  cursor: pointer;
 }
 
 ul {
@@ -139,8 +160,9 @@ ul {
 .container {
   /* Блочная модель */
   display: flex;
+  flex-direction: column;
+
   width: 1200px;
-  min-height: 100%;
   margin: 0 auto;
 
   /* Оформление */
@@ -171,7 +193,22 @@ li {
 }
 
 img {
+  /* Оформление */
   overflow: hidden;
+}
+
+input {
+  /* Блочная модель */
+  padding-left: 20px;
+  padding-right: 20px;
+
+  /* Типографика */
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+
+  /* Оформление */
+  color: #000000;
 }
 
 
@@ -207,30 +244,20 @@ img {
 
   /* Блочная модель */
   display: block;
-
-  max-height: 70px;
-  margin: 0 auto;
-  margin-right: 30px;
 }
 
 .navigation-list {
-  /* Позиционирование */
-  position: relative;
-
   /* Блочная модель */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 
   max-height: 64px;
   margin-left: 170px;
 }
 
 .navigation-item {
-  /* Позиционирование */
-  position: relative;
-
   /* Блочная модель */
   display: flex;
   justify-content: center;
@@ -260,9 +287,6 @@ img {
 }
 
 .navigation-user-list {
-  /* Позиционирование */
-  position: relative;
-
   /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
@@ -279,6 +303,9 @@ img {
 }
 
 .navigation-user-link {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
   min-width: 44px;
   min-height: 64px;
@@ -286,6 +313,9 @@ img {
 }
 
 .navigation-user-search {
+  /* Позиционирование */
+  position: absolute;
+
   /* Блочная модель */
   display: flex;
   justify-content: center;
@@ -301,7 +331,7 @@ img {
 
 .navigation-user-favorites {
   /* Позиционирование */
-  position: relative;
+  position: absolute;
 
   /* Блочная модель */
   display: flex;
@@ -368,9 +398,7 @@ img {
 .main-index,
 .main-inner {
   /* Блочная модель */
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  flex-grow: 1; /*стик-футор*/
 }
 
 /* Main - Hero
@@ -899,7 +927,9 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
+  width: 1200px;
   height: 120px;
+  margin: 0 auto;
 
   /* Оформление */
   background-color: #ffffff;
@@ -909,18 +939,22 @@ ____________________________________________ */
 .page-footer-frame {
   /* Блочная модель */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   width: 1060px;
+  margin: 30px 70px 40px;
+  box-sizing: border-box;
 }
 
 .page-footer-social {
-  /* Позиционирование */
-  position: relative;
-
   /* Блочная модель */
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 142px;
   height: 40px;
   margin: 0;
   padding: 0;
