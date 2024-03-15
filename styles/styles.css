@@ -20,6 +20,11 @@ html,
 body {
   /* Блочная модель */
   height: 100%;
+  padding: 0;
+  margin: 0;
+
+  /* Оформление */
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -44,8 +49,9 @@ body {
 
 body {
   /* Блочная модель */
+  min-width: 1280px;
   margin: 0;
-  padding: 0;
+  padding: 0 40px;
 
   /* Типографика */
   font-family: "PT Sans", sans-serif;
@@ -53,6 +59,11 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
+  text-decoration: none;
+
+  /* Оформление */
+  color: #333333;
+  background: #f2f2f2;
 }
 
 .body-page {
@@ -60,13 +71,15 @@ body {
   display: flex;
   flex-direction: column;
 
-  width: 1280px;
-  min-height: 100%; /*стик-футор*/
+  width: 1200px;
+  min-height: 100%; /*sticky footer = стик-футор*/
   margin: 0 auto;
 
   /* Оформление */
-  color: #333333;
-  background: #f2f2f2;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0 0 15px #00000033;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -143,6 +156,7 @@ p {
   text-align: center;
 
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 ul {
@@ -155,20 +169,6 @@ ul {
 
   /* Оформление */
   list-style-type: none;
-}
-
-.container {
-  /* Блочная модель */
-  display: flex;
-  flex-direction: column;
-
-  width: 1200px;
-  margin: 0 auto;
-
-  /* Оформление */
-  color: #ffffff;
-  background-color: #82B3D3;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle {
@@ -193,8 +193,12 @@ li {
 }
 
 img {
+  /* Блочная модель */
+  max-width: 100%;
+
   /* Оформление */
   overflow: hidden;
+  object-fit: contain;
 }
 
 input {
@@ -208,7 +212,13 @@ input {
   line-height: 24px;
 
   /* Оформление */
-  color: #000000;
+  color: #00000099;
+  background-color: #f2f2f2;
+  border: none;
+  border-style: none;
+  border-radius: 4px;
+
+  cursor: pointer;
 }
 
 
@@ -216,9 +226,13 @@ input {
 ============================================
 ============================================ */
 
-/* Header=Шапка - начало
+/* Header=Шапка (навигация) - начало
 ============================================ */
 .page-header {
+  /* Блочная модель */
+  flex-grow: 0; /*sticky footer = стик-футор*/
+  flex-shrink: 0;
+
   /* Оформление */
   background-color: #ffffff;
   color: #000000;
@@ -389,7 +403,7 @@ input {
   color: #ffffff;
   text-transform: uppercase;
 }
-/* Header=Шапка - конец
+/* Header=Шапка (навигация) - конец
 ============================================ */
 
 
@@ -398,7 +412,7 @@ input {
 .main-index,
 .main-inner {
   /* Блочная модель */
-  flex-grow: 1; /*стик-футор*/
+  flex-grow: 1; /*sticky footer = стик-футор*/
 }
 
 /* Main - Hero
@@ -926,6 +940,9 @@ ____________________________________________ */
   display: flex;
   justify-content: center;
   align-items: center;
+
+  flex-grow: 0; /*sticky footer = стик-футор*/
+  flex-shrink: 0;
 
   width: 1200px;
   height: 120px;
