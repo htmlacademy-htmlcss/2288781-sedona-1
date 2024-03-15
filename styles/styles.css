@@ -72,7 +72,7 @@ body {
   flex-direction: column;
 
   width: 1200px;
-  min-height: 100%; /*sticky footer = стик-футор*/
+  min-height: 100%; /*sticky footer = стик-футер*/
   margin: 0 auto;
 
   /* Оформление */
@@ -230,12 +230,20 @@ input {
 ============================================ */
 .page-header {
   /* Блочная модель */
-  flex-grow: 0; /*sticky footer = стик-футор*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-grow: 0; /*sticky footer = стик-футер*/
   flex-shrink: 0;
+
+  max-width: 1200px;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 70px;
 
   /* Оформление */
   background-color: #ffffff;
-  color: #000000;
 }
 
 .navigation {
@@ -245,10 +253,10 @@ input {
   /* Блочная модель */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  width: 1200px;
-  height: 64px;
-  padding: 0 70px;
+  min-width: 1060px;
+  max-height: 64px;
 }
 
 .navigation-logo {
@@ -258,16 +266,17 @@ input {
 
   /* Блочная модель */
   display: block;
+  max-height: 70px;
 }
 
 .navigation-list {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
 
-  max-height: 64px;
   margin-left: 170px;
 }
 
@@ -276,11 +285,12 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding: 20px 16px;
 }
 
 .navigation-link {
+  /* Блочная модель */
+  padding: 20px 16px;
+
   /* Типографика */
   font-size: 20px;
   line-height: 24px;
@@ -301,19 +311,26 @@ input {
 }
 
 .navigation-user-list {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
 
+  max-width: 88px;
   margin-left: auto;
 }
 
 .navigation-user-item {
+  /* Позиционирование */
+  position: relative;
+
   /* Блочная модель */
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-user-link {
@@ -321,21 +338,26 @@ input {
   position: relative;
 
   /* Блочная модель */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   min-width: 44px;
   min-height: 64px;
   padding: 22px 12px;
 }
 
+
 .navigation-user-search {
   /* Позиционирование */
   position: absolute;
+  top: 0;
+  left: 0;
 
   /* Блочная модель */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 
-  min-width: 18px;
+  width: 18px;
   min-height: 18px;
 
   /* Оформление */
@@ -345,12 +367,12 @@ input {
 
 .navigation-user-favorites {
   /* Позиционирование */
-  position: absolute;
+  position: relative;
+  top: 0;
+  left: 0;
 
   /* Блочная модель */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 
   min-width: 18px;
   min-height: 17px;
@@ -362,8 +384,8 @@ input {
 
 .navigation-user-statistics {
   /* Позиционирование */
-  position: absolute;
-  top: 11px;
+  position: relative;
+  top: -7px;
   left: 20px;
 
   /* Типографика */
@@ -385,10 +407,6 @@ input {
 
 .navigation-btn {
   /* Блочная модель */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
   margin: 14px 0 14px 20px;
 
   /* Оформление */
@@ -412,7 +430,12 @@ input {
 .main-index,
 .main-inner {
   /* Блочная модель */
-  flex-grow: 1; /*sticky footer = стик-футор*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1; /*sticky footer = стик-футер*/
 }
 
 /* Main - Hero
@@ -423,13 +446,14 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
-  max-width: 100%;
+  width: 100%;
   height: 485px;
 
   /* Оформление */
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: 100% auto, cover;
   text-align: center;
 }
 
@@ -941,7 +965,7 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
-  flex-grow: 0; /*sticky footer = стик-футор*/
+  flex-grow: 0; /*sticky footer = стик-футер*/
   flex-shrink: 0;
 
   width: 1200px;
