@@ -9,25 +9,25 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
   </head>
 
   <body>
 
-    <p class="visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
     <!-- Главная страница -->
     <div class="body-page">
 
-      <h1 class="visually-hidden">Cайт поиска отелей в городе Седоне</h1>
+      <p class="visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
+
+      <h1 class="visually-hidden">Cайт поиска отелей<br> в городе Седоне</h1>
 
       <!-- Шапка = Header -->
-      <header class="container page-header" data-test="header">
+      <header class="page-header">
 
         <nav class="navigation">
 
-          <a class="logo" href="index.html">
+          <a class="navigation-logo" href="index.html">
             <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
           </a>
 
@@ -43,31 +43,38 @@
             </li>
           </ul>
 
-          <ul class="navigation-user-list">
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-search" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-favourites" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <span class="navigation-user-statistics">12</span>
-              </a>
-            </li>
-          </ul>
+          <div class="navigation-user-menu">
 
-          <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+            <ul class="navigation-user-list">
+
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-search" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-favorites" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <span class="navigation-user-statistics">12</span>
+                </a>
+              </li>
+
+            </ul>
+
+            <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+
+          </div>
 
         </nav>
 
       </header>
 
-      <main class="container main-inner" data-test="main">
+      <main class="main-inner">
 
         <div class="filter-catalog">
 
-          <section class="main-inner-filter" data-test="filter">
+          <section class="main-inner-filter">
 
             <h2 class="main-inner-filter-title">Гостиницы Седоны</h2>
 
@@ -248,7 +255,7 @@
 
           </section>
 
-          <section class="catalog-hotels" data-test="catalog">
+          <section class="catalog-hotels">
 
             <div class="hotel-cards">
 
@@ -354,7 +361,7 @@
           </section>
 
           <!-- Секция "Рассылка" -->
-          <section class="subscribe subscribe-catalog" data-test="subscribe">
+          <section class="subscribe subscribe-catalog">
 
             <h2 class="visually-hidden">Рассылка</h2>
 
@@ -387,7 +394,7 @@
       </main>
 
       <!-- Подвал -->
-      <footer class="container page-footer">
+      <footer class="page-footer">
 
         <div class="page-footer-frame">
 

@@ -20,5 +20,6 @@
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
-  "figma.autocompleteBlocks": true
+  "figma.autocompleteBlocks": true,
+  "liveServer.settings.port": 5501
 }
