@@ -1,5 +1,4 @@
 @font-face {
-  /* Типографика */
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -8,7 +7,6 @@
 }
 
 @font-face {
-  /* Типографика */
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -16,34 +14,25 @@
   font-display: swap;
 }
 
+* {
+  outline: 1px solid #0a7954;
+}
+
 html,
 body {
-  /* Блочная модель */
   height: 100%;
-  padding: 0;
-  margin: 0;
-
-  /* Оформление */
-  box-sizing: border-box;
 }
 
 .visually-hidden {
-  /* Позиционирование */
   position: absolute;
-
-  /* Блочная модель */
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
-  /* Оформление */
   border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-
-  /* Разное */
   overflow: hidden;
 }
 
@@ -70,74 +59,60 @@ body {
   /* Блочная модель */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 
   width: 1200px;
-  min-height: 100%; /*sticky footer = стик-футер*/
+  min-height: 100%; /* sticky footer */
   margin: 0 auto;
 
-  /* Оформление */
-  color: #000000;
-  background: #ffffff;
-  box-shadow: 0 0 15px #00000033;
   box-sizing: border-box;
+
+  /* Оформление */
+  color: #ffffff;
+  background: #82B3D3;
+  box-shadow: 0 0 15px #00000033;
 }
 
-h1 {
-  /* Блочная модель */
-  margin: 0;
+.repository {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
 
-  /* Типографика */
+.repository a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.repository a:hover {
+  color: #BF3535;
+}
+
+.body-page h1 {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   text-transform: uppercase;
-
-  /* Оформление */
-  color: #000000;
   text-align: center;
 }
 
-h2 {
-  /* Блочная модель */
-  margin: 0;
-
-  /* Типографика */
+.body-page h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-
-  /* Оформление */
-  color: #000000;
   text-align: center;
 }
 
-h3 {
-  /* Блочная модель */
-  margin: 0;
-
-  /* Типографика */
+.body-page h3 {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-
-  /* Оформление */
-  color: #000000;
-  text-align: center;
-}
-
-p {
-  /* Блочная модель */
-  margin: 0;
 }
 
 .btn {
   /* Блочная модель */
-  display: block;
-
-  width: max-content;
-  margin: 0;
   padding: 8px 50px;
 
   /* Типографика */
@@ -149,7 +124,7 @@ p {
   text-decoration: none;
 
   /* Оформление */
-  color: #000000;
+  color: #ffffff;
   background-color: #ffc0c0;
   border: none;
   border-radius: 4px;
@@ -159,45 +134,16 @@ p {
   box-sizing: border-box;
 }
 
-ul {
-  /* Блочная модель */
-  padding: 0;
-  margin: 0;
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  /* Оформление */
-  list-style-type: none;
-}
-
 .subtitle {
-  /* Типографика */
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-
-  /* Оформление */
-  text-align: center;
-}
-
-a {
-  /* Типографика */
-  text-decoration: none;
-}
-
-li {
-  /* Оформление */
-  text-align: center;
 }
 
 img {
-  /* Блочная модель */
   max-width: 100%;
-
-  /* Оформление */
-  overflow: hidden;
+  height: auto;
   object-fit: contain;
 }
 
@@ -229,66 +175,48 @@ input {
 /* Header=Шапка (навигация) - начало
 ============================================ */
 .page-header {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 
-  flex-grow: 0; /*sticky footer = стик-футер*/
+  flex-grow: 0; /*sticky footer */
   flex-shrink: 0;
 
-  max-width: 1200px;
-  height: 64px;
-  margin: 0 auto;
   padding: 0 70px;
 
-  /* Оформление */
   background-color: #ffffff;
 }
 
 .navigation {
-  /* Позиционирование */
   position: relative;
 
-  /* Блочная модель */
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
-  min-width: 1060px;
   max-height: 64px;
 }
 
 .navigation-logo {
-  /* Позиционирование */
   position: absolute;
   z-index: 1;
 
-  /* Блочная модель */
-  display: block;
+  max-height: 75px;
 }
 
 .navigation-list {
-  /* Позиционирование */
-  position: relative;
-
-  /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-left: 140px;
 
-  margin-left: 170px;
+  list-style-type: none;
 }
 
 .navigation-item {
-  /* Позиционирование */
-  position: relative;
-
-  /* Блочная модель */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .navigation-link {
@@ -370,7 +298,7 @@ input {
 
 }
 
-.navigation-user-favourites {
+.navigation-user-favorites {
   /* Позиционирование */
   position: relative;
 
@@ -446,7 +374,7 @@ input {
   justify-content: center;
   align-items: center;
 
-  flex-grow: 1; /*sticky footer = стик-футер*/
+  flex-grow: 1; /* sticky footer = стик-футер */
 }
 
 /* Main - Hero
@@ -454,6 +382,7 @@ ____________________________________________ */
 .hero {
   /* Блочная модель */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -502,7 +431,7 @@ ____________________________________________*/
 .advantages-lead-title {
   /* Блочная модель */
   width: 620px;
-  padding: 0 0 25px 0;
+  padding: 0 0 25px;
   margin: 0;
 }
 
