@@ -1,5 +1,4 @@
 @font-face {
-  /* Типографика */
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
@@ -8,7 +7,6 @@
 }
 
 @font-face {
-  /* Типографика */
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -16,44 +14,35 @@
   font-display: swap;
 }
 
+/*
+* {
+  outline: 1px solid #0a2c1f;
+}
+*/
+
 html,
 body {
-  /* Блочная модель */
   height: 100%;
-  padding: 0;
-  margin: 0;
-
-  /* Оформление */
-  box-sizing: border-box;
 }
 
 .visually-hidden {
-  /* Позиционирование */
   position: absolute;
-
-  /* Блочная модель */
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
-  /* Оформление */
   border: 0;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-
-  /* Разное */
   overflow: hidden;
 }
 
 body {
-  /* Блочная модель */
   min-width: 1280px;
   margin: 0;
   padding: 0 40px;
 
-  /* Типографика */
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 22px;
@@ -61,166 +50,108 @@ body {
   font-weight: 400;
   text-decoration: none;
 
-  /* Оформление */
   color: #333333;
   background: #f2f2f2;
 }
 
 .body-page {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
 
-  width: 1200px;
-  min-height: 100%; /*sticky footer = стик-футер*/
+  max-width: 1200px;
+  min-height: 100%; /* sticky footer */
   margin: 0 auto;
 
-  /* Оформление */
-  color: #000000;
-  background: #ffffff;
+  color: #ffffff;
+  background: #82B3D3;
   box-shadow: 0 0 15px #00000033;
-  box-sizing: border-box;
 }
 
-h1 {
-  /* Блочная модель */
-  margin: 0;
+.repository {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
 
-  /* Типографика */
+.repository a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.repository a:hover {
+  color: #BF3535;
+}
+
+.body-page h1 {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   text-transform: uppercase;
-
-  /* Оформление */
-  color: #000000;
   text-align: center;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-h2 {
-  /* Блочная модель */
-  margin: 0;
-
-  /* Типографика */
+.body-page h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-
-  /* Оформление */
-  color: #000000;
   text-align: center;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-h3 {
-  /* Блочная модель */
-  margin: 0;
-
-  /* Типографика */
+.body-page h3 {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
-
-  /* Оформление */
-  color: #000000;
   text-align: center;
-}
 
-p {
-  /* Блочная модель */
-  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .btn {
-  /* Блочная модель */
-  display: block;
-
-  width: max-content;
   margin: 0;
   padding: 8px 50px;
 
-  /* Типографика */
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
+  font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
 
-  /* Оформление */
-  color: #000000;
-  background-color: #ffc0c0;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #ffc0cb;
   border: none;
   border-radius: 4px;
-  text-align: center;
 
   cursor: pointer;
   box-sizing: border-box;
 }
 
-ul {
-  /* Блочная модель */
-  padding: 0;
-  margin: 0;
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-
-  /* Оформление */
-  list-style-type: none;
-}
-
 .subtitle {
-  /* Типографика */
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 
-  /* Оформление */
-  text-align: center;
-}
-
-a {
-  /* Типографика */
-  text-decoration: none;
-}
-
-li {
-  /* Оформление */
   text-align: center;
 }
 
 img {
-  /* Блочная модель */
   max-width: 100%;
-
-  /* Оформление */
-  overflow: hidden;
+  height: auto;
   object-fit: contain;
 }
-
-input {
-  /* Блочная модель */
-  padding-left: 20px;
-  padding-right: 20px;
-
-  /* Типографика */
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-
-  /* Оформление */
-  color: #00000099;
-  background-color: #f2f2f2;
-  border: none;
-  border-style: none;
-  border-radius: 4px;
-
-  cursor: pointer;
-}
-
 
 /* Главная страница
 ============================================
@@ -229,79 +160,86 @@ input {
 /* Header=Шапка (навигация) - начало
 ============================================ */
 .page-header {
-  /* Блочная модель */
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
 
-  flex-grow: 0; /*sticky footer = стик-футер*/
+  flex-grow: 0; /*sticky footer */
   flex-shrink: 0;
+}
 
-  max-width: 1200px;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1200px;
   height: 64px;
   margin: 0 auto;
   padding: 0 70px;
 
-  /* Оформление */
   background-color: #ffffff;
 }
 
-.navigation {
-  /* Позиционирование */
+.navigation-menu {
   position: relative;
 
-  /* Блочная модель */
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  min-width: 1060px;
-  max-height: 64px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-logo {
-  /* Позиционирование */
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
 
-  /* Блочная модель */
-  display: block;
+  margin-right: 30px;
+}
+
+.navigation-logo img {
+  aspect-ratio: auto 140 / 70;
+
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 .navigation-list {
-  /* Позиционирование */
-  position: relative;
-
-  /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
 
+  min-width: 340px;
+  min-height: 64px;
   margin-left: 170px;
+
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .navigation-item {
-  /* Позиционирование */
-  position: relative;
-
-  /* Блочная модель */
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  align-self: stretch;
+
+  text-align: center;
+
 }
 
 .navigation-link {
-  /* Позиционирование */
-  position: relative;
-  z-index: 2;
-
-  /* Блочная модель */
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
 
   padding: 20px 16px;
 
-  /* Типографика */
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -309,10 +247,10 @@ input {
   text-transform: capitalize;
   background-color: transparent;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .navigation-link-current {
-  /* Оформление */
   text-decoration: underline;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
@@ -321,7 +259,6 @@ input {
 }
 
 .navigation-user-menu {
-  /* Блочная модель */
   display: flex;
   align-items: center;
 
@@ -329,108 +266,132 @@ input {
 }
 
 .navigation-user-list {
-  /* Позиционирование */
-  position: relative;
-
-  /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
 
   max-width: 88px;
+  min-height: 64px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .navigation-user-item {
-  /* Позиционирование */
   position: relative;
 
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
 
   min-width: 44px;
   min-height: 64px;
+
+  text-align: center;
 }
 
 .navigation-user-search {
-  /* Позиционирование */
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  /* Блочная модель */
-  display: block;
+  flex-shrink: 0;
 
   min-width: 20px;
   min-height: 20px;
+  margin: 0;
   padding: 22px 12px;
 
-  /* Оформление */
   background-image: url("../images/header-icon/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
 
+  fill: #000000;
+
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.navigation-user-favourites {
-  /* Позиционирование */
-  position: relative;
+.navigation-user-favorites {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  /* Блочная модель */
-  display: block;
+  flex-shrink: 0;
 
   min-width: 20px;
   min-height: 20px;
+  margin: 0;
   padding: 22px 12px;
 
   /* Оформление */
   background-image: url("../images/header-icon/heart-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
+
+  fill: #000000;
+
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.navigation-user-statistics {
-  /* Позиционирование */
-  position: absolute;
-  top: 11px;
-  left: 20px;
-
-  /* Типографика */
-  font-size: 10px;
-  line-height: 10px;
-  color: #ffffff;
-
-  /* Блочная модель */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.navigation-user-favorites span {
   max-width: 20px;
   max-height: 20px;
   padding: 5px 5px 5px 4px;
 
-  /* Оформление */
   border-radius: 10px;
   text-align: center;
   background-color: #7DB54F;
 }
 
+.navigation-user-statistics {
+  position: absolute;
+  top: 11px;
+  left: 20px;
+
+  flex-shrink: 0;
+
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
 .navigation-btn {
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
 
-  margin: 14px 0 14px 20px;
+  min-width: 160px;
+  margin-left: 20px;
 
-  /* Оформление */
   background-color: #756157;
   border: none;
   border-radius: 4px;
 
-  /* Типографика */
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
+}
+
+.navigation-btn:hover,
+.navigation-btn:focus  {
+  background-color: #615048;
+}
+
+.navigation-btn:active {
+  background-color: #756157;
+  color: #FFFFFF4D;
+}
+
+.navigation-btn:disabled {
+  background-color: #E5E5E5;
 }
 /* Header=Шапка (навигация) - конец
 ============================================ */
@@ -440,146 +401,169 @@ input {
 ============================================ */
 .main-index,
 .main-inner {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  flex-grow: 1; /*sticky footer = стик-футер*/
+  flex-grow: 1; /* sticky footer */
 }
 
 /* Main - Hero
 ____________________________________________ */
 .hero {
-  /* Блочная модель */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 
   width: 100%;
   height: 485px;
+  margin: 0;
+  padding: 0;
 
-  /* Оформление */
+
+
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center bottom, center;
   background-size: 100% auto, cover;
-  text-align: center;
+}
+
+.hero img {
+  aspect-ratio: auto 458 / 352;
+
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 /* Main - Advantages
 ____________________________________________*/
 .advantages {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  max-width: 100%;
+  margin: 0;
+  padding: 0;
 
-  /* Оформление */
   background-color: #ffffff;
   color: #000000;
 }
 
 .advantages-connotation {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   width: 1200px;
-
+  height: auto;
   padding: 69px 0;
 
   margin-bottom: 21px;
 }
 
+.advantages-connotation p {
+  display: flex;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .advantages-lead-title {
-  /* Блочная модель */
   width: 620px;
-  padding: 0 0 25px 0;
+  height: auto;
   margin: 0;
+  padding-bottom: 25px;
 }
 
 .advantages-lead-description {
-  /* Блочная модель */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 651px;
-  margin: 0;
+  width: auto;
+  height: auto;
 }
 
 .advantages-first-row,
 .advantages-second-row,
 .advantages-third-row {
-  /* Блочная модель */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
-  /* Разное */
   box-sizing: border-box;
 }
 
+.advantages-second-row li {
+  flex-shrink: 0;
+}
+
+.advantages-first-row ul,
+.advantages-second-row ul,
+.advantages-third-row ul {
+  list-style-type: none;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
 .advantages-list {
-  /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   margin: 0;
   padding: 0;
+}
 
-  /* Оформление */
-  list-style: none;
-  text-align: center;
+.advantages-list li {
+  width: 230px;
+  height: auto;
 }
 
 .advantages-item {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 400px;
-  height: 385px;
-}
+  max-width: 400px;
+  min-height: 385px;
+  padding: 0 85px;
 
-.advantages-item p {
-  /* Блочная модель */
-  width: 230px;
-  height: auto;
-  margin: 0;
-  padding-top: 30px;
-
-  /* Типографика */
-  font-size: 18px;
-  line-height: 21px;
-
-  /* Оформление */
   text-align: center;
 }
 
+.advantages-first-row img,
+.advantages-third-row img {
+  aspect-ratio: auto 800 / 384;
+
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 .advantages-title {
-  /* Блочная модель */
   width: 175px;
-  height: 56px;
+  height: auto;
   margin: 0;
+  padding: 0;
   padding-bottom: 30px;
 }
 
 .advantages-title-color {
-  /* Оформление */
   color: #ffffff;
+}
+
+.advantages-description {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-top: 30px;
+
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .advantages-town,
@@ -590,13 +574,11 @@ ____________________________________________*/
 
 .advantages-square,
 .advantages-tourists {
-  /* Оформление */
   background-color: #83B3D31F;
   color: #000000;
 }
 
 .advantages-road {
-  /* Оформление */
   background-color: #83B3D333;
   color: #000000;
 }
@@ -604,18 +586,17 @@ ____________________________________________*/
 .advantages-town,
 .advantages-square,
 .advantages-road {
-  /* Блочная модель */
   float: left;
 }
 
 .advantages-bridge,
 .advantages-tourists {
-  /* Блочная модель */
   float: right;
 }
 
 .advantages-strips {
-  /* Блочная модель */
+  display: flex;
+
   width: 60px;
   height: 2px;
   border-top: 2px solid;
@@ -625,174 +606,162 @@ ____________________________________________*/
 
 .advantages-town-strips,
 .advantages-bridge-strips {
-  /* Оформление */
   border-color: #FFFFFF4D;
 }
 
 .advantages-square-strips,
 .advantages-road-strips,
 .advantages-tourists-strips {
-  /* Оформление */
   border-color: #0000004D;
-}
-
-.advantages-photo {
-  /* Блочная модель */
-  width: 100%;
-  height: 100%;
 }
 
 /* Main -> Services
 ____________________________________________ */
 .services {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   align-self: stretch;
 
   margin: 0;
   padding: 0;
 
-  /* Оформление */
   background-color: #ffffff;
   color: #000000;
-  text-align: center;
 }
 
 .services-connotation {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
 
-  padding: 64px 0;
+  width: 1200px;
+  height: auto;
   margin: 0;
+  padding: 64px 0;
 }
 
 .services-lead-title {
-  /* Блочная модель */
   width: 505px;
-  padding: 0 0 20px;
+  height: auto;
   margin: 0;
+  padding-bottom: 20px;
 }
 
 .services-lead-description {
-  /* Блочная модель */
+  display: flex;
+
   width: auto;
+  height: auto;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.services-row {
+  display: flex;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+.services-row ul {
+  list-style-type: none;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .services-list {
-  /* Блочная модель */
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
   margin: 0;
   padding: 0;
 
-  /* Оформление */
   list-style: none;
+
+  text-align: center;
 }
 
+.services-list li {
+  width: 230px;
+  height: auto;
+  }
+
 .services-item {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 
-  width: 400px;
-  height: 385px;
-}
-
-.services-item-wrapper {
-  /* Блочная модель */
-  /* Блочная модель */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 80px 85px;
-}
-
-.services-item p {
-  /* Блочная модель */
-  width: 100%;
+  max-width: 400px;
+  min-height: 385px;
   margin: 0;
+  padding: 0 85px;
 
-  /* Типографика */
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
+  text-align: center;
+}
+
+.services-title {
+  align-self: stretch;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 30px 0;
+
+  text-align: center;
 }
 
 .services-item-grey {
-  /* Оформление */
   background-color: #83B3D31F;
 }
 
 .services-item-home {
-  /* Блочная модель */
   width: 75px;
   height: 72px;
 
-  /* Оформление */
   background-image: url("../images/services-icon/services-icon-home.svg");
   background-repeat: no-repeat;
 }
 
 .services-item-food {
-  /* Блочная модель */
   width: 75px;
   height: 72px;
 
-  /* Оформление */
   background-image: url("../images/services-icon/services-icon-food.svg");
   background-repeat: no-repeat;
 }
 
 .services-item-souvenirs {
-  /* Блочная модель */
   width: 75px;
-  height: 72px;
+  height: 75px;
 
-  /* Оформление */
   background-image: url("../images/services-icon/services-icon-souvenirs.svg");
   background-repeat: no-repeat;
-}
-
-.services-title {
-  /* Блочная модель */
-  width: 230px;
-  padding: 30px 0;
 }
 
 .services-description-home,
 .services-description-food,
 .services-description-souvenirs {
-  /* Блочная модель */
-  max-width: 100%;
+  min-width: 230px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 21px;
 }
 
 /* Main -> Search
 ____________________________________________ */
 .search {
-  /* Блочная модель */
-  max-width: 1200px;
-  padding: 96px 304px;
-
-  /* Оформление */
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.search-wrapper {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -801,33 +770,52 @@ ____________________________________________ */
   margin: 0;
   padding: 0;
 
-  /* Оформление */
-  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .search-connotation {
-  /* Блочная модель */
-  width: 592px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 1200px;
+  height: auto;
+  margin: 0;
+  padding: 96px 0;
 }
 
 .search-lead-title {
-  /* Блочная модель */
-  margin: 0 0 20px 0;
+  display: flex;
+
+  width: auto;
+  height: auto;
+  margin: 0 0 20px;
+  padding: 0;
 }
 
 .search-lead-description {
-  /* Блочная модель */
-  width: 592px;
-  text-align: center;
+  min-width: 592px;
+  height: auto;
+
   margin: 0;
   padding-bottom: 54px;
+
+  text-align: center;
 }
 
 .search-btn {
-  /* Блочная модель */
-  max-width: 276px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  /* Оформление */
+  width: 376px;
+  height: auto;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+
   border-radius: 4px;
   background-color: #756157;
   color: #ffffff;
@@ -836,76 +824,82 @@ ____________________________________________ */
 /* Main -> Subscribe
 ____________________________________________ */
 .subscribe {
-  /* Блочная модель */
-  max-width: 1200px;
-  height: auto;
-  padding: 96px 258px 104px;
-  margin: 0 auto;
+  display: flex;
 
-  /* Оформление */
+  max-width: 1200px;
+  padding: 96px 258px 104px;
+
   background-image: url("../images/background-images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
 }
 
-.subscribe-wrapper {
-  /* Блочная модель */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin: 0;
-  padding: 0;
+.subscribe-connotation {
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .subscribe-lead-title {
-  /* Блочная модель */
-  margin: 0 auto;
-  padding: 0 104.5px;
-  width: 404px;
+  max-width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
 
-  /* Типографика */
   color: #ffffff;
 }
 
 .subscribe-lead-description {
-  /* Блочная модель */
-  max-width: 475px;
-  height: 100%;
-  padding: 20px 104.5px 54px;
-  margin: 0 auto;
+  display: flex;
 
-  /* Типографика */
+  width: 475px;
+  height: 215px;
+  margin: 0;
+  padding: 20px 0 54px;
+
   color: #ffffff;
   text-align: center;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .subscribe-form {
-    /* Позиционирование */
-    position: relative;
-    left: 10px;
+  display: flex;
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  /* flex-basis: 0; */
 
-    /* Блочная модель */
-    display: inline-block;
-    width: 432px;
-    height: 48px;
-    padding-left: 10px;
+  width: max-content;
+  padding: 12px 28px;
+
+  box-sizing: border-box;
+}
+
+.subscribe-form-email input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #00000099;
+  background-color: #f2f2f2;
+  border: none;
+  border-style: none;
+  border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .subscribe-form-email {
-  /* Оформление */
+  display: flex;
+
   text-align: left;
 }
 
 .subscribe-form-email input {
-  /* Позиционирование */
   position: absolute;
   left: 10px;
 
-  /* Блочная модель */
   display: inline-block;
   min-width: 100%;
   min-height: 100%;
@@ -913,47 +907,40 @@ ____________________________________________ */
 }
 
 .subscribe-btn {
-  /* Позиционирование */
   position: absolute;
   left: 459px;
 
-  /* Типографика */
+  display: block;
+  width: max-content;
+
   color: #ffffff;
 
-  /* Оформление */
   border-radius: 0 4px 4px 0;
   border: none;
   background-color: #82B3D3;
 }
 
 .subscribe-form-email p {
-  /* Позиционирование */
   position: absolute;
 
-  /* Блочная модель */
   max-width: 100%;
   height: 52px;
   margin-left: 20px;
 
-  /* Типографика */
   color: #f2f2f2;
 
-  /* Оформление */
   border-radius: 4px 0 0 4px;
 }
 
 .subscribe-form-email input [type="text"] {
-  /* Блочная модель */
   width: 87px;
   height: 24px;
   margin: 0;
 
-  /* Типографика */
   opacity: 60%;
   font-size: 18px;
   line-height: 24px;
 
-  /* Оформление */
   text-align: left;
 }
 /* Main=Основное содержание - конец
@@ -964,7 +951,6 @@ ____________________________________________ */
 /* Footer=Подвал - начало
 ============================================ */
 .page-footer {
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -976,13 +962,11 @@ ____________________________________________ */
   height: 120px;
   margin: 0 auto;
 
-  /* Оформление */
   background-color: #ffffff;
   color: #000000;
 }
 
 .page-footer-frame {
-  /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -994,7 +978,6 @@ ____________________________________________ */
 }
 
 .page-footer-social {
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1004,84 +987,70 @@ ____________________________________________ */
   margin: 0;
   padding: 0;
 
-  /* Оформление */
   list-style: none;
   text-align: center;
 }
 
 .social-list {
-  /* Блочная модель */
   max-width: 142px;
   height: 40px;
   padding: 0;
 
-  /* Оформление */
   list-style: none;
 
 }
 
 .social-item {
-  /* Позиционирование */
+
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
   display: flex;
   max-width: 142px;
   height: 40px;
 }
 
 .social-vk {
-  /* Позиционирование */
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
-  display: inline-block;
-  width: 24.001px;
+  display: flex;
+  width: 24px;
   height: 14px;
   margin: 0 10px;
 
-  /* Оформление */
   background-image: url("../images/social-icon/vk.svg");
   background-repeat: no-repeat;
 }
 
 .social-tm {
-  /* Позиционирование */
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
   display: inline-block;
   width: 18px;
   height: 16px;
   margin: 0 10px;
 
-  /* Оформление */
   background-image: url("../images/social-icon/telegramm.svg");
   background-repeat: no-repeat;
   text-align: center;
 }
 
 .social-youtube {
-  /* Позиционирование */
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
   display: inline-block;
   width: 22px;
   height: 17px;
   margin: 0 10px;
 
-  /* Оформление */
   background-image: url("../images/social-icon/youtube.svg");
   background-repeat: no-repeat;
 }
 
 .phone-item {
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1091,11 +1060,9 @@ ____________________________________________ */
 }
 
 .phone-link {
-  /* Блочная модель */
   margin: 0;
   padding: 0;
 
-  /* Типографика */
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -1106,12 +1073,12 @@ ____________________________________________ */
 }
 
 .footer-link-htmlacademy {
-  /* Блочная модель */
-  display: inline-block;
+  display: flex;
+  flex-shrink: 0;
+  
   padding: 0;
   margin: 0;
 
-  /* Оформление */
   vertical-align: baseline;
 }
 /* Footer=Подвал - конец
