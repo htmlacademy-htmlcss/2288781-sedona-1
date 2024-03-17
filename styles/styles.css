@@ -14,9 +14,11 @@
   font-display: swap;
 }
 
+/*
 * {
   outline: 1px solid #0a2c1f;
 }
+*/
 
 html,
 body {
@@ -416,10 +418,12 @@ ____________________________________________ */
   align-items: center;
   flex-shrink: 0;
 
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 485px;
+  margin: 0;
+  padding: 0;
+
+
 
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
@@ -821,30 +825,19 @@ ____________________________________________ */
 ____________________________________________ */
 .subscribe {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
   padding: 96px 258px 104px;
 
   background-image: url("../images/background-images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
 }
 
-.subscribe-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: 684px;
-  height: 415px;
-  margin: 0;
-  padding: 0;
+.subscribe-connotation {
+  /* display: flex; */
+  /* flex-direction: column; */
 }
 
 .subscribe-lead-title {
@@ -873,15 +866,14 @@ ____________________________________________ */
 
 .subscribe-form {
   display: flex;
-  align-items: center;
-  align-self: stretch;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  /* flex-basis: 0; */
 
-  min-width: 452px;
-  height: 52px;
+  width: max-content;
   padding: 12px 28px;
+
+  box-sizing: border-box;
 }
 
 .subscribe-form-email input {
@@ -898,18 +890,16 @@ ____________________________________________ */
   cursor: pointer;
 }
 
-
 .subscribe-form-email {
-  /* Оформление */
+  display: flex;
+
   text-align: left;
 }
 
 .subscribe-form-email input {
-  /* Позиционирование */
   position: absolute;
   left: 10px;
 
-  /* Блочная модель */
   display: inline-block;
   min-width: 100%;
   min-height: 100%;
@@ -917,47 +907,40 @@ ____________________________________________ */
 }
 
 .subscribe-btn {
-  /* Позиционирование */
   position: absolute;
   left: 459px;
 
-  /* Типографика */
+  display: block;
+  width: max-content;
+
   color: #ffffff;
 
-  /* Оформление */
   border-radius: 0 4px 4px 0;
   border: none;
   background-color: #82B3D3;
 }
 
 .subscribe-form-email p {
-  /* Позиционирование */
   position: absolute;
 
-  /* Блочная модель */
   max-width: 100%;
   height: 52px;
   margin-left: 20px;
 
-  /* Типографика */
   color: #f2f2f2;
 
-  /* Оформление */
   border-radius: 4px 0 0 4px;
 }
 
 .subscribe-form-email input [type="text"] {
-  /* Блочная модель */
   width: 87px;
   height: 24px;
   margin: 0;
 
-  /* Типографика */
   opacity: 60%;
   font-size: 18px;
   line-height: 24px;
 
-  /* Оформление */
   text-align: left;
 }
 /* Main=Основное содержание - конец
@@ -968,7 +951,6 @@ ____________________________________________ */
 /* Footer=Подвал - начало
 ============================================ */
 .page-footer {
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -980,13 +962,11 @@ ____________________________________________ */
   height: 120px;
   margin: 0 auto;
 
-  /* Оформление */
   background-color: #ffffff;
   color: #000000;
 }
 
 .page-footer-frame {
-  /* Блочная модель */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -998,7 +978,6 @@ ____________________________________________ */
 }
 
 .page-footer-social {
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1008,84 +987,70 @@ ____________________________________________ */
   margin: 0;
   padding: 0;
 
-  /* Оформление */
   list-style: none;
   text-align: center;
 }
 
 .social-list {
-  /* Блочная модель */
   max-width: 142px;
   height: 40px;
   padding: 0;
 
-  /* Оформление */
   list-style: none;
 
 }
 
 .social-item {
-  /* Позиционирование */
+
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
   display: flex;
   max-width: 142px;
   height: 40px;
 }
 
 .social-vk {
-  /* Позиционирование */
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
-  display: inline-block;
-  width: 24.001px;
+  display: flex;
+  width: 24px;
   height: 14px;
   margin: 0 10px;
 
-  /* Оформление */
   background-image: url("../images/social-icon/vk.svg");
   background-repeat: no-repeat;
 }
 
 .social-tm {
-  /* Позиционирование */
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
   display: inline-block;
   width: 18px;
   height: 16px;
   margin: 0 10px;
 
-  /* Оформление */
   background-image: url("../images/social-icon/telegramm.svg");
   background-repeat: no-repeat;
   text-align: center;
 }
 
 .social-youtube {
-  /* Позиционирование */
   position: relative;
   bottom: 11px;
 
-  /* Блочная модель */
   display: inline-block;
   width: 22px;
   height: 17px;
   margin: 0 10px;
 
-  /* Оформление */
   background-image: url("../images/social-icon/youtube.svg");
   background-repeat: no-repeat;
 }
 
 .phone-item {
-  /* Блочная модель */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1095,11 +1060,9 @@ ____________________________________________ */
 }
 
 .phone-link {
-  /* Блочная модель */
   margin: 0;
   padding: 0;
 
-  /* Типографика */
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -1110,12 +1073,12 @@ ____________________________________________ */
 }
 
 .footer-link-htmlacademy {
-  /* Блочная модель */
-  display: inline-block;
+  display: flex;
+  flex-shrink: 0;
+  
   padding: 0;
   margin: 0;
 
-  /* Оформление */
   vertical-align: baseline;
 }
 /* Footer=Подвал - конец
