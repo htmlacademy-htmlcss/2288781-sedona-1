@@ -20,6 +20,12 @@
 }
 */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
@@ -836,8 +842,8 @@ ____________________________________________ */
 }
 
 .subscribe-connotation {
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-lead-title {
@@ -1075,7 +1081,7 @@ ____________________________________________ */
 .footer-link-htmlacademy {
   display: flex;
   flex-shrink: 0;
-  
+
   padding: 0;
   margin: 0;
 
