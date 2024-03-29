@@ -10,7 +10,7 @@
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" size="16x16" href="../images/favicon.png">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
 
   </head>
@@ -23,60 +23,55 @@
 
       <h1 class="visually-hidden">Городок Седона в Аризоне <br> и его достопримечательности</h1>
 
+
       <!-- Шапка = Header -->
       <header class="page-header">
 
         <nav class="navigation">
 
-          <div class="navigation-menu">
+          <a class="navigation-logo" aria-current="page">
+            <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
+          </a>
 
-            <a class="navigation-logo" aria-current="page">
-              <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
-            </a>
+          <ul class="navigation-list">
 
-            <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
+            </li>
 
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
-              </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
 
-              <li class="navigation-item">
-                  <a class="navigation-link" href="#">О Седоне</a>
-              </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
 
-              <li class="navigation-item">
-                  <a class="navigation-link" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
+          </ul>
 
-          </div>
+          <ul class="navigation-user-list">
 
-          <div class="navigation-user-menu">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-search" href="">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
 
-            <ul class="navigation-user-list">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-favorites" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="navigation-user-statistics">12</span>
+              </a>
+            </li>
 
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-search" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
+          </ul>
 
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-favorites" href="#">
-                  <span class="visually-hidden">Избранное</span>
-                  <span class="navigation-user-statistics">12</span>
-                </a>
-              </li>
-
-            </ul>
-
-            <a class="btn navigation-btn" href="#">Хочу сюда!</a>
-
-          </div>
+          <a class="btn navigation-btn" href="#">Хочу сюда!</a>
 
         </nav>
 
       </header>
+
 
       <!-- Основное содержание = Main -->
       <main class="main-index">
@@ -213,24 +208,23 @@
 
           <h2 class="visually-hidden">Форма рассылки</h2>
 
-          <div class="subscribe-wrapper">
+          <div class="subscribe-connotation">
 
-            <div class="subscribe-connotation">
+            <div class="subscribe-connotation-wrapper">
+
               <p class="subscribe-lead-title subtitle">Подпишитесь на рассылку</p>
+
               <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
             </div>
 
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="subscribe-form-email">
-                <label for="email"></label>
-                <input type="text" id="email" name="email" placeholder="Ваш e-mail" required>
-              </p>
-              <button class="btn subscribe-btn" type="submit">
-                <span class="subscribe-btn-mail">Подписаться</span>
-              </button>
+              <label class="subscribe-form-label" for="subscribe">
+                <span class="visually-hidden">Введите ваш e-mail</span>
+                <input type="email" id="subscribe" name="email" placeholder="Ваш e-mail" required>
+              </label>
+              <button class="btn subscribe-btn" type="submit">Подписаться</button>
             </form>
-
-          </div>
 
         </section>
 
@@ -239,7 +233,7 @@
       <!-- Подвал = Footer -->
       <footer class="page-footer">
 
-        <div class="page-footer-frame">
+        <div class="page-footer-wrapper">
 
           <section class="page-footer-social">
 
