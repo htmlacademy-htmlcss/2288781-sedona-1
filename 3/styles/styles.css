@@ -170,13 +170,13 @@ img {
   margin-bottom: -6px;
 }
 
-.navigation-logo:hover,
-.navigation-logo:focus {
-  opacity: 0.5;
+.navigation-logo:hover img,
+.navigation-logo:focus-visible img {
+  opacity: 0.8;
 }
 
-.navigation-logo:active {
-  opacity: 0.7;
+.navigation-logo:active img {
+  opacity: 0.5;
 }
 
 .navigation-list {
@@ -309,7 +309,7 @@ img {
 }
 
 .navigation-user-search:active,
-.navigation-user-favorites:active, {
+.navigation-user-favorites:active {
   fill: #756257;
   fill-opacity: 0.3;
 }
@@ -358,13 +358,18 @@ img {
   cursor: pointer;
 }
 
-.navigation-btn:active {
-  background-color: #756157;
-  color: #FFFFFF4D;
+.navigation-btn:hover {
+  background-color: #615048;
 }
 
-.navigation-btn:hover,
-.navigation-btn:focus  {
+.navigation-btn:active {
+  background-color: #756157;
+  color: #ffffff4d;
+}
+
+.navigation-btn:focus-visible  {
+  outline: none;
+  border: 3px solid #82B3D3;
   background-color: #615048;
 }
 
@@ -695,7 +700,6 @@ ____________________________________________ */
   background-color: #756157;
 }
 
-
 .search-btn:disabled {
   background-color: #E5E5E5;
 }
@@ -851,6 +855,7 @@ ____________________________________________ */
 
 .page-footer-social {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -892,12 +897,25 @@ ____________________________________________ */
   cursor: pointer;
 }
 
+.social-link:hover {
+  fill: #68A2CA;
+}
+
+.social-link:focus-visible {
+  border: 3px solid #83b3d3;
+  border-radius: 10px;
+  fill: #68a2ca;
+  outline: none;
+}
+
+.social-link:active {
+  fill: #68a2ca4d;
+}
+
 .social-vk {
   background-image: url("../images/social-icon/vk.svg");
   background-repeat: no-repeat;
   background-position: center;
-
-  fill: #68A2CA;
 }
 
 .social-tm {
@@ -1026,7 +1044,7 @@ ____________________________________________ */
   color: #ffffff;
 }
 
-/* Фильтр -> хлебные крошки */
+/* Фильтр -> Breadcrumbs = хлебные крошки */
 .breadcrumbs-list {
   display: flex;
 
@@ -1305,6 +1323,8 @@ ____________________________________________ */
   border-radius: 4px;
 }
 
+/* Main -> Pagination (каталог)
+____________________________________________ */
 .pagination {
   display: flex;
   flex-direction: row;
@@ -1322,11 +1342,11 @@ ____________________________________________ */
 ____________________________________________ */
 .subscribe-catalog {
   margin: 0;
-  padding: 96px 258px 105px;
+  padding: 96px 0 105px;
 
   background-color: #ffffff;
 }
 
-.subscribe-connotation-catalog p {
+.subscribe-connotation-wrapper p {
   color: #000000;
 }
