@@ -300,7 +300,6 @@ img {
   content: url("../images/header-icon/heart-icon.svg");
 }
 
-
 .navigation-user-search:hover,
 .navigation-user-search:focus,
 .navigation-user-favorites:hover,
@@ -1335,7 +1334,7 @@ ____________________________________________ */
 }
 
 .pagination-list {
-
+  subscribe-connotation-wrapper
 }
 
 /* Main -> Subscribe (каталог)
@@ -1347,6 +1346,6 @@ ____________________________________________ */
   background-color: #ffffff;
 }
 
-.subscribe-connotation-wrapper p {
+.subscribe-connotation-wrapper-catalog p  {
   color: #000000;
 }
