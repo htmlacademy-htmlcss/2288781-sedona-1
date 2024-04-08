@@ -2,75 +2,60 @@
 <html lang="ru">
 
   <head>
-
-    <!-- Basic Page Needs
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <title>HTML Academy: Седона - каталог (верстка О. Г. Арефьевой)</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
-
     <base href="https://htmlacademy-htmlcss.github.io/2288781-sedona-1/3/">
 </head>
 
   <body>
 
-    <!-- Страница ка -->
+    <!-- Страница каталога -->
     <div class="body-page">
-
       <p class="visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
-
       <h1 class="visually-hidden">Cайт поиска отелей<br> в городе Седоне</h1>
 
       <!-- Шапка = Header -->
       <header class="page-header" data-test="header">
-
+        <!-- Навигация -->
         <nav class="navigation">
-
-          <a class="navigation-logo" href="index.html">
-            <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
-          </a>
-
-          <ul class="navigation-list">
-
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
-            </li>
-
-            <li class="navigation-item">
+          <!-- Основное меню -->
+          <div class="navigation-wrapper">
+            <a class="navigation-logo"  href="index.html" aria-current="page">
+              <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
+            </a>
+            <ul class="navigation-list">
+              <li class="navigation-item">
+                <a class="navigation-link"  href="index.html">Главная</a>
+              </li>
+              <li class="navigation-item">
                 <a class="navigation-link" href="#">О Седоне</a>
-            </li>
-
-            <li class="navigation-item">
+              </li>
+              <li class="navigation-item">
                 <a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
-            </li>
+              </li>
+            </ul>
+          </div>
 
-          </ul>
-
-          <ul class="navigation-user-list">
-
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-search" href="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-
-            <li class="navigation-user-item">
-              <a class="navigation-user-link navigation-user-favorites" href="#">
-                <span class="visually-hidden">Избранное</span>
-                <span class="navigation-user-statistics">12</span>
-              </a>
-            </li>
-
-          </ul>
-
-          <a class="btn navigation-btn" href="#">Хочу сюда!</a>
-
+          <!-- Пользовательское меню -->
+          <div class="navigation-user-wrapper">
+            <ul class="navigation-user-list">
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-search" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link navigation-user-favorites" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <span class="navigation-user-statistics">12</span>
+                </a>
+              </li>
+            </ul>
+            <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+          </div>
         </nav>
-
       </header>
 
       <!-- Основное содержание = Main -->
@@ -85,23 +70,19 @@
 
               <p class="main-inner-filter-title">Гостиницы Седоны</p>
 
-              <ul class="breadcrumbs-list">
-
+              <ol class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
-                  <button class="breadcrumbs-link breadcrumbs-home" href="index.html">
+                  <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
                     <span class="visually-hidden">Вход на главную страницу</span>
-                  </button>
+                  </a>
                 </li>
-
                 <li class="breadcrumbs-item">
-                  <button class="breadcrumbs-link breadcrumbs-arrow" aria-current="page">
+                  <a class="breadcrumbs-link breadcrumbs-arrow" aria-current="page">
                     <span class="visually-hidden">Вход в каталог</span>
                     <span class="breadcrumbs-arrow-text" aria-current="page" autocapitalize="words">Гостиницы</span>
-                  </button>
+                  </a>
                 </li>
-
-              </ul>
-
+              </ol>
             </div>
 
             <form class="inner-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -242,7 +223,7 @@
 
             <p class="inner-found">Найдено гостиниц: <span class="inner-result">38</span></p>
 
-            <select class="inner-select" aria-label="Сортировка">
+            <select class="inner-selected" aria-label="Сортировка">
               <option value="sheap">Самые дешевые</option>
               <option value="popular">Самые популярные</option>
               <option value="expensive">Самые дорогие</option>
@@ -336,49 +317,27 @@
 
             <!-- Секция "Пагинация" -->
             <div class="pagination">
-
-              <h2 class="visually-hidden">Страницы</h2>
-
+              <h2 class="visually-hidden">Страницы каталога</h2>
               <ul class="pagination-list">
-
                 <li class="pagination-item">
-                  <a href="#" class="pagination-link">
-                    <span class="visually-hidden pagination-prev">Предыдущая страница</span>
-                  </a>
+                  <a class="pagination-link pagination-link-current" aria-current="page">1</a>
                 </li>
-
-                <li class="pagination-item">
-                  <a href="#" class="pagination-link pagination-link-current" aria-current="page">1</a>
-                </li>
-
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">2</a>
                 </li>
-
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">3</a>
                 </li>
-
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">4</a>
                 </li>
-
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">...</a>
+                  <a class="pagination-link pagination-link-continued" href="#">...</a>
                 </li>
-
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>
                 </li>
-
-                <li class="pagination-item">
-                  <a class="pagination-link pagination-next" href="#">
-                    <span class="visually-hidden">Следующая страница</span>
-                  </a>
-                </li>
-
               </ul>
-
             </div>
 
         </section>
@@ -398,7 +357,7 @@
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="subscribe-form-label" for="subscribe">
                   <span class="visually-hidden">Введите ваш e-mail</span>
-                  <input class="subscribe-form-input" type="email" id="subscribe" name="email" placeholder="Ваш e-mail" aria-label="Подписка на рассылку" required>
+                  <input class="subscribe-form-input" type="email" id="subscribe" name="email" placeholder="Ваш e-mail" autocomplete="on" aria-label="Подписка на рассылку" required>
                 </label>
                 <button class="btn subscribe-btn" type="submit">Подписаться</button>
               </form>
