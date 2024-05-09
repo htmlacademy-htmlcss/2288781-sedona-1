@@ -10,7 +10,6 @@
   </head>
   <body>
     <div class="body-page">
-      <!-- Текстовое описание главной страницы -->
       <p class="repository visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
       <!-- Шапка = Header
       ___________________________________________ -->
@@ -19,7 +18,7 @@
         <nav class="navigation">
         <!-- Логотип городка Седоны -->
         <a class="logo-sedona" href="index.html" aria-current="page">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны.">
         </a>
           <!-- Основное меню -->
           <ul class="navigation-list">
@@ -121,7 +120,7 @@
           </div>
         </section>
         <!-- Секция "Блок сервиса" -->
-        <section class="services">
+        <section class="services" data-test="services">
           <h2 class="visually-hidden">Сервис для туристов в городке Седона</h2>
           <div class="services-connotation">
             <p class="services-lead-title title"><strong>Приезжайте в Седону отдохнуть в комфорте и уюте!</strong></p>
@@ -158,22 +157,13 @@
           <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
           <div class="subscribe-connotation">
             <div class="subscribe-connotation-wrapper">
-              <p class="subscribe-lead-title title">Подпишитесь на рассылку</p>
+              <p class="subscribe-lead-title title"><strong>Подпишитесь на рассылку</strong></p>
               <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
-            <!-- Форма подписки -->
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscribe-form-label" for="user-email">
-                <span class="visually-hidden" for="user-email">Укажите вашу электронную почту</span>
-                <input
-                  class="subscribe-form-input"
-                  type="email"
-                  id="user-email"
-                  name="user-email"
-                  placeholder="Ваш e-mail"
-                  autocomplete="on"
-                  aria-label="Подписка на рассылку"
-                  required>
+                <span class="visually-hidden">Укажите вашу электронную почту</span>
+                <input class="subscribe-form-input" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" autocomplete="on" aria-label="Подписка на рассылку" required>
               </label>
               <button class="btn subscribe-btn" type="submit">Подписаться</button>
             </form>

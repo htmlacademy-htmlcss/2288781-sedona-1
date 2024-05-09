@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона - каталог (верстка О. Г. Арефьевой)</title>
+    <title>HTML Academy: Седона - главная страница (верстка О. Г. Арефьевой)</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- Для просмотра разметки, если раскомментировать -->
+    <!-- <link rel="stylesheet" href="styles/outlines.css"> -->
   </head>
-
   <body>
-
-    <!-- Страница каталога -->
     <div class="body-page">
-      <p class="visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
-      <h1 class="visually-hidden">Cайт поиска отелей<br> в городе Седоне</h1>
-
-      <!-- Шапка = Header -->
+      <p class="repository visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
+      <!-- Шапка = Header
+      ___________________________________________ -->
       <header class="page-header" data-test="header">
         <!-- Навигация -->
         <nav class="navigation">
+        <!-- Логотип городка Седоны -->
+        <a class="logo-sedona" href="index.html">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны.">
+        </a>
           <!-- Основное меню -->
-          <div class="navigation-wrapper">
-            <a class="navigation-logo"  href="index.html" aria-current="page">
-              <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
-            </a>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link"  href="index.html">Главная</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">О Седоне</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
-              </li>
-            </ul>
-          </div>
-
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="index.html" >Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
+            </li>
+          </ul>
           <!-- Пользовательское меню -->
-          <div class="navigation-user-wrapper">
-            <ul class="navigation-user-list">
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-search" href="#">
-                  <span class="visually-hidden">Поиск</span>
-                </a>
-              </li>
-              <li class="navigation-user-item">
-                <a class="navigation-user-link navigation-user-favorites" href="#">
-                  <span class="visually-hidden">Избранное</span>
-                  <span class="navigation-user-statistics">12</span>
-                </a>
-              </li>
-            </ul>
-            <a class="btn navigation-btn" href="#">Хочу сюда!</a>
-          </div>
+          <ul class="navigation-user-list">
+            <!-- Иконка "Поиск" -->
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-search" href="#">
+                <span class="visually-hidden">Поиск гостиницы</span>
+              </a>
+            </li>
+            <!-- Иконка "Избранное" -->
+            <li class="navigation-user-item">
+              <a class="navigation-user-link navigation-user-favorites" href="#">
+                <span class="visually-hidden">Избранные гостиницы</span>
+                <span class="navigation-user-statistics">12<em class="visually-hidden">выбранных гостиниц для сравнения</em></span>
+              </a>
+            </li>
+          </ul>
+          <!-- Кнопка "Хочу сюда!" -->
+          <a class="btn navigation-btn" href="#">Хочу сюда!</a>
         </nav>
       </header>
-
-      <!-- Основное содержание = Main -->
+      <!-- Основное содержание = Main
+      ___________________________________________ -->
       <main class="main-inner" data-test="main">
 
         <!-- Секция "Фильтр" -->
@@ -367,55 +363,44 @@
 
       </main>
 
-      <!-- Подвал = Footer -->
+      <!-- Подвал = Footer
+      ___________________________________________ -->
       <footer class="page-footer" data-test="footer">
-
         <div class="page-footer-wrapper">
-
-          <section class="page-footer-social">
-
-            <h2 class="visually-hidden">Форма социальных каналов</h2>
-
+          <!-- Социальные каналы -->
+          <section class="social">
+            <h2 class="visually-hidden">Социальные каналы HTML Academy</h2>
             <ul class="social-list">
-
               <li class="social-item">
                 <a class="social-link social-vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Канал в Vkontakte</span>
                 </a>
               </li>
-
               <li class="social-item">
                 <a class="social-link social-tm" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Канал в Telegram</span>
                 </a>
               </li>
-
               <li class="social-item">
                 <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Канал в Youtube</span>
                 </a>
               </li>
-
             </ul>
-
           </section>
-
-          <address class="page-footer-phone">
+          <!-- Адрес - телефон -->
+          <section class="phone">
+            <h2 class="visually-hidden">Контакты HTML Academy</h2>
             <a class="phone-link" href="+78128121212">+7 (812) 812-12-12</a>
-          </address>
-
-          <div class="page-footer-logo">
-            <a class="page-footer-logo-link" href="https://htmlacademy.ru/">
-              <img src="images/html-academy.svg" width="115" height="33" alt="Логотип HTML academy.">
+          </section>
+          <!-- Логотип Академии HTML -->
+          <div class="logo-htmlacademy">
+            <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
+              <img src="images/html-academy.svg" width="115" height="33" alt="Логотип Академии HTML.">
             </a>
           </div>
-
         </div>
-
       </footer>
-
     </div>
-
   </body>
-
 </html>
