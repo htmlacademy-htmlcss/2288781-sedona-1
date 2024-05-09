@@ -881,7 +881,7 @@ ____________________________________________ */
   padding: 0;
 }
 
-.page-footer-social {
+.social {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -892,7 +892,7 @@ ____________________________________________ */
   padding: 0;
 }
 
-.page-footer-social h2 {
+.social h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -957,7 +957,7 @@ ____________________________________________ */
   background-image: url("../images/social-icon/youtube.svg");
 }
 
-.page-footer-phone {
+.phone {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -994,7 +994,7 @@ ____________________________________________ */
   color: #7561574d;
 }
 
-.page-footer-logo {
+.logo-htmlacademy {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1006,7 +1006,7 @@ ____________________________________________ */
   padding: 0;
 }
 
-.page-footer-logo-link {
+.logo-htmlacademy-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1036,13 +1036,13 @@ ____________________________________________ */
   fill: #68a2ca4d;
 }
 
-.page-footer-logo-link:hover img,
-.page-footer-logo-link:focus-visible img {
+.logo-htmlacademy-link:hover img,
+.logo-htmlacademy-link:focus-visible img {
   color: #756157;
   fill: #756157;
 }
 
-.page-footer-logo-link:active img {
+.logo-htmlacademy-link:active img {
   color: #7561574d;
   fill: #7561574d;
   fill-opacity: 0.3;
