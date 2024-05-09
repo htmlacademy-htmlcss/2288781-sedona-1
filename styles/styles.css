@@ -167,7 +167,7 @@ img {
   display: flex;
 }
 
-.navigation-logo {
+.logo-sedona {
   position: absolute;
   z-index: 1;
 
@@ -178,12 +178,12 @@ img {
   opacity: 0.8;
 }
 
-.navigation-logo:hover img,
-.navigation-logo:focus-visible img {
+.logo-sedona:hover img,
+.logo-sedona:focus-visible img {
   opacity: 0.8;
 }
 
-.navigation-logo:active img {
+.logo-sedona:active img {
   opacity: 0.5;
 }
 
