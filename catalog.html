@@ -55,11 +55,11 @@
       <!-- Основное содержание = Main
       ___________________________________________ -->
       <main class="main-inner" data-test="main">
-
+        <h1 class="visually-hidden">Страница каталога гостиниц городка Седона</h1>
         <!-- Секция "Фильтр" -->
         <section class="main-inner-filter" data-test=" filter">
 
-            <h2 class="visually-hidden">Форма меню поиска гостиниц</h2>
+            <h2 class="visually-hidden">Форма поиска гостиниц</h2>
 
             <div class="main-inner-filter-wrapper">
 
@@ -337,30 +337,23 @@
 
         </section>
 
-        <!-- Секция "Рассылка" -->
-        <section class="subscribe-catalog" data-test="subscribe">
-
-            <h2 class="visually-hidden">Форма рассылки</h2>
-
-            <div class="subscribe-connotation">
-
-              <div class="subscribe-connotation-wrapper subscribe-connotation-wrapper-catalog">
-                <p class="subscribe-lead-title subtitle">Подпишитесь на рассылку</p>
-                <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-              </div>
-
-              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="subscribe-form-label" for="subscribe">
-                  <span class="visually-hidden">Введите ваш e-mail</span>
-                  <input class="subscribe-form-input" type="email" id="subscribe" name="email" placeholder="Ваш e-mail" autocomplete="on" aria-label="Подписка на рассылку" required>
-                </label>
-                <button class="btn subscribe-btn" type="submit">Подписаться</button>
-              </form>
-
+        <!-- Секция "Блок подписки" -->
+        <section class="subscribe" data-test="subscribe">
+          <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
+          <div class="subscribe-connotation">
+            <div class="subscribe-connotation-wrapper">
+              <p class="subscribe-lead-title title"><strong>Подпишитесь на рассылку</strong></p>
+              <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
-
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="subscribe-form-label" for="user-email">
+                <span class="visually-hidden">Укажите вашу электронную почту</span>
+                <input class="subscribe-form-input" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" autocomplete="on" aria-label="Подписка на рассылку" required>
+              </label>
+              <button class="btn subscribe-btn" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
-
       </main>
 
       <!-- Подвал = Footer
