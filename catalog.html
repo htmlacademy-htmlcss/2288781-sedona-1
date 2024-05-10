@@ -23,7 +23,7 @@
           <!-- Основное меню -->
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html" >Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -44,7 +44,7 @@
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранные гостиницы</span>
-                <span class="navigation-user-statistics">12<em class="visually-hidden">выбранных гостиниц для сравнения</em></span>
+                <span class="navigation-user-statistics">12 <em class="visually-hidden">выбранных гостиниц для сравнения</em></span>
               </a>
             </li>
           </ul>
@@ -54,40 +54,35 @@
       </header>
       <!-- Основное содержание = Main
       ___________________________________________ -->
-      <main class="main-inner" data-test="main">
+      <main class="main-inner" data-test="main" >
         <h1 class="visually-hidden">Страница каталога гостиниц городка Седона</h1>
-        <!-- Секция "Фильтр" -->
-        <section class="main-inner-filter" data-test=" filter">
 
-            <h2 class="visually-hidden">Форма поиска гостиниц</h2>
+        <!-- Секция "Breadcrumbs = Хлебные крошки" -->
+        <section class="breadcrumbs">
+          <h2 class="breadcrumbs-title">Гостиницы Седоны</h2>
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
+                <span class="visually-hidden">Вход на страницу главной страницы</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-arrow" aria-current="page">
+                <span class="visually-hidden">Вход на страницу каталога</span>
+                <span class="breadcrumbs-arrow-text" autocapitalize="words">Гостиницы</span>
+              </a>
+            </li>
+          </ul>
+          </section>
 
-            <div class="main-inner-filter-wrapper">
+          <!-- Секция "Filter = Фильтр" -->
+          <section class="main-inner-filter" data-test="filter">
+            <form class="main-inner-form" action="https://echo.htmlacademy.ru/" method="get">
 
-              <p class="main-inner-filter-title">Гостиницы Седоны</p>
-
-              <ol class="breadcrumbs-list">
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
-                    <span class="visually-hidden">Вход на главную страницу</span>
-                  </a>
-                </li>
-                <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link breadcrumbs-arrow" aria-current="page">
-                    <span class="visually-hidden">Вход в каталог</span>
-                    <span class="breadcrumbs-arrow-text" aria-current="page" autocapitalize="words">Гостиницы</span>
-                  </a>
-                </li>
-              </ol>
-            </div>
-
-            <form class="inner-form" action="https://echo.htmlacademy.ru/" method="get">
-
-              <fieldset class="inner-infrastructure">
-
-                <legend class="infrastructure-title">
+              <fieldset class="main-inner-infrastructure">
+                <legend class="main-inner-infrastructure-title">
                   Инфраструктура:
                 </legend>
-
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
                     <label class="infrastructure-control" for="swimming-pool">
