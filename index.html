@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - главная страница (верстка О. Г. Арефьевой)</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Для просмотра разметки, если раскомментировать -->
-    <!-- <link rel="stylesheet" href="styles/outlines.css"> -->
   </head>
+
   <body>
     <div class="body-page">
+
       <p class="repository visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
+
       <!-- Шапка = Header
       ___________________________________________ -->
       <header class="page-header" data-test="header">
+
         <!-- Навигация -->
         <nav class="navigation">
-        <!-- Логотип городка Седоны -->
-        <a class="logo-sedona" href="index.html" aria-current="page">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны.">
-        </a>
+
+          <!-- Логотип городка Седоны -->
+          <a class="logo-sedona-link" aria-current="page">
+            <span class="logo-sedona">
+              <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны.">
+            </span>
+          </a>
+
           <!-- Основное меню -->
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
+              <a class="navigation-link navigation-link-current" aria-current="page">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -32,14 +39,17 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
+
           <!-- Пользовательское меню -->
           <ul class="navigation-user-list">
+
             <!-- Иконка "Поиск" -->
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск гостиницы</span>
               </a>
             </li>
+
             <!-- Иконка "Избранное" -->
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-favorites" href="#">
@@ -48,20 +58,25 @@
               </a>
             </li>
           </ul>
+
           <!-- Кнопка "Хочу сюда!" -->
           <a class="btn navigation-btn" href="#">Хочу сюда!</a>
         </nav>
       </header>
+
       <!-- Основное содержание = Main
       ___________________________________________ -->
       <main class="main-index" data-test="main">
-        <!-- Hero -->
+
+        <!-- Заголовок главной страницы -->
+        <h1 class="visually-hidden">Городок Седона в Аризоне и его достопримечательности</h1>
+
+        <!-- Секция Hero -->
         <section class="hero" data-test="hero">
-          <!-- Заголовок главной страницы -->
-          <h1 class="visually-hidden">Городок Седона в Аризоне и его достопримечательности</h1>
-          <!-- Другой логотип городка Седоны -->
+          <h2 class="visually-hidden">Приглашение в городок Седона</h2>
           <img src="images/main-page/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. «Because the Grand Canyon sucks!».">
         </section>
+
         <!-- Секция "Блок преимуществ" -->
         <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества туризма в городке Седона</h2>
@@ -74,7 +89,7 @@
               <li class="advantages-item advantages-town">
                 <h3 class="advantages-title advantages-title-town subtitle">Настоящий городок</h3>
                 <div class="advantages-strips advantages-town-strips">
-                  <span class="visually-hidden">Полоса <em>(декоративный элемент)</em></span>
+                  <span class="visually-hidden">Полоска <em>(декоративный элемент)</em></span>
                 </div>
                 <p class="advantages-description advantages-description-town">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </li>
@@ -86,21 +101,21 @@
               <li class="advantages-item advantages-square">
                 <h3 class="advantages-title subtitle">Небольшая площадь</h3>
                 <div class="advantages-strips advantages-square-strips">
-                  <span class="visually-hidden">Полоса <em>(декоративный элемент)</em></span>
+                  <span class="visually-hidden">Полоска <em>(декоративный элемент)</em></span>
                 </div>
                 <p class="advantages-description">Все достопримечательности находятся очень близко</p>
               </li>
               <li class="advantages-item advantages-road">
                 <h3 class="advantages-title subtitle">Красивая дорога</h3>
                 <div class="advantages-strips advantages-road-strips">
-                  <span class="visually-hidden">Полоса <em>(декоративный элемент)</em></span>
+                  <span class="visually-hidden">Полоска <em>(декоративный элемент)</em></span>
                 </div>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="advantages-item advantages-tourists">
                 <h3 class="advantages-title subtitle">Мало туристов</h3>
                 <div class="advantages-strips advantages-tourists-strips">
-                  <span class="visually-hidden">Полоса <em>(декоративный элемент)</em></span>
+                  <span class="visually-hidden">Полоска <em>(декоративный элемент)</em></span>
                 </div>
                 <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
@@ -112,13 +127,14 @@
               <li class="advantages-item advantages-bridge">
                 <h3 class="advantages-title advantages-title-bridge subtitle">Там есть<br> мост Дьявола</h3>
                 <div class="advantages-strips advantages-bridge-strips">
-                  <span class="visually-hidden">Полоса <em>(декоративный элемент)</em></span>
+                  <span class="visually-hidden">Полоска <em>(декоративный элемент)</em></span>
                 </div>
                 <p class="advantages-description advantages-description-bridge">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </li>
             </ul>
           </div>
         </section>
+
         <!-- Секция "Блок сервиса" -->
         <section class="services" data-test="services">
           <h2 class="visually-hidden">Сервис для туристов в городке Седона</h2>
@@ -143,8 +159,9 @@
             </ul>
           </div>
         </section>
+
         <!-- Секция "Блок поиска" -->
-        <section class="search" data-test="search">
+        <section class="search" data-test="search" id="search">
           <h2 class="visually-hidden">Бронирование гостиницы в городке Седона</h2>
           <div class="search-connotation">
             <p class="search-lead-title title"><strong>Заинтересовались?</strong></p>
@@ -152,6 +169,7 @@
             <a class="btn search-btn" href="#">Поиск гостиницы в Седоне</a>
           </div>
         </section>
+
         <!-- Секция "Блок подписки" -->
         <section class="subscribe" data-test="subscribe">
           <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
@@ -161,59 +179,59 @@
               <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="subscribe-form-label" for="user-email">
-                <span class="visually-hidden">Укажите вашу электронную почту</span>
-                <input
-                  class="subscribe-form-input"
-                  type="email"
-                  id="user-email"
-                  name="user-email"
-                  placeholder="Ваш e-mail"
-                  autocomplete="on"
-                  aria-label="Подписка на рассылку"
-                  required>
-              </label>
+              <p>
+                <label class="visually-hidden" for="user-email">Укажите вашу электронную почту
+                  <input class="subscribe-form-input" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" aria-label="Подписка на рассылку" required>
+                </label>
+              </p>
               <button class="btn subscribe-btn" type="submit">Подписаться</button>
             </form>
           </div>
         </section>
+
       </main>
+
+
       <!-- Подвал = Footer
       ___________________________________________ -->
       <footer class="page-footer" data-test="footer">
         <div class="page-footer-wrapper">
+
           <!-- Социальные каналы -->
           <section class="social">
             <h2 class="visually-hidden">Социальные каналы HTML Academy</h2>
             <ul class="social-list">
               <li class="social-item">
                 <a class="social-link social-vk" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Канал в Vkontakte</span>
+                  <span class="visually-hidden">Канал Академии в Vkontakte</span>
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link social-tm" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Канал в Telegram</span>
+                  <span class="visually-hidden">Канал Академии в Telegram</span>
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">Канал в Youtube</span>
+                  <span class="visually-hidden">Канал Академии в Youtube</span>
                 </a>
               </li>
             </ul>
           </section>
-          <!-- Адрес - телефон -->
+
+          <!-- Телефон -->
           <section class="phone">
             <h2 class="visually-hidden">Контакты HTML Academy</h2>
             <a class="phone-link" href="+78128121212">+7 (812) 812-12-12</a>
           </section>
+
           <!-- Логотип Академии HTML -->
-          <div class="logo-htmlacademy">
-            <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-              <img src="images/html-academy.svg" width="115" height="33" alt="Логотип Академии HTML.">
-            </a>
-          </div>
+          <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
+            <span class="logo-htmlacademy">
+              <img src="images/html-academy.svg" width="115" height="33" alt="Логотип Академии HTML; переход на канал HTML Academy.">
+            </span>
+          </a>
+
         </div>
       </footer>
     </div>

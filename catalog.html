@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - главная страница (верстка О. Г. Арефьевой)</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- Для просмотра разметки, если раскомментировать -->
-    <!-- <link rel="stylesheet" href="styles/outlines.css"> -->
   </head>
+
   <body>
+
     <div class="body-page">
+
       <p class="repository visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
+
+
       <!-- Шапка = Header
       ___________________________________________ -->
       <header class="page-header" data-test="header">
+
         <!-- Навигация -->
         <nav class="navigation">
-        <!-- Логотип городка Седоны -->
-        <a class="logo-sedona" href="index.html">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны.">
-        </a>
+
+          <!-- Логотип городка Седоны -->
+          <a class="header-logo-sedona" href="index.html" aria-label="Переход на главную">
+            <span class="logo-sedona">
+              <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны." aria-hidden="true">
+            </span>
+          </a>
+
           <!-- Основное меню -->
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -32,14 +41,17 @@
               <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
+
           <!-- Пользовательское меню -->
           <ul class="navigation-user-list">
+
             <!-- Иконка "Поиск" -->
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск гостиницы</span>
               </a>
             </li>
+
             <!-- Иконка "Избранное" -->
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-favorites" href="#">
@@ -48,10 +60,13 @@
               </a>
             </li>
           </ul>
+
           <!-- Кнопка "Хочу сюда!" -->
           <a class="btn navigation-btn" href="#">Хочу сюда!</a>
         </nav>
       </header>
+
+
       <!-- Основное содержание = Main
       ___________________________________________ -->
       <main class="main-inner" data-test="main" >
@@ -77,6 +92,7 @@
 
           <!-- Секция "Filter = Фильтр" -->
           <section class="main-inner-filter" data-test="filter">
+            <h2 class="visually-hidden">Бронирование нужной гостиницы в городке Седона</h2>
             <form class="main-inner-form" action="https://echo.htmlacademy.ru/" method="get">
 
               <fieldset class="main-inner-infrastructure">
@@ -85,39 +101,18 @@
                 </legend>
                 <ul class="infrastructure-list">
                   <li class="infrastructure-item">
-                    <label class="infrastructure-control" for="swimming-pool">
-                      <input
-                        class="control-input"
-                        id="swimming-pool"
-                        type="checkbox"
-                        name="swimming-pool"
-                        checked>
-                      Бассейн
-                    </label>
+                    <label class="infrastructure-control" for="swimming-pool">Бассейн</label>
+                    <input class="control-input" id="swimming-pool" type="checkbox" name="swimming-pool" checked>
                   </li>
                   <li class="infrastructure-item">
-                    <label class="infrastructure-control" for="parking-space">
-                      <input
-                        class="control-input"
-                        id="parking-space"
-                        type="checkbox"
-                        name="parking-space"
-                        checked>
-                      Парковка
-                    </label>
+                    <label class="infrastructure-control" for="parking-space">Парковка</label>
+                    <input class="control-input" id="parking-space" type="checkbox" name="parking-space" checked>
                   </li>
                   <li class="infrastructure-item">
-                    <label class="infrastructure-control" for="wi-fi">
-                      <input
-                        class="control-input"
-                        id="wi-fi"
-                        type="checkbox"
-                        name="wi-fi">
-                      Wi-Fi
-                    </label>
+                    <label class="infrastructure-control" for="wi-fi">Wi-Fi</label>
+                    <input class="control-input" id="wi-fi" type="checkbox" name="wi-fi">
                   </li>
                 </ul>
-
               </fieldset>
 
               <fieldset class="inner-type-housing">
@@ -308,7 +303,7 @@
             <!-- Секция "Пагинация" -->
             <div class="pagination">
               <h2 class="visually-hidden">Страницы каталога</h2>
-              <ul class="pagination-list">
+              <ol class="pagination-list">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-link-current" aria-current="page">1</a>
                 </li>
@@ -327,7 +322,7 @@
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>
                 </li>
-              </ul>
+              </ol>
             </div>
 
         </section>
@@ -361,17 +356,17 @@
             <ul class="social-list">
               <li class="social-item">
                 <a class="social-link social-vk" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Канал в Vkontakte</span>
+                  <span class="visually-hidden">Канал Академии в Vkontakte</span>
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link social-tm" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Канал в Telegram</span>
+                  <span class="visually-hidden">Канал Академии в Telegram</span>
                 </a>
               </li>
               <li class="social-item">
                 <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <span class="visually-hidden">Канал в Youtube</span>
+                  <span class="visually-hidden">Канал Академии в Youtube</span>
                 </a>
               </li>
             </ul>
@@ -384,7 +379,7 @@
           <!-- Логотип Академии HTML -->
           <div class="logo-htmlacademy">
             <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-              <img src="images/html-academy.svg" width="115" height="33" alt="Логотип Академии HTML.">
+              <img src="images/html-academy.svg" width="115" height="33" alt="Логотип Академии HTML; переход на канал HTML Academy.">
             </a>
           </div>
         </div>

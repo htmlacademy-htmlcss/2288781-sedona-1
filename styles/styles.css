@@ -20,7 +20,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 1px solid #6a16c9;
+  /* outline: 1px solid #6a16c9; */
 }
 
 html {
