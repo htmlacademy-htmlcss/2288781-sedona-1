@@ -2,7 +2,7 @@
 
 * Студент: [Оксана Арефьева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2288781).
 * Наставник: `Оксана Вайнруб`(<https://htmlacademy.ru/profile/id166797>).
-* Сайт: `Учебный проект "Седона"`(<https://htmlacademy-htmlcss.github.io/2288781-sedona-1/3/>).
+* Сайт: `Учебный проект <q>Седона</q>`(<https://htmlacademy-htmlcss.github.io/2288781-sedona-1/3/>).
 ---
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
