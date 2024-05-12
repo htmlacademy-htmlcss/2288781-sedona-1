@@ -74,11 +74,6 @@ body {
   box-shadow: 0 0 15px #00000033;
 }
 
-.body-page h1 {
-  font-size: 60px;
-  line-height: 78px;
-}
-
 .repository {
   font-size: 16px;
   line-height: 20px;
@@ -370,6 +365,12 @@ img {
 
   max-width: 1200px;
   min-height: 100%;
+}
+
+.main-index h1,
+.main-inner h1 {
+  font-size: 60px;
+  line-height: 78px;
 }
 
 /* Main - Hero
