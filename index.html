@@ -26,7 +26,7 @@
         <nav class="navigation">
 
           <!-- __<Логотип городка Седоны>__ -->
-          <a class="logo-sedona-link" aria-current="page">
+          <a class="header-logo-sedona" aria-current="page">
             <span class="logo-sedona">
               <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны.">
             </span>
@@ -59,14 +59,16 @@
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранные гостиницы</span>
-                <span class="navigation-user-statistics">12 <em class="visually-hidden">выбранных гостиниц для сравнения</em></span>
+                <span class="navigation-user-statistics">12 <em class="visually-hidden" aria-label="выбранных гостиниц для сравнения">выбранных гостиниц для сравнения</em></span>
               </a>
             </li>
 
-          </ul>
+            <!-- __кнопка "Хочу сюда!"__ -->
+            <li class="navigation-user-item">
+              <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+            </li>
 
-          <!-- __<Кнопка "Хочу сюда!">__ -->
-          <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+          </ul>
 
         </nav>
 
