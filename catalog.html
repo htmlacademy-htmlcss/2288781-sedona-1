@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - главная страница (верстка О. Г. Арефьевой)</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
@@ -14,15 +14,14 @@
 
       <p class="repository visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе <a href="https://htmlacademy.ru/intensive/htmlcss"> «HTML и CSS. Профессиональная вёрстка сайтов»</a>.</p>
 
-
       <!-- Шапка = Header
       ___________________________________________ -->
       <header class="page-header" data-test="header">
 
-        <!-- Навигация -->
+        <!-- __навигация__ -->
         <nav class="navigation">
 
-          <!-- Логотип городка Седоны -->
+          <!-- __<Логотип городка Седоны>__ -->
           <a class="header-logo-sedona" href="index.html" aria-label="Переход на главную">
             <span class="logo-sedona">
               <img src="images/logo.svg" width="140" height="70" alt="Логотип городка Седоны." aria-hidden="true">
@@ -35,7 +34,7 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
+              <a class="navigation-link" href="about.html">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current" aria-current="page">Гостиницы</a>
@@ -45,14 +44,14 @@
           <!-- Пользовательское меню -->
           <ul class="navigation-user-list">
 
-            <!-- Иконка "Поиск" -->
+            <!-- __иконка "Поиск"__ -->
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-search" href="#">
                 <span class="visually-hidden">Поиск гостиницы</span>
               </a>
             </li>
 
-            <!-- Иконка "Избранное" -->
+            <!-- __иконка "Избранное"__ -->
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-favorites" href="#">
                 <span class="visually-hidden">Избранные гостиницы</span>
@@ -69,7 +68,7 @@
 
       <!-- Основное содержание = Main
       ___________________________________________ -->
-      <main class="main-inner" data-test="main" >
+      <main class="main-catalog" data-test="main" >
         <h1 class="visually-hidden">Страница каталога гостиниц городка Седона</h1>
 
         <!-- Секция "Breadcrumbs = Хлебные крошки" -->
@@ -91,12 +90,12 @@
           </section>
 
           <!-- Секция "Filter = Фильтр" -->
-          <section class="main-inner-filter" data-test="filter">
+          <section class="main-catalog-filter" data-test="filter">
             <h2 class="visually-hidden">Бронирование нужной гостиницы в городке Седона</h2>
-            <form class="main-inner-form" action="https://echo.htmlacademy.ru/" method="get">
+            <form class="main-catalog-form" action="https://echo.htmlacademy.ru/" method="get">
 
-              <fieldset class="main-inner-infrastructure">
-                <legend class="main-inner-infrastructure-title">
+              <fieldset class="main-catalog-infrastructure">
+                <legend class="main-catalog-infrastructure-title">
                   Инфраструктура:
                 </legend>
                 <ul class="infrastructure-list">
@@ -115,7 +114,7 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="inner-type-housing">
+              <fieldset class="catalog-type-housing">
 
                 <legend class="type-housing-title">
                   Тип жилья:
@@ -157,13 +156,13 @@
 
               </fieldset>
 
-              <fieldset class="inner-price">
+              <fieldset class="catalog-price">
 
                 <legend class="price-title">
                   Стоимость, <span>₽:</span>
                 </legend>
 
-                <div class="inner-price-wrapper">
+                <div class="catalog-price-wrapper">
                   <label class="price-range price-range-min" for="price-range-min">
                     <input
                       class="price-input-min"
@@ -188,11 +187,11 @@
 
               </fieldset>
 
-              <div class="inner-btn">
-                <p class="inner-btn-submit">
+              <div class="catalog-btn">
+                <p class="catalog-btn-submit">
                   <button class="btn" type="submit">Применить</button>
                 </p>
-                <p class="inner-btn-reset">
+                <p class="catalog-btn-reset">
                   <button class="btn" type="reset">Сбросить</button>
                 </p>
               </div>
@@ -202,13 +201,13 @@
         </section>
 
         <!-- Секция "Каталог" -->
-        <section class="inner-select" data-test="catalog">
+        <section class="catalog-select" data-test="catalog">
 
             <h2 class="visually-hidden">Cписок выбранных гостиниц в Седоне</h2>
 
-            <p class="inner-found">Найдено гостиниц: <span class="inner-result">38</span></p>
+            <p class="catalog-found">Найдено гостиниц: <span class="catalog-result">38</span></p>
 
-            <select class="inner-selected" aria-label="Сортировка">
+            <select class="catalog-selected" aria-label="Сортировка">
               <option value="sheap">Самые дешевые</option>
               <option value="popular">Самые популярные</option>
               <option value="expensive">Самые дорогие</option>

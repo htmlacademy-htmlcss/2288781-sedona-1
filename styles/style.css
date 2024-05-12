@@ -57,6 +57,12 @@ body {
   background: #f2f2f2;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .body-page {
   display: flex;
   flex-direction: column;
@@ -70,7 +76,7 @@ body {
   background: #82B3D3;
 
   text-align: center;
-  
+
   /* __тени__ */
   box-shadow: 0 0 15px #00000033;
 }
@@ -119,12 +125,6 @@ body {
   text-align: center;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 
 /* Главная страница
 ============================================
@@ -149,19 +149,9 @@ img {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
 
   width: 1060px;
   height: 64px;
-}
-
-.navigation-wrapper,
-.navigation-user-wrapper {
-  position: relative;
-  top: 0;
-  left: 0;
-
-  display: flex;
 }
 
 .header-logo-sedona {
@@ -358,7 +348,7 @@ img {
 /* Main=Основное содержание - начало
 ============================================ */
 .main-index,
-.main-inner {
+.main-catalog {
   display: flex;
   flex-direction: column;
 
@@ -369,7 +359,7 @@ img {
 }
 
 .main-index h1,
-.main-inner h1 {
+.main-catalog h1 {
   font-size: 60px;
   line-height: 78px;
 }
@@ -1066,7 +1056,7 @@ ____________________________________________ */
 ============================================ */
 
 /* Фильтр */
-.main-inner-filter {
+.main-catalog-filter {
   width: 1200px;
   height: auto;
   padding: 35px 70px 70px;
@@ -1080,7 +1070,7 @@ ____________________________________________ */
   color: #000000;
 }
 
-.main-inner-filter h2 {
+.main-catalog-filter h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1089,7 +1079,7 @@ ____________________________________________ */
   text-align: center;
 }
 
-.main-inner-filter-wrapper {
+.main-catalog-filter-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1100,7 +1090,7 @@ ____________________________________________ */
   padding: 0;
 }
 
-.main-inner-filter-title {
+.main-catalog-filter-title {
   width: 495px;
   height: 78px;
   margin: 0;
@@ -1196,19 +1186,19 @@ ____________________________________________ */
 }
 
 
-.inner-form {
+.catalog-form {
   display: flex;
   width: 1060px;
   height: 160px;
 }
 
-.inner-infrastructure {
+.catalog-infrastructure {
 
   margin: 40px 70px 0 0;
   padding: 0;
 }
 
-.inner-infrastructure input {
+.catalog-infrastructure input {
   margin-bottom: 16px;
   margin-right: 16px;
 }
@@ -1240,26 +1230,26 @@ ____________________________________________ */
   list-style: none;
 }
 
-.inner-type-housing {
+.catalog-type-housing {
   display: flex;
 
   padding: 0;
   margin: 40px 140px 0 0;
 }
 
-.inner-type-housing input {
+.catalog-type-housing input {
   margin-bottom: 16px;
   margin-right: 16px;
 }
 
-.inner-price {
+.catalog-price {
   display: flex;
 
   margin: 0;
   padding: 0;
 }
 
-.inner-price fieldset {
+.catalog-price fieldset {
   margin: 0;
   padding: 0;
 }
@@ -1276,7 +1266,7 @@ ____________________________________________ */
   color: #ffffff;
 }
 
-.inner-price-wrapper {
+.catalog-price-wrapper {
   margin: 0;
   margin-top: 32px;
   padding: 0;
@@ -1335,7 +1325,7 @@ ____________________________________________ */
   border: 4px white solid;
 }
 
-.inner-button-submit {
+.catalog-button-submit {
   max-width: 191px;
   height: 36px;
 
@@ -1343,7 +1333,7 @@ ____________________________________________ */
   background-color: #82B3D3;
 }
 
-.inner-button-reset {
+.catalog-button-reset {
   font-size: 16px;
   line-height: 20px;
 
@@ -1370,7 +1360,7 @@ ____________________________________________ */
 /* Main -> Select (каталог)
 ____________________________________________ */
 
-.inner-select {
+.catalog-select {
   /* display: flex;
   flex-direction: column;
   align-items: flex-end; */
@@ -1384,7 +1374,7 @@ ____________________________________________ */
   color: #000000;
 }
 
-.inner h2 {
+.catalog h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
