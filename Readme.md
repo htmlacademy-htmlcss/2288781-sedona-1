@@ -1,11 +1,9 @@
 # Личный проект «Седона»
 
 * Студент: [Оксана Арефьева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2288781).
-* Наставник: `Оксана Вайнруб` (https://htmlacademy.ru/profile/id166797).
-* Сайт: `Учебный проект "Седона"` (https://htmlacademy-htmlcss.github.io/2288781-sedona-1/3/).
-
+* Наставник: `Оксана Вайнруб`(<https://htmlacademy.ru/profile/id166797>).
+* Сайт: `Учебный проект "Седона"`(<https://htmlacademy-htmlcss.github.io/2288781-sedona-1/3/>).
 ---
-
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
@@ -35,7 +33,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
-#### 4. Начинайте обучение!
+#### 4. Начинайте обучение
 
 ---
 
