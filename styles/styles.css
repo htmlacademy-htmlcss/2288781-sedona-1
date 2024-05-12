@@ -20,7 +20,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  /* outline: 1px solid #6a16c9; */
+  outline: 1px solid #6a16c9;
 }
 
 html {
@@ -70,6 +70,7 @@ body {
   background: #82B3D3;
 
   text-align: center;
+  /* Тени */
   box-shadow: 0 0 15px #00000033;
 }
 
@@ -167,10 +168,11 @@ img {
   display: flex;
 }
 
-.logo-sedona {
-  position: absolute;
-  z-index: 1;
+.header-logo-sedona {
+  width: 140px;
+}
 
+.logo-sedona {
   max-height: 70px;
   margin: 0 30px -6px 0;
   padding: 0;
@@ -261,30 +263,36 @@ img {
   border: none;
 }
 
-.navigation-user-link {
+.navigation-user-link::before {
+  content:"";
+  position: absolute;
+
   width: 100%;
   height: 64px;
   margin: 0;
   padding: 22px 12px;
 
+  background-image: url("../images/header-icon/search-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+
   cursor: pointer;
 }
 
-.navigation-user-link.navigation-user-search {
-  background-image: url("../images/header-icon/search-icon.svg");
-}
-
-.navigation-user-link.navigation-user-favorites {
-  background-image: url("../images/header-icon/heart-icon.svg");
-}
-
-.navigation-user-search img,
-.navigation-user-favorites img {
+.navigation-user-favorites::before {
+  content:"";
   position: absolute;
-  top: 0;
-  left: 0;
+
+  width: 100%;
+  height: 64px;
+  margin: 0;
+  padding: 22px 12px;
+
+  background-image: url("../images/header-icon/heart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  cursor: pointer;
 }
 
 .navigation-user-favorites span {
