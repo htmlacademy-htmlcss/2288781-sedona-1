@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
 
-    <title>HTML Academy: Седона - главная страница (верстка О. Г. Арефьевой)</title>
+    <title>HTML Academy: Седона - каталог (верстка О. Г. Арефьевой)</title>
 
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
@@ -66,13 +66,17 @@
 
           <!-- Кнопка "Хочу сюда!" -->
           <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+
         </nav>
+
       </header>
 
 
       <!-- Основное содержание = Main
       ___________________________________________ -->
       <main class="main-catalog" data-test="main" >
+
+        <!-- Заголовок каталога -->
         <h1 class="visually-hidden">Страница каталога гостиниц городка Седона</h1>
 
         <!-- Секция "Breadcrumbs = Хлебные крошки" -->
@@ -343,13 +347,17 @@
         </section>
 
         <!-- Секция "Блок подписки" -->
-        <section class="subscribe subscribe-white" data-test="subscribe">
+        <section class="subscribe" data-test="subscribe">
+          <!-- Заголовок секции "Блок подписки" -->
           <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
-          <div class="subscribe-connotation">
-            <div class="subscribe-connotation-wrapper">
+
+          <div class="subscribe-connotation-wrapper">
+
+            <div class="subscribe-connotation">
               <p class="subscribe-lead-title title"><strong>Подпишитесь на рассылку</strong></p>
               <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
+
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscribe-form-label" for="user-email">
                 <span class="visually-hidden">Укажите вашу электронную почту</span>
@@ -357,8 +365,11 @@
               </label>
               <button class="btn subscribe-btn" type="submit">Подписаться</button>
             </form>
+
           </div>
+
         </section>
+
       </main>
 
       <!-- Подвал = Footer
