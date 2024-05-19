@@ -1184,24 +1184,24 @@ ____________________________________________ */
 }
 
 
-.catalog-form {
+.main-catalog-form {
   display: flex;
   width: 1060px;
   height: 160px;
 }
 
-.catalog-infrastructure {
+.main-catalog-infrastructure {
 
   margin: 40px 70px 0 0;
   padding: 0;
 }
 
-.catalog-infrastructure input {
+.main-catalog-infrastructure input {
   margin-bottom: 16px;
   margin-right: 16px;
 }
 
-.infrastructure-title,
+.main-catalog-infrastructure-title,
 .type-housing-title {
   display: flex;
 
@@ -1215,7 +1215,7 @@ ____________________________________________ */
   color: #ffffff;
 }
 
-.infrastructure-list,
+.main-catalog-infrastructure-list,
 .type-housing-list {
   margin: 0;
   padding: 0;
@@ -1228,31 +1228,31 @@ ____________________________________________ */
   list-style: none;
 }
 
-.catalog-type-housing {
+.main-catalog-type-housing {
   display: flex;
 
   padding: 0;
   margin: 40px 140px 0 0;
 }
 
-.catalog-type-housing input {
+.main-catalog-type-housing input {
   margin-bottom: 16px;
   margin-right: 16px;
 }
 
-.catalog-price {
+.main-catalog-price {
   display: flex;
 
   margin: 0;
   padding: 0;
 }
 
-.catalog-price fieldset {
+.main-catalog-price fieldset {
   margin: 0;
   padding: 0;
 }
 
-.price-title {
+.main-catalog-title {
   display: flex;
 
   height: auto;
@@ -1264,7 +1264,7 @@ ____________________________________________ */
   color: #ffffff;
 }
 
-.catalog-price-wrapper {
+.main-catalog-price-wrapper {
   margin: 0;
   margin-top: 32px;
   padding: 0;
@@ -1323,7 +1323,7 @@ ____________________________________________ */
   border: 4px white solid;
 }
 
-.catalog-button-submit {
+.main-catalog-button-submit {
   max-width: 191px;
   height: 36px;
 
@@ -1331,7 +1331,7 @@ ____________________________________________ */
   background-color: #82B3D3;
 }
 
-.catalog-button-reset {
+.main-catalog-button-reset {
   font-size: 16px;
   line-height: 20px;
 
@@ -1358,7 +1358,7 @@ ____________________________________________ */
 /* Main -> Select (каталог)
 ____________________________________________ */
 
-.catalog-select {
+.main-catalog-select {
   /* display: flex;
   flex-direction: column;
   align-items: flex-end; */
@@ -1372,7 +1372,7 @@ ____________________________________________ */
   color: #000000;
 }
 
-.catalog h2 {
+.main-catalog h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;

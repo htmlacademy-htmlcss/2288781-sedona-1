@@ -95,38 +95,51 @@
 
           <!-- Секция "Filter = Фильтр" -->
           <section class="main-catalog-filter" data-test="filter">
+
             <h2 class="visually-hidden">Бронирование нужной гостиницы в городке Седона</h2>
+
             <form class="main-catalog-form" action="https://echo.htmlacademy.ru/" method="get">
 
               <fieldset class="main-catalog-infrastructure">
-                <legend class="main-catalog-infrastructure-title">
-                  Инфраструктура:
-                </legend>
-                <ul class="infrastructure-list">
-                  <li class="infrastructure-item">
-                    <label class="infrastructure-control" for="swimming-pool">Бассейн</label>
-                    <input class="control-input" id="swimming-pool" type="checkbox" name="swimming-pool" checked>
+
+                <legend class="main-catalog-infrastructure-title">Инфраструктура:</legend>
+
+                <ul class="main-catalog-infrastructure-list">
+
+                  <li class="main-catalog-infrastructure-item">
+                    <label class="infrastructure-control" for="swimming-pool">
+                      <input class="control-input" id="swimming-pool" type="checkbox" name="swimming-pool" checked>
+                      Бассейн
+                    </label>
                   </li>
-                  <li class="infrastructure-item">
-                    <label class="infrastructure-control" for="parking-space">Парковка</label>
-                    <input class="control-input" id="parking-space" type="checkbox" name="parking-space" checked>
+
+                  <li class="main-catalog-infrastructure-item">
+                    <label class="infrastructure-control" for="parking-space">
+                      <input class="control-input" id="parking-space" type="checkbox" name="parking-space" checked>
+                      Парковка
+                    </label>
                   </li>
-                  <li class="infrastructure-item">
-                    <label class="infrastructure-control" for="wi-fi">Wi-Fi</label>
-                    <input class="control-input" id="wi-fi" type="checkbox" name="wi-fi">
+
+                  <li class="main-catalog-infrastructure-item">
+                    <label class="main-catalog-infrastructure-control" for="wi-fi">
+                      <input class="control-input" id="wi-fi" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label>
                   </li>
+
                 </ul>
+
               </fieldset>
 
-              <fieldset class="catalog-type-housing">
+              <fieldset class="main-catalog-type-housing">
 
-                <legend class="type-housing-title">
+                <legend class="main-catalog-type-housing-title">
                   Тип жилья:
                 </legend>
 
-                <ul class="type-housing-list">
-                  <li class="type-housing-item">
-                    <label class="type-housing-control" for="hotel">
+                <ul class="main-catalog-type-housing-list">
+                  <li class="main-catalog-type-housing-item">
+                    <label class="main-catalog-type-housing-control" for="hotel">
                       <input
                         class="control-input"
                         id="hotel"
@@ -136,8 +149,8 @@
                       Гостиница
                     </label>
                   </li>
-                  <li class="type-housing-item">
-                    <label class="type-housing-control" for="motel">
+                  <li class="main-catalog-type-housing-item">
+                    <label class="main-catalog-type-housing-control" for="motel">
                       <input
                         class="control-input"
                         id="motel"
@@ -146,8 +159,8 @@
                       Мотель
                     </label>
                   </li>
-                  <li class="type-housing-item">
-                    <label class="type-housing-control"  for="apartments">
+                  <li class="main-catalog-type-housing-item">
+                    <label class="main-catalog-type-housing-control"  for="apartments">
                       <input
                         class="control-input"
                         id="apartments"
@@ -160,21 +173,19 @@
 
               </fieldset>
 
-              <fieldset class="catalog-price">
+              <fieldset class="main-catalog-price">
 
-                <legend class="price-title">
-                  Стоимость, <span>₽:</span>
-                </legend>
+                <legend class="price-title">Стоимость, <span>₽:</span> </legend>
 
-                <div class="catalog-price-wrapper">
+                <div class="main-catalog-price-wrapper">
                   <label class="price-range price-range-min" for="price-range-min">
+                    <span class="text-price-from">от</span>
                     <input
                       class="price-input-min"
                       id="price-range-min"
                       type="text"
                       value="0"
                       placeholder="от">
-                    <span class="text-price-from">от</span>
                   </label>
                   <label class="price-range price-range-max" for="price-range-max">
                     <input
@@ -191,11 +202,11 @@
 
               </fieldset>
 
-              <div class="catalog-btn">
-                <p class="catalog-btn-submit">
+              <div class="main-catalog-btn">
+                <p class="main-catalog-btn-submit">
                   <button class="btn" type="submit">Применить</button>
                 </p>
-                <p class="catalog-btn-reset">
+                <p class="main-catalog-btn-reset">
                   <button class="btn" type="reset">Сбросить</button>
                 </p>
               </div>
@@ -205,13 +216,13 @@
         </section>
 
         <!-- Секция "Каталог" -->
-        <section class="catalog-select" data-test="catalog">
+        <section class="main-catalog-select" data-test="catalog">
 
             <h2 class="visually-hidden">Cписок выбранных гостиниц в Седоне</h2>
 
-            <p class="catalog-found">Найдено гостиниц: <span class="catalog-result">38</span></p>
+            <p class="main-catalog-found">Найдено гостиниц: <span class="catalog-result">38</span></p>
 
-            <select class="catalog-selected" aria-label="Сортировка">
+            <select class="main-catalog-selected" aria-label="Сортировка">
               <option value="sheap">Самые дешевые</option>
               <option value="popular">Самые популярные</option>
               <option value="expensive">Самые дорогие</option>
@@ -297,15 +308,16 @@
                   <p class="stars-2">
                     <span class="visually-hidden">Двухзвездочный отель</span>
                   </p>
-                  <a class="hotel-cards-rating">Рейтинг: <span>5.0</span></a>
+                  <p class="hotel-cards-rating">Рейтинг: <span>5.0</span></p>
                 </li>
 
               </ul>
+
             </div>
 
             <!-- Секция "Пагинация" -->
             <div class="pagination">
-              <h2 class="visually-hidden">Страницы каталога</h2>
+              <p class="visually-hidden">Страницы каталога</p>
               <ol class="pagination-list">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-link-current" aria-current="page" aria-label="Переход на первую страницу списка каталога">1</a>
