@@ -793,7 +793,7 @@ ____________________________________________ */
   display: flex;
   flex-wrap: wrap;
 
-  width: auto;
+  width: 475px;
   height: auto;
   margin: 0;
   padding: 20px 0 54px 0;
@@ -804,9 +804,12 @@ ____________________________________________ */
 .subscribe-form {
   display: flex;
   align-items: center;
+
+  margin: 0;
+  padding: 0;
 }
 
-.subscribe-form label {
+.subscribe-form-label {
   width: 452px;
   height: 52px;
   margin: 0;
@@ -818,7 +821,7 @@ ____________________________________________ */
 }
 
 .subscribe-form-input {
-  min-width: 452px;
+  min-width: 100%;
   height: auto;
   margin: 0;
   padding: 14px 20px;
