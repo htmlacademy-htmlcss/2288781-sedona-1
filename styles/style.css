@@ -16,9 +16,9 @@
 }
 
 /* Общие стили */
-*,
-*::before,
-*::after {
+html *,
+html *::before,
+html *::after {
   /* box-sizing: border-box; */
   outline: 1px solid #6a16c9;
 }
@@ -73,9 +73,7 @@ img {
   margin: 0 auto;
   padding: 0;
 
-  color: #ffffff;
-  background: #8daab8;
-
+  background: #ffffff;
   text-align: center;
 
   /* __тени__ */
@@ -88,6 +86,7 @@ img {
 }
 
 .btn {
+  display: inline-block;
   margin: 0;
   padding: 8px 50px;
 
@@ -102,6 +101,7 @@ img {
 
   color: #ffffff;
   background-color: #ffc0cb;
+
   border: none;
 
   cursor: pointer;
@@ -112,6 +112,8 @@ img {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+
+  color: #000000;
 
   text-align: center;
 }
@@ -299,9 +301,6 @@ img {
   fill: #581717;
 }
 
-
-
-
 .navigation-user-statistics {
   position: absolute;
   top: 16px;
@@ -332,6 +331,10 @@ img {
   border-radius: 4px;
 }
 
+.navigation-btn:default {
+  background-color: #756157;
+}
+
 .navigation-btn:hover {
   background-color: #615048;
 }
@@ -341,13 +344,13 @@ img {
   color: #ffffff4d;
 }
 
-.navigation-btn:focus-visible  {
+.navigation-btn:focus  {
   outline: none;
-  border: 3px solid #82B3D3;
+  /* border: 3px solid #82B3D3; */
   background-color: #615048;
 }
 
-.navigation-btn:default {
+.navigation-btn:disabled {
   background-color: #e5e5e5;
 }
 /* Header=Шапка (навигация) - конец
@@ -440,7 +443,7 @@ ____________________________________________*/
 }
 
 .advantages-lead-description {
-  width: auto;
+  width: 0 auto;
   margin: 0;
   padding: 25px 0 0;
 
@@ -786,14 +789,6 @@ ____________________________________________ */
 }
 
 .subscribe-lead-title {
-  display: flex;
-  flex-wrap: wrap;
-
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-
   color: #ffffff;
 }
 
