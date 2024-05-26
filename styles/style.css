@@ -220,16 +220,6 @@ btn:focus-visible {
   opacity: 0.3;
 }
 
-/* первый способ  */
-.navigation-link-current {
-  /* text-decoration: underline;
-  text-decoration-color: #756257;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 20px;
-  text-underline-position: under; */
-}
-
-/* второй способ */
 .navigation-link-current::before {
   content: "";
   position: absolute;
@@ -306,7 +296,6 @@ btn:focus-visible {
 
   border-radius: 10px;
   background-color: #7DB54F;
-  color: #ffffff;
 
   z-index: 1;
 }
@@ -790,8 +779,6 @@ ____________________________________________ */
   flex-direction: column;
   align-items: center;
 
-  max-width: auto;
-  max-height: auto;
   margin: 0;
   padding: 96px 0 104px;
 }
@@ -800,8 +787,6 @@ ____________________________________________ */
   width: 684px;
   margin: 0;
   padding: 0;
-
-  color: #ffffff;
 }
 
 .subscribe-lead-description {
@@ -811,8 +796,6 @@ ____________________________________________ */
   width: 684px;
   margin: 0;
   padding: 20px 0 54px;
-
-  color: #ffffff;
 }
 
 .subscribe-form {
