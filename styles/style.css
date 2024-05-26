@@ -20,7 +20,7 @@ html *,
 html *::before,
 html *::after {
   box-sizing: border-box;
-  outline: 1px solid #6a16c9;
+  /* outline: 1px solid #6a16c9; */
 }
 
 html {
@@ -275,17 +275,17 @@ btn:focus-visible {
   cursor: pointer;
 }
 
-.search:hover {
+.search-icon:hover {
   fill: #756157;
   opacity: 0.7;
 }
 
-.search:focus {
+.search-icon:focus {
   fill: #615048;
   opacity: 0.5;
 }
 
-.search:active {
+.search-icon:active {
   fill: #7DB54F;
   opacity: 0.3;
 }
@@ -311,19 +311,34 @@ btn:focus-visible {
   z-index: 1;
 }
 
-.heart-group:hover,
+.heart-icon:hover {
+  fill: #756157;
+  opacity: 0.7;
+}
+
+.heart-icon:focus {
+  fill: #615048;
+  opacity: 0.5;
+}
+
+.heart-icon:active {
+  fill: #7DB54F;
+  opacity: 0.3;
+}
+
+.heart-icon-group:hover,
 .heart:hover {
   fill: #756157;
   opacity: 0.7;
 }
 
-.heart-group:focus,
+.heart-icon-group:focus,
 .heart:focus {
   fill: #615048;
   opacity: 0.5;
 }
 
-.heart-group:active,
+.heart-icon-group:active,
 .heart:active {
   fill: #7DB54F;
   opacity: 0.3;
@@ -745,7 +760,7 @@ ____________________________________________ */
 ____________________________________________ */
 .subscribe {
   margin: 0;
-  padding: 96px 0 105px;
+  padding: 0;
 
   background-color: #ffffff;
   color: #000000;
@@ -770,29 +785,22 @@ ____________________________________________ */
   text-align: center;
 }
 
-.subscribe-connotation-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  width: auto;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .subscribe-connotation {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  width: auto;
-  height: auto;
+  max-width: auto;
+  max-height: auto;
   margin: 0;
-  padding: 0;
+  padding: 96px 0 104px;
 }
 
 .subscribe-lead-title {
+  width: 684px;
+  margin: 0;
+  padding: 0;
+
   color: #ffffff;
 }
 
@@ -800,17 +808,16 @@ ____________________________________________ */
   display: flex;
   flex-wrap: wrap;
 
-  width: 475px;
-  height: auto;
+  width: 684px;
   margin: 0;
-  padding: 20px 0 54px 0;
+  padding: 20px 0 54px;
 
   color: #ffffff;
 }
 
 .subscribe-form {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr auto;
 
   margin: 0;
   padding: 0;
@@ -912,6 +919,8 @@ ____________________________________________ */
 
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .social h2 {
@@ -957,32 +966,35 @@ ____________________________________________ */
   margin: 0;
   padding: 10px;
 
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
 
-  color: #83b3d3;
-  background-color: #83b3d3;
-  border: none;
+.social-link:not(:disabled):hover,
+.social-link:not(:disabled):focus-visible  {
+  opacity: 0.7;
+}
+
+.social-link:not(:disabled):active {
+  color: #68A2CA4D;
+  opacity: 0.3;
 }
 
 .social-vk {
-  mask-image: url("../images/social-icon/vk.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
-
+  background-image: url("../images/social-icon/vk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .social-tm {
-  mask-image: url("../images/social-icon/telegramm.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
+  background-image: url("../images/social-icon/telegramm.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .social-youtube {
-  mask-image: url("../images/social-icon/youtube.svg");
-  mask-repeat: no-repeat;
-  mask-position: center;
+  background-image: url("../images/social-icon/youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .phone {
@@ -1045,33 +1057,16 @@ ____________________________________________ */
   padding: 0;
 
   cursor: pointer;
-  fill: #000000;
 }
 
-.social-link a,
-.page-footer-logo-link a {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.social-link:hover,
-.social-link:focus-visible {
-  fill: #68a2ca;
-}
-
-.social-link:active {
-  fill: #68a2ca4d;
-}
-
-.logo-htmlacademy-link:hover img,
-.logo-htmlacademy-link:focus-visible img {
+.logo-htmlacademy-link:hover,
+.logo-htmlacademy-link:focus-visible {
   color: #756157;
   fill: #756157;
+  fill-opacity: 0.7;
 }
 
-.logo-htmlacademy-link:active img {
-  color: #7561574d;
+.logo-htmlacademy-link:active {
   fill: #7561574d;
   fill-opacity: 0.3;
 }
