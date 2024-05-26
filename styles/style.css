@@ -19,7 +19,7 @@
 html *,
 html *::before,
 html *::after {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   outline: 1px solid #6a16c9;
 }
 
@@ -42,39 +42,31 @@ html {
 }
 
 body {
-  min-width: 1280px;
+  display: flex;
+  flex-direction: column;
+
   /* стик футер */
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0 40px;
 
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 
   color: #333333;
   background: #f2f2f2;
-}
 
-img {
-  /* max-width: 100%;
-  height: auto;
-  object-fit: contain; */
+  text-align: center;
 }
 
 .body-page {
-  display: flex;
-  flex-direction: column;
-
   width: 1200px;
-  min-height: 100%;
   margin: 0 auto;
   padding: 0;
 
   background: #ffffff;
-  text-align: center;
 
   /* __тени__ */
   box-shadow: 0 0 15px #00000033;
@@ -107,13 +99,15 @@ img {
   cursor: pointer;
 }
 
+btn:focus-visible {
+  outline: 3px solid #7691F8;
+}
+
 .title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-
-  color: #000000;
 
   text-align: center;
 }
@@ -140,22 +134,20 @@ img {
   flex-grow: 0;
   flex-shrink: 0;
 
-  max-width: 1200px;
   /* стик футер */
   min-height: 100%;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 70px;
-
-  background-color: #ffffff;
 }
 
 .navigation {
   position: relative;
 
   display: flex;
+  align-items: center;
 
   width: 1060px;
-  height: 64px;
+  max-height: 64px;
 }
 
 .header-logo-sedona {
@@ -169,11 +161,10 @@ img {
 }
 
 .logo-sedona {
-  max-height: 70px;
-  margin: 0 30px -6px 0;
+  margin: 0 -2px -6px 0;
   padding: 0;
 
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .logo-sedona:hover img,
@@ -189,7 +180,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  min-width: 340px;
+  min-width: 339px;
   margin: 0;
   padding: 0;
 
@@ -200,9 +191,6 @@ img {
   position: relative;
 
   display: flex;
-
-  width: auto;
-  height: 64px;
 }
 
 .navigation-link {
@@ -218,7 +206,6 @@ img {
 
   text-transform: capitalize;
   text-decoration: none;
-  background-color: transparent;
 
   cursor: pointer;
 }
@@ -261,7 +248,6 @@ img {
   display: flex;
   flex-wrap: wrap;
 
-  min-width: 88px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -281,34 +267,35 @@ img {
 .navigation-user-link {
   position: relative;
 
+  min-width: 20px;
+  min-height: 20px;
   margin: 0;
   padding: 22px 12px;
 
   cursor: pointer;
 }
 
-.navigation-user-link span {
-  max-width: 20px;
-  max-height: 20px;
-
-  border-radius: 10px;
-  text-align: center;
-  background-color: #7DB54F;
+.search:hover {
+  fill: #756157;
+  opacity: 0.7;
 }
 
-.navigation-user-link:hover {
-  color: #581717;
-  fill: #581717;
+.search:focus {
+  fill: #615048;
+  opacity: 0.5;
+}
+
+.search:active {
+  fill: #7DB54F;
+  opacity: 0.3;
 }
 
 .navigation-user-statistics {
   position: absolute;
-  top: 16px;
-  left: 24px;
+  top: 11px;
+  right: 1px;
 
-  width: 11px;
-  height: 10px;
-  margin: 0;
+  margin: 11px 4px 33 px 20px;
   padding: 5px 5px 5px 4px;
 
   font-size: 10px;
@@ -316,7 +303,30 @@ img {
   color: #ffffff;
 
   text-decoration: none;
-  text-align: center;
+
+  border-radius: 10px;
+  background-color: #7DB54F;
+  color: #ffffff;
+
+  z-index: 1;
+}
+
+.heart-group:hover,
+.heart:hover {
+  fill: #756157;
+  opacity: 0.7;
+}
+
+.heart-group:focus,
+.heart:focus {
+  fill: #615048;
+  opacity: 0.5;
+}
+
+.heart-group:active,
+.heart:active {
+  fill: #7DB54F;
+  opacity: 0.3;
 }
 
 .navigation .navigation-btn {
@@ -331,27 +341,14 @@ img {
   border-radius: 4px;
 }
 
-.navigation-btn:default {
-  background-color: #756157;
-}
-
 .navigation-btn:hover {
   background-color: #615048;
+  opacity: 0.7;
 }
 
 .navigation-btn:active {
   background-color: #756157;
   color: #ffffff4d;
-}
-
-.navigation-btn:focus  {
-  outline: none;
-  /* border: 3px solid #82B3D3; */
-  background-color: #615048;
-}
-
-.navigation-btn:disabled {
-  background-color: #e5e5e5;
 }
 /* Header=Шапка (навигация) - конец
 ============================================ */
@@ -378,7 +375,7 @@ img {
   line-height: 78px;
 }
 
-/* Main - Hero
+/* Main -> Hero
 ____________________________________________ */
 .hero {
   display: flex;
@@ -386,17 +383,17 @@ ____________________________________________ */
   align-items: center;
 
   min-width: 1200px;
-  height: 485px;
+  min-height: 485px;
   margin: 0;
   padding: 0;
+
+  background-color: #8daab8;
+  color: #ffffff;
 
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center;
   background-size: contain, cover;
-
-  background-color: #8daab8;
-  color: #ffffff;
 }
 
 .hero h2 {
@@ -408,10 +405,15 @@ ____________________________________________ */
   text-align: center;
 }
 
-/* Main - Advantages
-____________________________________________*/
+/* Main -> Advantages
+____________________________________________ */
 .advantages {
-  min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1200px;
 
   background-color: #ffffff;
   color: #000000;
@@ -432,20 +434,19 @@ ____________________________________________*/
   justify-content: center;
   align-items: center;
 
+  width: 1200px;
   margin: 0 0 21px;
   padding: 69px 0;
 }
 
 .advantages-lead-title {
-  max-width: 620px;
   margin: 0;
   padding: 0;
 }
 
 .advantages-lead-description {
-  width: 0 auto;
-  margin: 0;
-  padding: 25px 0 0;
+  margin: 25px 0 0;
+  padding: 0;
 
   color: #333333;
 }
@@ -480,8 +481,8 @@ ____________________________________________*/
 }
 
 .advantages-title {
-  max-width: 175px;
-  margin: 0 auto;
+  width: 230px;
+  margin: 0;
   padding: 0 0 30px;
 
   color: #000000;
@@ -493,7 +494,7 @@ ____________________________________________*/
 }
 
 .advantages-description {
-  min-width: 230px;
+  width: 230px;
   margin: 0 auto;
   padding: 30px 0 0;
 
@@ -561,6 +562,8 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
+  max-width: 1200px;
+
   margin: 0;
   padding: 0;
 
@@ -589,25 +592,24 @@ ____________________________________________ */
 }
 
 .services-lead-title {
-  width: 505px;
-  margin: 0;
-  padding: 0 0 20px;
-}
-
-.services-lead-description {
-  width: auto;
-  height: auto;
   margin: 0;
   padding: 0;
 }
 
+.services-lead-description {
+  margin: 20px 0 0;
+  padding: 0;
+
+  color: #333333;
+}
+
 .services-row {
   display: flex;
-  align-items: flex-start;
 }
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -621,54 +623,54 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
-  max-width: 400px;
-  min-height: 385px;
-  margin: 0;
-  padding: 0 85px;
+  width: 400px;
+  padding: 80px 85px;
 
+  text-align: center;
+}
+
+.services-item::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
+.services-item-home::before {
+  background-image: url("../images/services-icon/services-icon-home.svg");
+}
+
+.services-item-food::before {
+  background-image: url("../images/services-icon/services-icon-food.svg");
+}
+
+.services-item-souvenirs::before {
+  background-image: url("../images/services-icon/services-icon-souvenirs.svg");
+}
+
 .services-title {
-  width: 100%;
-  margin: 0;
-  padding: 30px 0;
+  width: 230px;
+  margin: 0 0 30px;
 }
 
 .services-item-grey {
   background-color: #83B3D31F;
 }
 
-.services-item-home {
-  width: 75px;
-  height: 72px;
-
-  background-image: url("../images/services-icon/services-icon-home.svg");
-}
-
-.services-item-food {
-  width: 75px;
-  height: 72px;
-
-  background-image: url("../images/services-icon/services-icon-food.svg");
-}
-
-.services-item-souvenirs {
-  width: 75px;
-  height: 75px;
-
-  background-image: url("../images/services-icon/services-icon-souvenirs.svg");
-}
-
 .services-description-home,
 .services-description-food,
 .services-description-souvenirs {
-  min-width: 230px;
   margin: 0;
   padding: 0;
 
   font-size: 18px;
   line-height: 21px;
+
+  color: #333333;
 }
 
 /* Main -> Search
@@ -676,8 +678,8 @@ ____________________________________________ */
 .search {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  max-width: 1200px;
 
   margin: 0;
   padding: 0;
@@ -707,13 +709,15 @@ ____________________________________________ */
 }
 
 .search-lead-title {
+  width: 592px;
   margin: 0;
   padding: 0;
 }
 
 .search-lead-description {
-  margin: 20px 0 54px;
-  padding: 0;
+  width: 592px;
+  margin: 0;
+  padding: 20px 0 54px;
 }
 
 .search-btn {
@@ -727,7 +731,7 @@ ____________________________________________ */
 }
 
 .search-btn[href]:hover,
-.search-btn[href]:focus-visible  {
+.search-btn[href]:focus-visible {
   background-color: #615048;
 }
 
@@ -957,22 +961,28 @@ ____________________________________________ */
   background-position: center;
   cursor: pointer;
 
-  fill: #83b3d3;
-  background-color: #ffffff;
+  color: #83b3d3;
+  background-color: #83b3d3;
   border: none;
 }
 
 .social-vk {
   mask-image: url("../images/social-icon/vk.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
 
 }
 
 .social-tm {
   mask-image: url("../images/social-icon/telegramm.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .social-youtube {
   mask-image: url("../images/social-icon/youtube.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .phone {
