@@ -1063,8 +1063,6 @@ ____________________________________________ */
 
 /* Фильтр */
 .main-catalog-filter {
-  width: 1200px;
-  height: auto;
   padding: 35px 70px 70px;
 
   background-image: url("../images/background-images/filter.jpg");
@@ -1076,7 +1074,7 @@ ____________________________________________ */
   color: #ffffff;
 }
 
-.main-catalog-filter h2 {
+.main-catalog-filter h1 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1085,22 +1083,11 @@ ____________________________________________ */
   text-align: center;
 }
 
-.main-catalog-filter-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  width: 100%;
-  height: auto;
-  margin: 0 0 40px;
-  padding: 0;
-}
-
-.main-catalog-filter-title {
-  width: 495px;
-  height: 78px;
+/* Фильтр -> Breadcrumbs = хлебные крошки */
+.filter-title {
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
 
   font-size: 60px;
   line-height: 78px;
@@ -1109,88 +1096,61 @@ ____________________________________________ */
   color: #ffffff;
 }
 
-/* Фильтр -> Breadcrumbs = хлебные крошки */
 .breadcrumbs-list {
   display: flex;
-
-  min-width: 114px;
+  flex-wrap: wrap;
 
   margin: 0;
-  padding: 8px 0 0;
+  padding: 0;
+  margin-bottom: 40px;
 
   list-style: none;
 }
 
 .breadcrumbs-item {
-  position: relative;
-  top: 0;
-  left: 0;
-
   display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-image: url(../images/breadcrumbs/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .breadcrumbs-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+
 }
 
-.breadcrumbs-link > .breadcrumbs-home {
+.breadcrumbs-item + .breadcrumbs-item::before {
+  content: "";
+  display: inline-block;
   width: 13px;
   height: 15px;
   margin: 3px 0;
   padding: 0 0 2px;
-
-}
-
-.breadcrumbs-link > .breadcrumbs-arrow {
-  width: 8px;
-  height: auto;
-  margin: 0 10px;
-  padding: 5px 7px;
-}
-
-.breadcrumbs-home::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 12px;
-  height: 12px;
-
   background-image: url("../images/breadcrumbs/filter-home.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.breadcrumbs-arrow::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 7px;
-  height: 10x;
-
-  background-image: url("../images/breadcrumbs/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .breadcrumbs-arrow-text {
-  position: relative;
-  top: 0;
-  left: 41px;
-
   font-size: 16px;
   line-height: 21px;
   text-transform: capitalize;
   color: #ffffff;
 }
-
 
 .main-catalog-form {
   display: flex;
@@ -1365,10 +1325,6 @@ ____________________________________________ */
 ____________________________________________ */
 
 .main-catalog-select {
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-end; */
-
   max-width: 1200px;
   height: auto;
   margin: 0;
@@ -1388,9 +1344,8 @@ ____________________________________________ */
 }
 
 .hotel-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+
 }
 
 
