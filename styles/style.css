@@ -131,9 +131,6 @@ btn:focus-visible {
 .page-header {
   display: flex;
 
-  flex-grow: 0;
-  flex-shrink: 0;
-
   /* стик футер */
   min-height: 100%;
   margin: 0;
@@ -163,6 +160,8 @@ btn:focus-visible {
 .logo-sedona {
   margin: 0 -2px -6px 0;
   padding: 0;
+
+  z-index: 1;
 
   opacity: 1;
 }
@@ -350,9 +349,19 @@ btn:focus-visible {
   opacity: 0.7;
 }
 
+.navigation-btn:focus {
+  background-color: #615048;
+}
+
 .navigation-btn:active {
   background-color: #756157;
   color: #ffffff4d;
+}
+
+.navigation-btn:disabled {
+  background-color: #e5e5e5;
+  outline: none;
+  cursor: default;
 }
 /* Header=Шапка (навигация) - конец
 ============================================ */
@@ -387,13 +396,11 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
-  min-width: 1200px;
-  min-height: 485px;
+  width: 1200px;
   margin: 0;
-  padding: 0;
+  padding: 51px 0 82px;
 
   background-color: #8daab8;
-  color: #ffffff;
 
   background-image: url("../images/main-page/divider.png"), url("../images/background-images/index-background.jpg");
   background-repeat: no-repeat;
