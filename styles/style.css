@@ -162,7 +162,6 @@ btn:focus-visible {
   padding: 0;
 
   z-index: 1;
-
   opacity: 1;
 }
 
@@ -392,7 +391,6 @@ btn:focus-visible {
 ____________________________________________ */
 .hero {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -627,10 +625,13 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
-  width: auto;
-  padding: 80px 85px;
+  width: 400px;
+  min-height: 385px;
+  margin: 0;
+  padding: 0 85px;
 
   text-align: center;
+  box-sizing: border-box;
 }
 
 .services-item::before {
