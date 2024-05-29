@@ -376,9 +376,10 @@ btn:focus-visible {
   /* стик футер */
   flex-grow: 1;
 
-  max-width: 1200px;
+  width: 1200px;
   /* стик футер */
   min-height: 100%;
+  margin: 0 auto;
 }
 
 .main-index h1,
@@ -1064,53 +1065,41 @@ ____________________________________________ */
 
 /* Фильтр */
 .main-catalog-filter {
-  display: flex;
-  flex-direction: column;
-
   max-width: 1200px;
-  min-height: 412px;
+  margin: 0;
+  padding: 35px 70px 70px 70px;
 
   background-color: #8daab8;
   color: #ffffff;
-  padding: 35px ;
 
   background-image: url("../images/background-images/filter.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.main-catalog-filter-wrapper {
-  display: flex;
-  flex-direction: column;
+  background-size: cover;
 }
 
 .filter-title  {
   margin: 0;
-  padding: 0;
-  margin-bottom: 8px;
 
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  font-style: normal;
+
+  text-align: left;
 }
 
 /* Фильтр -> Breadcrumbs = хлебные крошки */
 .breadcrumbs-list {
   display: flex;
-  flex-wrap: wrap;
 
-  margin: 0;
+  margin: 8px 0 40px 0;
   padding: 0;
-  margin-bottom: 40px;
 
-  list-style: none;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
-  display: flex;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs-item + .breadcrumbs-item::before {
@@ -1127,11 +1116,6 @@ ____________________________________________ */
 
 .breadcrumbs-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-
-
 }
 
 .breadcrumbs-item + .breadcrumbs-item::before {
@@ -1333,15 +1317,6 @@ ____________________________________________ */
 
   background-color: #ffffff;
   color: #000000;
-}
-
-.main-catalog h2 {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  text-align: center;
 }
 
 .hotel-cards {
