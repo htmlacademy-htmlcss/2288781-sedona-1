@@ -1102,32 +1102,33 @@ ____________________________________________ */
   padding: 0;
 }
 
-.breadcrumbs-item + .breadcrumbs-item::before {
-  content: "";
+.breadcrumbs-link-home {
   display: inline-block;
-  width: 7px;
-  height: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-image: url(../images/breadcrumbs/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
-.breadcrumbs-link {
-  display: flex;
-}
-
-.breadcrumbs-item + .breadcrumbs-item::before {
-  content: "";
-  display: inline-block;
   width: 13px;
   height: 15px;
-  margin: 3px 0;
-  padding: 0 0 2px;
+
   background-image: url("../images/breadcrumbs/filter-home.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  list-style-type: none;
+}
+
+.
+<a class="breadcrumbs-link breadcrumbs-link-arrow {
+  display: inline-block;
+
+  width: 13px;
+  height: 15px;
+  margin-left: 10px;
+
+  background-image: url(../images/breadcrumbs/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  list-style-type: none;
+  border: none;
 }
 
 .breadcrumbs-arrow-text {
