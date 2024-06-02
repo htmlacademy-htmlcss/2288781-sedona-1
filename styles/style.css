@@ -917,6 +917,7 @@ ____________________________________________ */
   padding: 10px;
 
   cursor: pointer;
+  opacity: 1;
 }
 
 .social-link:not(:disabled):hover,
@@ -1055,54 +1056,90 @@ ____________________________________________ */
 /* Фильтр -> Breadcrumbs = хлебные крошки */
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: nowrap;
 
-  margin: 8px 0 40px 0;
+  max-width: auto;
+  margin: 8px 0 40px;
   padding: 0;
 
   list-style-type: none;
+  text-align: left;
 }
 
 .breadcrumbs-item {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 10px 0 0;
   padding: 0;
 }
 
 .breadcrumbs-link-home {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 13px;
   height: 15px;
+  margin: 0;
+  padding: 0 0 2px;
 
   background-image: url("../images/breadcrumbs/filter-home.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   list-style-type: none;
+  opacity: 1;
 }
 
-/*
-.
-<a class="breadcrumbs-link breadcrumbs-link-arrow {
-  display: inline-block;
+.breadcrumbs-link-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 13px;
   height: 15px;
-  margin-left: 10px;
+  margin: 0;
+  padding: 5px, 7px;
 
   background-image: url(../images/breadcrumbs/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 
   list-style-type: none;
-  border: none;
+  opacity: 1;
 }
-*/
 
-.breadcrumbs-arrow-text {
+.breadcrumbs-link-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumbs-link-text {
   font-size: 16px;
   line-height: 21px;
+
   text-transform: capitalize;
   color: #ffffff;
+
+  opacity: 1;
+}
+
+.breadcrumbs-link-group:not(:disabled):hover {
+  color: #ffffff99;
+  opacity: 0.7;
+}
+
+.breadcrumbs-link-group:not(:disabled):focus-visible {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.breadcrumbs-link-group:not(:disabled):active {
+  color: #ffffff4d;
+  opacity: 0.3;
 }
 
 .main-catalog-form {
