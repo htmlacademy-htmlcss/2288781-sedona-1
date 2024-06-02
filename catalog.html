@@ -111,26 +111,22 @@
 
           <!-- ___Блок "Breadcrumbs = Хлебные крошки"___ -->
           <ol class="breadcrumbs-list breadcrumbs-link-group">
-
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Вход на страницу главной страницы</span>
               </a>
             </li>
-
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-arrow" aria-current="page">
                 <span class="visually-hidden">Мы на странице каталога</span>
               </a>
             </li>
-
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-position" aria-current="page">
                 <span class="visually-hidden">Вход на страницу каталога</span>
                 <span class="breadcrumbs-link-text">Гостиницы</span>
               </a>
             </li>
-
           </ol>
 
           <!-- ___Блок "Filter = Фильтр"___ -->
@@ -140,38 +136,43 @@
             method="get"
             data-test="filter"
           >
-            <!-- ___"инфраструктура"___ -->
-            <fieldset class="main-catalog-infrastructure">
-              <legend class="main-catalog-infrastructure-title">Инфраструктура:</legend>
-              <ul class="main-catalog-infrastructure-list">
-                <li class="main-catalog-infrastructure-item">
-                  <label class="infrastructure-control" for="swimming-pool">
-                    <input
-                      class="control-input"
-                      id="swimming-pool"
-                      type="checkbox"
-                      name="swimming-pool"
-                      checked
-                    >
-                    Бассейн
-                  </label>
-                </li>
-                <li class="main-catalog-infrastructure-item">
-                  <label class="infrastructure-control" for="parking-space">
-                    <input class="control-input" id="parking-space" type="checkbox" name="parking-space" checked>
-                      Парковка
-                  </label>
-                </li>
-                <li class="main-catalog-infrastructure-item">
-                  <label class="main-catalog-infrastructure-control" for="wi-fi">
-                    <input class="control-input" id="wi-fi" type="checkbox" name="wi-fi">
-                      Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <!-- ___"тип жилья"___ -->
-            <fieldset class="main-catalog-type-housing">
+
+            <div class="main-catalog-left">
+              <!-- ___"инфраструктура"___ -->
+              <fieldset class="main-catalog-infrastructure">
+                <legend class="main-catalog-infrastructure-title">Инфраструктура:</legend>
+                <ul class="main-catalog-infrastructure-list">
+                  <li class="main-catalog-infrastructure-item">
+                    <label class="infrastructure-control" for="swimming-pool">
+                      <input
+                        class="control-input"
+                        id="swimming-pool"
+                        type="checkbox"
+                        name="swimming-pool"
+                        checked
+                      >
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="main-catalog-infrastructure-item">
+                    <label class="infrastructure-control" for="parking-space">
+                      <input
+                        class="control-input"
+                        id="parking-space"
+                         type="checkbox" name="parking-space" checked>
+                        Парковка
+                    </label>
+                  </li>
+                  <li class="main-catalog-infrastructure-item">
+                    <label class="main-catalog-infrastructure-control" for="wi-fi">
+                      <input class="control-input" id="wi-fi" type="checkbox" name="wi-fi">
+                        Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <!-- ___"тип жилья"___ -->
+              <fieldset class="main-catalog-type-housing">
                 <legend class="main-catalog-type-housing-title">
                   Тип жилья:
                 </legend>
@@ -208,42 +209,47 @@
                     </label>
                   </li>
                 </ul>
-            </fieldset>
-            <!-- ___"стоимость"___ -->
-            <fieldset class="main-catalog-price">
-                <legend class="price-title">Стоимость, <span>₽:</span> </legend>
-                <div class="main-catalog-price-wrapper">
-                  <label class="price-range price-range-min" for="price-range-min">
-                    <span class="text-price-from">от</span>
-                    <input
-                      class="price-input-min"
-                      id="price-range-min"
-                      type="text"
-                      value="0"
-                      placeholder="от">
-                  </label>
-                  <label class="price-range price-range-max" for="price-range-max">
-                    <input
-                      class="price-input-max"
-                      id="price-range-max"
-                      type="text"
-                      value="9000"
-                      placeholder="до">
-                    <span class="text-price-before">до</span>
-                  </label><br>
-                  <progress class="progress-range-line" min="0" max="100" value="70">
-                  </progress>
-                </div>
-            </fieldset>
-            <!-- ___"кнопки"___ -->
-            <div class="main-catalog-btn">
-              <p class="main-catalog-btn-submit">
-                <button class="btn" type="submit">Применить</button>
-              </p>
-              <p class="main-catalog-btn-reset">
-                <button class="btn" type="reset">Сбросить</button>
-              </p>
+              </fieldset>
             </div>
+
+            <div class="main-catalog-right">
+              <!-- ___"стоимость"___ -->
+              <fieldset class="main-catalog-price">
+              <legend class="main-catalog-price-title">Стоимость, <span>₽:</span> </legend>
+              <div class="main-catalog-price-wrapper">
+                <label class="price-range price-range-min" for="price-range-min">
+                  <span class="text-price-from">от</span>
+                  <input
+                    class="price-input-min"
+                    id="price-range-min"
+                    type="text"
+                    value="0"
+                    placeholder="от">
+                </label>
+                <label class="price-range price-range-max" for="price-range-max">
+                  <input
+                    class="price-input-max"
+                    id="price-range-max"
+                    type="text"
+                    value="9000"
+                    placeholder="до">
+                  <span class="text-price-before">до</span>
+                </label><br>
+                <progress class="progress-range-line" min="0" max="100" value="70">
+                </progress>
+              </div>
+              </fieldset>
+              <!-- ___"кнопки"___ -->
+              <div class="main-catalog-btn">
+            <p class="main-catalog-btn-submit">
+              <button class="btn" type="submit">Применить</button>
+            </p>
+            <p class="main-catalog-btn-reset">
+              <button class="btn" type="reset">Сбросить</button>
+            </p>
+              </div>
+            </div>
+
           </form>
 
         </section>

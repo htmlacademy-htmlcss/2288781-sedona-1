@@ -1144,36 +1144,72 @@ ____________________________________________ */
 
 .main-catalog-form {
   display: flex;
+  align-items: center;
+
+  width: 1060px;
+  margin: 0;
+  padding: 0;
 }
+
+.main-catalog-left {
+  display: flex;
+
+  max-width: 371px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-catalog-right {
+  display: flex;
+
+  max-width: 549px;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+
 
 .main-catalog-infrastructure,
 .main-catalog-type-housing {
   display: flex;
-  flex-direction: column;
 
-  width: auto;
+  min-width: auto;
   margin: 0;
   padding: 0;
 
   border-style: none;
+  text-align: left;
 }
 
-/*
-.main-catalog-infrastructure {
-  margin: 40px 70px 0 0;
+.main-catalog-price {
+  display: flex;
+
+  min-width: auto;
+  margin: 0 0 0 auto;
   padding: 0;
+
+  border-style: none;
+  text-align: left;
 }
 
-.main-catalog-infrastructure input {
+.main-catalog-infrastructure,
+.main-catalog-price {
+  margin-right: 70px;
+}
+
+.main-catalog-infrastructure input,
+.main-catalog-type-housing input {
   margin-bottom: 16px;
   margin-right: 16px;
 }
 
 .main-catalog-infrastructure-title,
-.type-housing-title {
+.main-catalog-type-housing-title,
+.main-catalog-price-title {
   display: flex;
 
   height: auto;
+  margin: 0;
+  padding: 0;
   margin-bottom: 32px;
 
   font-size: 20px;
@@ -1181,6 +1217,8 @@ ____________________________________________ */
   font-weight: 700;
   text-transform: capitalize;
   color: #ffffff;
+
+  text-align: left;
 }
 
 .main-catalog-infrastructure-list,
@@ -1319,7 +1357,6 @@ ____________________________________________ */
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
-*/
 
 
 /* Main -> Select (каталог)
