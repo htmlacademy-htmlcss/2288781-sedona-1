@@ -291,7 +291,7 @@
               </li>
             </ul>
 
-            <!-- Секция "Карточки гостиниц" -->
+            <!-- Блок "Карточки гостиниц" -->
             <div class="hotel-cards">
               <ul class="hotel-cards-list">
                 <li class="hotel-cards-item">
@@ -352,9 +352,9 @@
                 </li>
               </ul>
             </div>
-            <!-- Секция "Пагинация" -->
+
+            <!-- Блок "Пагинация" -->
             <div class="pagination">
-              <p class="visually-hidden">Страницы каталога</p>
               <ol class="pagination-list">
                 <li class="pagination-item">
                   <a class="pagination-link pagination-link-current" aria-current="page" aria-label="Переход на первую страницу списка каталога">1</a>
@@ -384,12 +384,22 @@
           <!-- Заголовок секции "Блок подписки" -->
           <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
           <div class="subscribe-connotation">
-            <p class="subscribe-lead-title title"><strong>Подпишитесь на рассылку</strong></p>
+            <p class="subscribe-lead-title title">
+              <strong>Подпишитесь на рассылку</strong>
+            </p>
             <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="subscribe-form-label" for="user-email">
+              <label for="user-email">
                 <span class="visually-hidden">Укажите вашу электронную почту</span>
-                <input class="subscribe-form-input" type="email" id="user-email" name="user-email" placeholder="Ваш e-mail" aria-label="Подписка на рассылку" required>
+                <input
+                  class="subscribe-form-email"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Ваш e-mail"
+                  aria-label="Подписка на рассылку"
+                  required
+                >
               </label>
               <button class="btn subscribe-btn" type="submit">Подписаться</button>
             </form>

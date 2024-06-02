@@ -89,12 +89,9 @@ body {
   background-color: #ffc0cb;
 
   border: none;
+  box-sizing: border-box;
 
   cursor: pointer;
-}
-
-btn:focus-visible {
-  outline: 3px solid #7691F8;
 }
 
 .title {
@@ -693,6 +690,7 @@ ____________________________________________ */
 
 .search-btn {
   background-color: #756157;
+  border-radius: 4px;
 }
 
 .search-btn[href]:disabled {
@@ -701,12 +699,12 @@ ____________________________________________ */
   cursor: default;
 }
 
-.search-btn[href]:hover,
-.search-btn[href]:focus-visible {
+.search-btn:hover,
+.search-btn:focus-visible {
   background-color: #615048;
 }
 
-.search-btn[href]:active {
+.search-btn:active {
   background-color: #756157;
   color: #FFFFFF4D;
   opacity: 0.3;
@@ -766,27 +764,19 @@ ____________________________________________ */
 }
 
 .subscribe-form {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: center;
 
+  min-height: 52px;
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
-.subscribe-form-label {
+.subscribe-form-email {
   width: 452px;
-  height: 52px;
-  margin: 0;
-  padding: 0;
-
-  border: none;
-  background-color: #f2f2f2;
-  border-radius: 4px 0 0 4px;
-}
-
-.subscribe-form-input {
-  min-width: 100%;
-  height: auto;
+  min-height: 52px;
   margin: 0;
   padding: 14px 20px;
 
@@ -796,20 +786,27 @@ ____________________________________________ */
 
   background-color: #f2f2f2;
   border: none;
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
-.subscribe-form-input:not(:disabled):hover,
-.subscribe-form-input:not(:disabled):focus-visible {
+.subscribe-form-email:hover {
   background-color: #e6e6e6;
 }
 
-.subscribe-form-input:not(:disabled):active {
+.subscribe-form-email:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.subscribe-form-email:active {
   opacity: 0.6;
 }
 
 .subscribe-btn {
-  width: 232px;
-  height: 52px;
+  max-width: 232px;
+  min-height: 52px;
 
   background-color: #82b3d3;
   color: #ffffff;
@@ -818,12 +815,12 @@ ____________________________________________ */
   cursor: pointer;
 }
 
-.subscribe-btn:not(:disabled):hover,
-.subscribe-btn:not(:disabled):focus-visible  {
+.subscribe-btn:hover,
+.subscribe-btn:focus-visible  {
   background-color: #68a2ca;
 }
 
-.subscribe-btn:not(:disabled):active {
+.subscribe-btn:active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
   opacity: 0.3;
@@ -1167,7 +1164,6 @@ ____________________________________________ */
   padding: 0;
 }
 
-
 .main-catalog-infrastructure,
 .main-catalog-type-housing {
   display: flex;
@@ -1222,7 +1218,7 @@ ____________________________________________ */
 }
 
 .main-catalog-infrastructure-list,
-.type-housing-list {
+.main-catalog-type-housing-list {
   margin: 0;
   padding: 0;
 
@@ -1363,10 +1359,11 @@ ____________________________________________ */
 ____________________________________________ */
 
 .main-catalog-select {
-  max-width: 1200px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+
   margin: 0;
-  padding: 0 70px;
+  padding: 50px 70px 60px;
 
   background-color: #ffffff;
   color: #000000;
@@ -1381,23 +1378,13 @@ ____________________________________________ */
 ____________________________________________ */
 .pagination {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 
-  width: 1060px;
+  max-width: 1060px;
+  height: 60px;
   margin: 0;
-  padding: 0;
-}
-
-.pagination h2 {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-
-  text-align: center;
+  padding: 40px 0 0;
 }
 
 .pagination-list {
@@ -1438,11 +1425,18 @@ ____________________________________________ */
   text-transform: uppercase;
   color: #ffffff;
 
+  background-color: #82b3d3;
+
   text-decoration: none;
   cursor: pointer;
 }
 
 .pagination-link-current {
   background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-link-continued {
+  background-color: #ffffff;
   color: #000000;
 }
