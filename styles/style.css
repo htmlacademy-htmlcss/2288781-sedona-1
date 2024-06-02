@@ -137,8 +137,8 @@ btn:focus-visible {
   display: flex;
   align-items: center;
 
-  width: 1060px;
-  max-height: 64px;
+  width: 100%;
+  height: auto;
 }
 
 .header-logo-sedona {
@@ -1144,10 +1144,21 @@ ____________________________________________ */
 
 .main-catalog-form {
   display: flex;
-  width: 1060px;
-  height: 160px;
 }
 
+.main-catalog-infrastructure,
+.main-catalog-type-housing {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  margin: 0;
+  padding: 0;
+
+  border-style: none;
+}
+
+/*
 .main-catalog-infrastructure {
   margin: 40px 70px 0 0;
   padding: 0;
@@ -1308,6 +1319,7 @@ ____________________________________________ */
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
+*/
 
 
 /* Main -> Select (каталог)

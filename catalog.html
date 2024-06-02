@@ -4,7 +4,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона - каталог (верстка О. Г. Арефьевой)</title>
+    <title>HTML Academy: Седона - страница каталога гостиниц (верстка О. Г. Арефьевой)</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
   </head>
@@ -100,69 +100,78 @@
       ___________________________________________ -->
       <main class="main-catalog" data-test="main" >
 
-        <!-- Заголовок каталога -->
-        <h1 class="visually-hidden">Страница каталога гостиниц городка Седона</h1>
+        <!-- <<Заголовок каталога>> -->
+        <h1 class="visually-hidden">Бронирование нужной гостиницы городка Седона</h1>
 
-        <!-- Секция "Фильтр бронирования гостиницы" -->
+        <!-- <<Секция "Фильтр бронирования гостиницы">> -->
         <section class="main-catalog-filter">
 
-          <!-- Подзаголовок каталога -->
+          <!-- ___Подзаголовок каталога___ -->
           <h2 class="filter-title">Гостиницы Седоны</h2>
 
-            <!-- <Блок "Breadcrumbs = Хлебные крошки" -->
-            <ol class="breadcrumbs-list breadcrumbs-link-group">
+          <!-- ___Блок "Breadcrumbs = Хлебные крошки"___ -->
+          <ol class="breadcrumbs-list breadcrumbs-link-group">
 
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
-                  <span class="visually-hidden">Вход на страницу главной страницы</span>
-                </a>
-              </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
+                <span class="visually-hidden">Вход на страницу главной страницы</span>
+              </a>
+            </li>
 
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-arrow" aria-current="page">
-                  <span class="visually-hidden">Мы на странице каталога</span>
-                </a>
-              </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-link-arrow" aria-current="page">
+                <span class="visually-hidden">Мы на странице каталога</span>
+              </a>
+            </li>
 
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-position" aria-current="page">
-                  <span class="visually-hidden">Вход на страницу каталога</span>
-                  <span class="breadcrumbs-link-text">Гостиницы</span>
-                </a>
-              </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link breadcrumbs-link-position" aria-current="page">
+                <span class="visually-hidden">Вход на страницу каталога</span>
+                <span class="breadcrumbs-link-text">Гостиницы</span>
+              </a>
+            </li>
 
-            </ol>
+          </ol>
 
-      <!-- <Блок "Filter = Фильтр"> -->
-      <!-- <section class="main-catalog-filter" data-test="filter"> -->
-
-            <h2 class="visually-hidden">Бронирование нужной гостиницы в городке Седона</h2>
-
-            <form class="main-catalog-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="main-catalog-infrastructure">
-                <legend class="main-catalog-infrastructure-title">Инфраструктура:</legend>
-                <ul class="main-catalog-infrastructure-list">
-                  <li class="main-catalog-infrastructure-item">
-                    <label class="infrastructure-control" for="swimming-pool">
-                      <input class="control-input" id="swimming-pool" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
-                    </label>
-                  </li>
-                  <li class="main-catalog-infrastructure-item">
-                    <label class="infrastructure-control" for="parking-space">
-                      <input class="control-input" id="parking-space" type="checkbox" name="parking-space" checked>
+          <!-- ___Блок "Filter = Фильтр"___ -->
+          <form
+            class="main-catalog-form"
+            action="https://echo.htmlacademy.ru/"
+            method="get"
+            data-test="filter"
+          >
+            <!-- ___"инфраструктура"___ -->
+            <fieldset class="main-catalog-infrastructure">
+              <legend class="main-catalog-infrastructure-title">Инфраструктура:</legend>
+              <ul class="main-catalog-infrastructure-list">
+                <li class="main-catalog-infrastructure-item">
+                  <label class="infrastructure-control" for="swimming-pool">
+                    <input
+                      class="control-input"
+                      id="swimming-pool"
+                      type="checkbox"
+                      name="swimming-pool"
+                      checked
+                    >
+                    Бассейн
+                  </label>
+                </li>
+                <li class="main-catalog-infrastructure-item">
+                  <label class="infrastructure-control" for="parking-space">
+                    <input class="control-input" id="parking-space" type="checkbox" name="parking-space" checked>
                       Парковка
-                    </label>
-                  </li>
-                  <li class="main-catalog-infrastructure-item">
-                    <label class="main-catalog-infrastructure-control" for="wi-fi">
-                      <input class="control-input" id="wi-fi" type="checkbox" name="wi-fi">
+                  </label>
+                </li>
+                <li class="main-catalog-infrastructure-item">
+                  <label class="main-catalog-infrastructure-control" for="wi-fi">
+                    <input class="control-input" id="wi-fi" type="checkbox" name="wi-fi">
                       Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="main-catalog-type-housing">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- ___"тип жилья"___ -->
+            <fieldset class="main-catalog-type-housing">
                 <legend class="main-catalog-type-housing-title">
                   Тип жилья:
                 </legend>
@@ -199,8 +208,9 @@
                     </label>
                   </li>
                 </ul>
-              </fieldset>
-              <fieldset class="main-catalog-price">
+            </fieldset>
+            <!-- ___"стоимость"___ -->
+            <fieldset class="main-catalog-price">
                 <legend class="price-title">Стоимость, <span>₽:</span> </legend>
                 <div class="main-catalog-price-wrapper">
                   <label class="price-range price-range-min" for="price-range-min">
@@ -224,16 +234,17 @@
                   <progress class="progress-range-line" min="0" max="100" value="70">
                   </progress>
                 </div>
-              </fieldset>
-              <div class="main-catalog-btn">
-                <p class="main-catalog-btn-submit">
-                  <button class="btn" type="submit">Применить</button>
-                </p>
-                <p class="main-catalog-btn-reset">
-                  <button class="btn" type="reset">Сбросить</button>
-                </p>
-              </div>
-            </form>
+            </fieldset>
+            <!-- ___"кнопки"___ -->
+            <div class="main-catalog-btn">
+              <p class="main-catalog-btn-submit">
+                <button class="btn" type="submit">Применить</button>
+              </p>
+              <p class="main-catalog-btn-reset">
+                <button class="btn" type="reset">Сбросить</button>
+              </p>
+            </div>
+          </form>
 
         </section>
 
