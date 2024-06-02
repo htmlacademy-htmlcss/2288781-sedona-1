@@ -19,7 +19,6 @@
 html *,
 html *::before,
 html *::after {
-  /* box-sizing: border-box; */
   outline: 1px solid #6a16c9;
 }
 
@@ -70,11 +69,6 @@ body {
 
   /* __тени__ */
   box-shadow: 0 0 15px #00000033;
-}
-
-.repository {
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .btn {
@@ -155,6 +149,8 @@ btn:focus-visible {
 
 .navigation .header-logo-sedona{
   margin-right: 28px;
+
+  opacity: 1;
 }
 
 .logo-sedona {
@@ -162,15 +158,14 @@ btn:focus-visible {
   padding: 0;
 
   z-index: 1;
-  opacity: 1;
 }
 
-.logo-sedona:hover img,
-.logo-sedona:focus-visible img {
+.header-logo-sedona:hover img,
+.header-logo-sedona:focus-visible img {
   opacity: 0.8;
 }
 
-.logo-sedona:active img {
+.header-logo-sedona:active img {
   opacity: 0.5;
 }
 
@@ -263,21 +258,6 @@ btn:focus-visible {
   cursor: pointer;
 }
 
-.search-icon:hover {
-  fill: #756157;
-  opacity: 0.7;
-}
-
-.search-icon:focus {
-  fill: #615048;
-  opacity: 0.5;
-}
-
-.search-icon:active {
-  fill: #7DB54F;
-  opacity: 0.3;
-}
-
 .navigation-user-statistics {
   position: absolute;
   top: 11px;
@@ -298,36 +278,20 @@ btn:focus-visible {
   z-index: 1;
 }
 
-.heart-icon:hover {
+.search-icon:hover,
+.heart-icon-group:hover {
   fill: #756157;
   opacity: 0.7;
 }
 
-.heart-icon:focus {
+.search-icon:focus,
+.heart-icon-group:focus {
   fill: #615048;
   opacity: 0.5;
 }
 
-.heart-icon:active {
-  fill: #7DB54F;
-  opacity: 0.3;
-}
-
-.heart-icon-group:hover,
-.heart:hover {
-  fill: #756157;
-  opacity: 0.7;
-}
-
-.heart-icon-group:focus,
-.heart:focus {
-  fill: #615048;
-  opacity: 0.5;
-}
-
-.heart-icon-group:active,
-.heart:active {
-  fill: #7DB54F;
+.search-icon:active,
+.heart-icon-group:active {
   opacity: 0.3;
 }
 
@@ -392,6 +356,7 @@ btn:focus-visible {
 ____________________________________________ */
 .hero {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -1115,6 +1080,7 @@ ____________________________________________ */
   list-style-type: none;
 }
 
+/*
 .
 <a class="breadcrumbs-link breadcrumbs-link-arrow {
   display: inline-block;
@@ -1130,6 +1096,7 @@ ____________________________________________ */
   list-style-type: none;
   border: none;
 }
+*/
 
 .breadcrumbs-arrow-text {
   font-size: 16px;
@@ -1145,7 +1112,6 @@ ____________________________________________ */
 }
 
 .main-catalog-infrastructure {
-
   margin: 40px 70px 0 0;
   padding: 0;
 }
