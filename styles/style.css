@@ -139,6 +139,8 @@ body {
 }
 
 .header-logo-sedona {
+  position: relative;
+
   width: 140px;
   margin: 0;
   padding: 0;
@@ -151,10 +153,9 @@ body {
 }
 
 .logo-sedona {
-  margin: 0 -2px -6px 0;
-  padding: 0;
+  position: relative;
 
-  z-index: 1;
+  margin-bottom: -10px;
 }
 
 .header-logo-sedona:hover img,
@@ -693,7 +694,7 @@ ____________________________________________ */
   border-radius: 4px;
 }
 
-.search-btn[href]:disabled {
+.search-btn:disabled {
   background-color: #e5e5e5;
   opacity: 0.8;
   cursor: default;
@@ -1139,220 +1140,8 @@ ____________________________________________ */
   opacity: 0.3;
 }
 
-.main-catalog-form {
-  display: flex;
-  align-items: center;
 
-  width: 1060px;
-  margin: 0;
-  padding: 0;
-}
 
-.main-catalog-left {
-  display: flex;
-
-  max-width: 371px;
-  margin: 0;
-  padding: 0;
-}
-
-.main-catalog-right {
-  display: flex;
-
-  max-width: 549px;
-  margin: 0 0 0 auto;
-  padding: 0;
-}
-
-.main-catalog-infrastructure,
-.main-catalog-type-housing {
-  display: flex;
-
-  min-width: auto;
-  margin: 0;
-  padding: 0;
-
-  border-style: none;
-  text-align: left;
-}
-
-.main-catalog-price {
-  display: flex;
-
-  min-width: auto;
-  margin: 0 0 0 auto;
-  padding: 0;
-
-  border-style: none;
-  text-align: left;
-}
-
-.main-catalog-infrastructure,
-.main-catalog-price {
-  margin-right: 70px;
-}
-
-.main-catalog-infrastructure input,
-.main-catalog-type-housing input {
-  margin-bottom: 16px;
-  margin-right: 16px;
-}
-
-.main-catalog-infrastructure-title,
-.main-catalog-type-housing-title,
-.main-catalog-price-title {
-  display: flex;
-
-  height: auto;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 32px;
-
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: #ffffff;
-
-  text-align: left;
-}
-
-.main-catalog-infrastructure-list,
-.main-catalog-type-housing-list {
-  margin: 0;
-  padding: 0;
-
-  font-size: 18px;
-  line-height: 23px;
-  text-transform: capitalize;
-  color: #ffffff;
-
-  list-style: none;
-}
-
-.main-catalog-type-housing {
-  display: flex;
-
-  padding: 0;
-  margin: 40px 140px 0 0;
-}
-
-.main-catalog-type-housing input {
-  margin-bottom: 16px;
-  margin-right: 16px;
-}
-
-.main-catalog-price {
-  display: flex;
-
-  margin: 0;
-  padding: 0;
-}
-
-.main-catalog-price fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-.main-catalog-title {
-  display: flex;
-
-  height: auto;
-
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-
-.main-catalog-price-wrapper {
-  margin: 0;
-  margin-top: 32px;
-  padding: 0;
-
-  text-align: center;
-}
-
-.price-input-min,
-.price-input-max {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.text-price-from {
-  position: relative;
-  left: 0;
-
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.text-price-before {
-  position: relative;
-  left: 0;
-  bottom: 0;
-
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-}
-
-.price-range input {
-  width: 103px;
-  height: 24px;
-  margin-bottom: 36px;
-
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-}
-
-.price-range label {
-  font-size: 18px;
-  line-height: 23px;
-  color: #ffffff;
-}
-
-.progress-range-line {
-  width: 287px;
-
-  opacity: 0.3;
-  border: 4px white solid;
-}
-
-.main-catalog-button-submit {
-  max-width: 191px;
-  height: 36px;
-
-  color: #ffffff;
-  background-color: #82B3D3;
-}
-
-.main-catalog-button-reset {
-  font-size: 16px;
-  line-height: 20px;
-
-  color: #ffffff;
-  background-color: none;
-  border-radius: 4px;
-}
-
-.hotel-cards-item {
-  display: flex;
-  flex-direction: column;
-
-  width: 298px;
-  margin: 0;
-  padding: 20px;
-
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-}
 
 
 /* Main -> Select (каталог)
@@ -1369,10 +1158,17 @@ ____________________________________________ */
   color: #000000;
 }
 
-.hotel-cards {
-  display: grid;
-}
+.hotel-cards-item {
+  display: flex;
+  flex-direction: column;
 
+  width: 298px;
+  margin: 0;
+  padding: 20px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
 
 /* Main -> Pagination (каталог)
 ____________________________________________ */
@@ -1406,9 +1202,6 @@ ____________________________________________ */
   width: 60px;
   height: 60px;
   margin-right: 8px;
-
-  border-radius: 4px;
-  border-color: #82b3d3;
 }
 
 .pagination-link {
@@ -1426,17 +1219,69 @@ ____________________________________________ */
   color: #ffffff;
 
   background-color: #82b3d3;
+  border-radius: 4px;
 
   text-decoration: none;
   cursor: pointer;
+  opacity: 1;
 }
 
 .pagination-link-current {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000000;
 }
 
 .pagination-link-continued {
   background-color: #ffffff;
   color: #000000;
+}
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+  opacity: 0.7;
+}
+
+.pagination-link-current:hover {
+  background-color: #f2f2f2;
+  opacity: 1;
+  color: #0000004d;
+}
+
+.pagination-link-continued:hover {
+  background-color: #ffffff;
+  opacity: 0.7;
+  color: #0000004d;
+}
+
+.pagination-link:focus-visible {
+  background-color: #82b3d3;
+  opacity: 0.9;
+}
+
+.pagination-link-current:focus-visible {
+  background-color: #f2f2f2f;
+  opacity: 0.3;
+}
+
+.pagination-link-continued:focus-visible {
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.pagination-link:active {
+  background-color: #82b3d3;
+  opacity: 0.3;
+  color: #ffffff4d;
+}
+
+.pagination-link-current:active {
+  background-color: #f2f2f2f;
+  opacity: 0.3;
+  color: #ffffff4d;
+}
+
+.pagination-link-continued:active {
+  background-color: #ffffff;
+  opacity: 0.3;
+  color: #ffffff4d;
 }
