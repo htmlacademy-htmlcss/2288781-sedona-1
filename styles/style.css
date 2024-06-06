@@ -1056,7 +1056,6 @@ ____________________________________________ */
   display: flex;
   flex-wrap: nowrap;
 
-  max-width: auto;
   margin: 8px 0 40px;
   padding: 0;
 
@@ -1140,6 +1139,81 @@ ____________________________________________ */
   opacity: 0.3;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group-left {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  margin-right: 70px;
+
+  border-style: none;
+
+}
+
+.catalog-filter-group-right {
+  display: flex;
+  flex-direction: column;
+
+  width: 288px;
+  margin: 0;
+  padding: 0;
+
+  border-style: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+  text-align: left;
+  color: #ffffff;
+}
+
+.catalog-filter-list {
+  padding: 0;
+  margin: 32px 0 0;
+}
+
+.catalog-filter-item {
+  margin: 16px 0 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 23px;
+
+  text-align: left;
+  color: #ffffff;
+
+  list-style-type: none;
+}
+
+.catalog-filter-label {
+  position: absolute;
+
+  display: flex;
+
+  margin: 0 5px 0 0;
+  padding: 0;
+
+
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.control {
+  position: relative;
+
+  display: flex;
+
+  margin: 0;
+  padding:  0;
+}
 
 
 

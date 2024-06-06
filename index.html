@@ -9,15 +9,14 @@
   </head>
 
   <body>
+
     <div class="body-page">
 
       <!-- Шапка = Header
       ___________________________________________ -->
       <header class="page-header" data-test="header">
-
         <!-- __навигация__ -->
         <nav class="navigation">
-
           <!-- __<Логотип городка Седоны>__ -->
           <a class="header-logo-sedona" aria-current="page">
             <img
@@ -29,7 +28,6 @@
               aria-hidden="true"
             >
           </a>
-
           <!-- __<Основное меню>__ -->
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -48,10 +46,8 @@
               </a>
             </li>
           </ul>
-
           <!-- __<Пользовательское меню>__ -->
           <ul class="navigation-user-list">
-
             <!-- __иконка "Поиск"__ -->
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
@@ -75,7 +71,6 @@
                 </svg>
               </a>
             </li>
-
             <!-- __иконка "Избранное"__ -->
             <li class="navigation-user-item">
               <a class="navigation-user-link heart-icon-group" href="#">
@@ -96,7 +91,7 @@
                   height="17"
                   viewBox="0 0 18 17"
                   fill="none"
-                  >
+                >
                   <path
                     fill="#000000"
                     d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
@@ -104,49 +99,41 @@
                 </svg>
               </a>
             </li>
-
           </ul>
-
           <!-- __<Кнопка "Хочу сюда!">__ -->
           <a class="btn navigation-btn" href="#">
             Хочу сюда!
           </a>
         </nav>
-
       </header>
 
       <!-- Основное содержание = Main
       ___________________________________________ -->
       <main class="main-index" data-test="main">
-
-        <!-- Заголовок главной страницы -->
+        <!-- Заголовок главной страницы h1 -->
         <h1 class="visually-hidden">
           Городок Седона в Аризоне и его достопримечательности
         </h1>
-
         <!-- Секция Hero -->
         <section class="hero" data-test="hero">
-
-          <!-- Подзаголовок -->
-          <h2 class="visually-hidden">Приглашение в городок Седона</h2>
-
+          <!-- Подзаголовок h2 -->
+          <h2 class="visually-hidden">
+            Приглашение в городок Седона
+          </h2>
+          <!-- Контентное изображение - логотип с различными шрифтами -->
           <img
             src="images/main-page/welcome.svg"
             width="458"
             height="352"
             alt="Welcome to the gorgeous Sedona. «Because the Grand Canyon sucks!»."
           >
-
         </section>
-
         <!-- Секция "Блок преимуществ" -->
         <section class="advantages" data-test="advantages">
-
-          <!-- Подзаголовок -->
+          <!-- Подзаголовок h2 -->
           <h2 class="visually-hidden">
             Преимущества туризма в городке Седона
           </h2>
-
           <!-- Текстовое описание -->
           <div class="advantages-connotation">
             <p class="advantages-lead-title title">
@@ -158,16 +145,16 @@
               Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
           </div>
-
           <!-- Список премуществ -->
+          <!-- <<<первый ряд>>> -->
           <div class="advantages-first-row">
             <ul class="advantages-list">
               <li class="advantages-item advantages-town">
-
+                <!-- Подзаголовок h3 -->
                 <h3 class="advantages-title advantages-title-town subtitle">
                   Настоящий городок
                 </h3>
-
+                <!-- Декоративный рисунок -->
                 <div class="advantages-strips advantages-town-strips">
                   <span class="visually-hidden">
                     Полоска
@@ -176,19 +163,21 @@
                     </em>
                   </span>
                 </div>
-
+                <!-- Текстовое описание -->
                 <p class="advantages-description advantages-description-town">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
-
               </li>
             </ul>
+            <!-- Контентное изображение -->
             <img
               src="images/main-page/photo-1.jpg"
               width="800"
               height="384"
-              alt="На фоне гор деревянные домики с флагами в окружении цветов.">
+              alt="На фоне гор деревянные домики с флагами в окружении цветов."
+            >
           </div>
+          <!-- <<<второй ряд>>> -->
           <div class="advantages-second-row">
             <ul class="advantages-list">
               <li class="advantages-item advantages-square">
@@ -324,6 +313,7 @@
           </div>
         </section>
       </main>
+
       <!-- Подвал = Footer
       ___________________________________________ -->
       <footer class="page-footer" data-test="footer">
@@ -349,15 +339,20 @@
               </li>
             </ul>
           </section>
+
           <!-- Контакты -->
           <address class="phone">
             <h2 class="visually-hidden">Контакты HTML Academy</h2>
             <a class="phone-link" href="+78128121212">+7 (812) 812-12-12</a>
           </address>
+
           <!-- Официальный сайт Академии HTML -->
           <section class="htmlacademy">
+
             <h2 class="visually-hidden">Официальный сайт HTML Academy</h2>
+
             <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
+
               <svg
                 width="115"
                 height="34"
@@ -378,12 +373,21 @@
                 <path d="M98.2 18.2564C96.6 18.2564 95.3 19.0564 94.6 20.2564H94.5C93.9 19.0564 92.7 18.2564 91.1 18.2564C89.7 18.2564 88.6 18.9564 88 20.0564V18.5564H86.1V29.1564H88.1V23.7564C88.1 21.7564 89.1 20.3564 90.7 20.2564C92.2 20.2564 93.1 21.2564 93.1 22.8564V29.1564H95.1V23.5564C95.1 21.1564 96.5 20.2564 97.7 20.2564C99.2 20.2564 100.1 21.2564 100.1 22.8564V29.1564H102.1V22.6564C102.2 20.0564 100.7 18.2564 98.2 18.2564Z" fill="#000000"/>
                 <path d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" fill="#000000k"/>
               </svg>
-              <span class="visually-hidden">Переход на официальный сайт Академии HTML</span>
+
+              <span class="visually-hidden">
+                Переход на официальный сайт Академии HTML
+              </span>
+
             </a>
+
           </section>
+
         </div>
+
       </footer>
+
     </div>
+
   </body>
 
 </html>
