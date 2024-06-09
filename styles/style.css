@@ -258,6 +258,18 @@ body {
   cursor: pointer;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin: auto;
+
+  fill: #000000;
+}
+
 .navigation-user-statistics {
   position: absolute;
   top: 11px;
@@ -790,6 +802,7 @@ ____________________________________________ */
   padding: 0 0 0 20px;
 
   border-radius: 4px 0 0 4px;
+  border-color: none;
 }
 
 .subscribe-form-name input[placeholder] {
@@ -841,8 +854,7 @@ ____________________________________________ */
   flex-shrink: 0;
 
   max-width: 1200px;
-  /* стик футер */
-  min-height: 100%;
+  min-height: 100%; /* стик футер */
   margin: 0;
   padding: 40px 70px 30px;
 
@@ -855,18 +867,20 @@ ____________________________________________ */
   align-items: center;
 
   width: 1060px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
 .social {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
 
+  max-width: 142px;
   margin: 0;
   padding: 0;
-
-  list-style: none;
+  margin-left: auto;
 }
 
 .social h2 {
@@ -889,57 +903,41 @@ ____________________________________________ */
 }
 
 .social-item {
+  outline-offset: -2px;
+  outline: 2px solid #ff6347;
+
   width: 48px;
   height: 40px;
   margin: 0;
   padding: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .social-link {
-  width: 25px;
-  height: 14px;
+  display: block;
+
   margin: 0;
-  padding: 13px 10px;
+
+  color: #83b3d3;
 
   cursor: pointer;
-  opacity: 1;
 }
 
-.social-link:not(:disabled):hover,
-.social-link:not(:disabled):focus-visible  {
-  opacity: 0.7;
+.social-link:hover,
+.social-link:focus {
+  color: #68a2ca;
 }
 
-.social-link:not(:disabled):active {
-  color: #68A2CA4D;
-  opacity: 0.3;
-}
-
-.social-vk {
-  background-image: url("../images/social-icon/vk.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.social-tm {
-  background-image: url("../images/social-icon/telegramm.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.social-youtube {
-  background-image: url("../images/social-icon/youtube.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.social-link:active {
+  color: #68a2ca4d;
 }
 
 .phone {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 
-  max-width: 720px;
+  min-width: 331px;
   margin: 0 auto;
   padding: 0 194px 0 195px;
 }
@@ -977,6 +975,7 @@ ____________________________________________ */
 
   flex-shrink: 0;
 
+  min-width: 115px;
   margin: 0 0 0 auto;
   padding: 0;
 }
@@ -1058,12 +1057,10 @@ ____________________________________________ */
   justify-content: center;
   align-items: center;
 
-  margin: 0 10px 0 0;
+  max-width: 13px;
+  max-height: 15px;
+  margin: 0;
   padding: 0;
-}
-
-.breadcrumbs-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .breadcrumbs-link {
@@ -1073,29 +1070,21 @@ ____________________________________________ */
   text-decoration: none;
   text-transform: capitalize;
   color: #ffffff;
-
-  opacity: 1;
 }
 
 .breadcrumbs-link-home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 13px;
-  height: 15px;
+  min-width: 12px;
+  min-height: 12px;
   margin: 0;
   padding: 0 0 2px;
 
   background-image: url("../images/breadcrumbs/filter-home.svg");
   background-repeat: no-repeat;
   background-position: center;
-
-  list-style-type: none;
-  opacity: 1;
 }
 
-.breadcrumbs-link-arrow {
+
+/* .breadcrumbs-link-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1111,13 +1100,17 @@ ____________________________________________ */
 
   list-style-type: none;
   opacity: 1;
-}
+} */
 
 .breadcrumbs-link-position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-left: 28px;
+
+  background-image: url("../images/breadcrumbs/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 15px;
+  background-position: center left 10px;
 }
+
 /*
 .breadcrumbs-link-group:not(:disabled):hover {
   color: #ffffff99;
@@ -1134,6 +1127,7 @@ ____________________________________________ */
   opacity: 0.3;
 }
 */
+
 .catalog-filter {
   display: flex;
 }
@@ -1268,6 +1262,8 @@ ____________________________________________ */
   width: 48px;
   height: 48px;
   margin-right: 8px;
+
+  box-sizing: border-box;
 }
 
 .btn-view-item:last-child {

@@ -13,8 +13,7 @@
 
     <div class="body-page">
 
-      <!-- Шапка = Header
-      ___________________________________________ -->
+      <!-- Шапка = Header -->
       <header class="page-header" data-test="header">
         <!-- __навигация__ -->
         <nav class="navigation">
@@ -98,29 +97,32 @@
         </nav>
       </header>
 
-      <!-- Основное содержание = Main
-      ___________________________________________ -->
+      <!-- Основное содержание = Main -->
       <main class="main-catalog" data-test="main" >
 
-        <!-- <<Заголовок каталога>> -->
-        <h1 class="visually-hidden">Бронирование нужной гостиницы городка Седона</h1>
+        <!-- <<<Заголовок каталога>>> -->
+        <h1 class="visually-hidden">
+          Бронирование нужной гостиницы городка Седона
+        </h1>
 
-        <!-- <<Секция "Фильтр бронирования гостиницы">> -->
+        <!-- <<<Секция "Фильтр бронирования гостиницы">>> -->
         <section class="main-catalog-filter">
-          <!-- ___Подзаголовок каталога___ -->
+
+          <!-- <подзаголовок каталога> -->
           <h2 class="filter-title">Гостиницы Седоны</h2>
-          <!-- ___Блок "Breadcrumbs = Хлебные крошки"___ -->
+
+          <!-- <блок "breadcrumbs = хлебные крошки"> -->
           <ol class="breadcrumbs-list breadcrumbs-link-group">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Вход на страницу главной страницы</span>
               </a>
             </li>
-            <li class="breadcrumbs-item">
+            <!-- <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-arrow" aria-current="page">
                 <span class="visually-hidden">Мы на странице каталога</span>
               </a>
-            </li>
+            </li> -->
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-position" aria-current="page">
                 <span class="visually-hidden">Вход на страницу каталога</span>
@@ -128,7 +130,8 @@
               </a>
             </li>
           </ol>
-          <!-- ___Блок "Filter = Фильтр"___ -->
+
+          <!-- <блок "filter = фильтр"> -->
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <!-- ___"инфраструктура"___ -->
             <fieldset class="catalog-filter-group-left">
@@ -257,38 +260,66 @@
               <button class="btn catalog-filter-reset" type="reset">Сбросить</button>
             </div>
           </form>
+
         </section>
 
-        <!-- Секция "Каталог" -->
+        <!-- <<<Секция "Каталог">>> -->
         <section class="main-catalog-select" data-test="catalog">
-            <h2 class="visually-hidden">Cписок выбранных гостиниц в Седоне</h2>
-            <p class="main-catalog-found">Найдено гостиниц: <span class="catalog-result">38</span></p>
-            <select class="main-catalog-selected" aria-label="Сортировка">
-              <option class="selected-control" value="sheap">Самые дешевые</option>
-              <option class="selected-control" value="popular">Самые популярные</option>
-              <option class="selected-control" value="expensive">Самые дорогие</option>
-            </select>
-
+          <!-- <подзаголовок секции "каталог"> -->
+          <h2 class="visually-hidden">
+            Cписок выбранных гостиниц в Седоне
+          </h2>
+          <!-- <обёртка "каталога"> -->
+          <div class="main-catalog-select-wrapper">
+            <!-- __поисковый блок__ -->
+            <p class="main-catalog-found">
+              Найдено гостиниц:
+              <span class="catalog-result">
+                38
+              </span>
+            </p>
+            <!-- __блок сортировки__ -->
+            <div class="select sorting-type">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="sheap">
+                  Самые дешевые
+                </option>
+                <option value="popular">
+                  Самые популярные
+                </option>
+                <option value="expensive">
+                  Самые дорогие
+                </option>
+              </select>
+            </div>
+            <!-- __блок кнопок сортировки__ -->
             <ul class="btn-view">
               <li class="btn-view-item">
                 <button class="btn-dark" href="#">
-                  <span class="visually-hidden">Показать карточки</span>
+                  <span class="visually-hidden">
+                    Показать карточки
+                  </span>
                 </button>
               </li>
               <li class="btn-view-item">
                 <button class="btn-dark-dark" href="#">
-                  <span class="visually-hidden">Показать слайд</span>
+                  <span class="visually-hidden">
+                    Показать слайд
+                  </span>
                 </button>
               </li>
               <li class="btn-view-item">
                 <button class="btn-dark-dark-dark" href="#">
-                  <span class="visually-hidden">Показать список</span>
+                  <span class="visually-hidden">
+                    Показать список
+                  </span>
                 </button>
               </li>
             </ul>
+          </div>
 
-            <!-- Блок "Карточки гостиниц" -->
-            <div class="hotel-cards">
+          <!-- Блок "Карточки гостиниц" -->
+          <div class="hotel-cards">
 
               <ul class="hotel-cards-list">
                 <li class="hotel-cards-item">
@@ -352,10 +383,10 @@
                 </li>
 
               </ul>
-            </div>
+          </div>
 
-            <!-- Блок "Пагинация" -->
-            <div class="pagination">
+          <!-- Блок "Пагинация" -->
+          <div class="pagination">
 
               <ol class="pagination-list">
                 <li class="pagination-item">
@@ -390,7 +421,7 @@
                 </li>
               </ol>
 
-            </div>
+          </div>
 
         </section>
 
@@ -434,8 +465,7 @@
 
       </main>
 
-      <!-- Подвал = Footer
-      ___________________________________________ -->
+      <!-- Подвал = Footer -->
       <footer class="page-footer" data-test="footer">
         <div class="page-footer-wrapper">
           <!-- Социальные каналы -->
