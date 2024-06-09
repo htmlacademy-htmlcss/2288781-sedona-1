@@ -10,7 +10,9 @@
   </head>
 
   <body>
+
     <div class="body-page">
+
       <!-- Шапка = Header
       ___________________________________________ -->
       <header class="page-header" data-test="header">
@@ -90,15 +92,19 @@
             </li>
           </ul>
           <!-- __<Кнопка "Хочу сюда!">__ -->
-          <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+          <a class="btn navigation-btn" href="#">
+            Хочу сюда!
+          </a>
         </nav>
       </header>
-      
+
       <!-- Основное содержание = Main
       ___________________________________________ -->
       <main class="main-catalog" data-test="main" >
+
         <!-- <<Заголовок каталога>> -->
         <h1 class="visually-hidden">Бронирование нужной гостиницы городка Седона</h1>
+
         <!-- <<Секция "Фильтр бронирования гостиницы">> -->
         <section class="main-catalog-filter">
           <!-- ___Подзаголовок каталога___ -->
@@ -258,23 +264,23 @@
             <h2 class="visually-hidden">Cписок выбранных гостиниц в Седоне</h2>
             <p class="main-catalog-found">Найдено гостиниц: <span class="catalog-result">38</span></p>
             <select class="main-catalog-selected" aria-label="Сортировка">
-              <option value="sheap">Самые дешевые</option>
-              <option value="popular">Самые популярные</option>
-              <option value="expensive">Самые дорогие</option>
+              <option class="selected-control" value="sheap">Самые дешевые</option>
+              <option class="selected-control" value="popular">Самые популярные</option>
+              <option class="selected-control" value="expensive">Самые дорогие</option>
             </select>
 
-            <ul>
-              <li>
+            <ul class="btn-view">
+              <li class="btn-view-item">
                 <button class="btn-dark" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </button>
               </li>
-              <li>
+              <li class="btn-view-item">
                 <button class="btn-dark-dark" href="#">
                   <span class="visually-hidden">Показать слайд</span>
                 </button>
               </li>
-              <li>
+              <li class="btn-view-item">
                 <button class="btn-dark-dark-dark" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </button>
@@ -283,6 +289,7 @@
 
             <!-- Блок "Карточки гостиниц" -->
             <div class="hotel-cards">
+
               <ul class="hotel-cards-list">
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
@@ -298,6 +305,7 @@
                   </p>
                   <a class="hotel-cards-rating">Рейтинг: <span>8.5</span></a>
                 </li>
+
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
                     <img class="hotel-cards-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Радуга на фоне темного неба у скалы в окрестностях Седоны.">
@@ -306,12 +314,13 @@
                   <p class="hotel-cards-type">Гостиница</p>
                   <p class="hotel-cards-price">От 5000 <span>₽</span></p>
                   <a class="btn more-detailed-btn" type="submit" href="#">Подробнее</a>
-                  <a class="btn rating-btn" type="submit" href="#">В избранное</a>
+                  <a class="btn rating-btn rating-btn-lime" type="submit" href="#">В избранном</a>
                   <p class="hotel-cards-stars stars-4">
                     <span class="visually-hidden">Четырехзвездочный отель</span>
                   </p>
                   <a class="hotel-cards-rating">Рейтинг: <span>9.2</span></a>
                 </li>
+
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
                     <img class="hotel-cards-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Рассвет у остроконечной скалы в окрестностях Седоны.">
@@ -326,6 +335,7 @@
                   </p>
                   <a class="hotel-cards-rating">Рейтинг: <span>6.9</span></a>
                 </li>
+
                 <li class="hotel-cards-item">
                   <a class="hotel-cards-link" href="#">
                     <img class="hotel-cards-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Лунное освещение у скалы в окрестностях Седоны.">
@@ -340,6 +350,7 @@
                   </p>
                   <p class="hotel-cards-rating">Рейтинг: <span>5.0</span></p>
                 </li>
+
               </ul>
             </div>
 
@@ -383,20 +394,29 @@
 
         </section>
 
-        <!-- Секция "Блок подписки" -->
+        <!-- <<<Секция "Блок подписки">>> -->
         <section class="subscribe" data-test="subscribe">
-          <!-- Заголовок секции "Блок подписки" -->
-          <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
+          <!-- <Заголовок секции "Блок подписки"> -->
+          <h2 class="visually-hidden">
+            Информация о туризме в городке Седона
+          </h2>
+          <!-- <Текстовое описание> -->
           <div class="subscribe-connotation">
             <p class="subscribe-lead-title title">
-              <strong>Подпишитесь на рассылку</strong>
+              <strong>
+                Подпишитесь на рассылку
+              </strong>
             </p>
-            <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribe-lead-description">
+              Только полезная информация и никакого спама, честное бойскаутское!
+            </p>
+            <!-- <Форма подписки> -->
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="user-email">
-                <span class="visually-hidden">Укажите вашу электронную почту</span>
+              <p class="subscribe-form-name">
+                <label for="user-email" class="visually-hidden">
+                  Укажите вашу электронную почту
+                </label>
                 <input
-                  class="subscribe-form-email"
                   type="email"
                   id="user-email"
                   name="user-email"
@@ -404,8 +424,10 @@
                   aria-label="Подписка на рассылку"
                   required
                 >
-              </label>
-              <button class="btn subscribe-btn" type="submit">Подписаться</button>
+              </p>
+              <button class="btn subscribe-btn" type="submit">
+                Подписаться
+              </button>
             </form>
           </div>
         </section>

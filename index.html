@@ -12,12 +12,12 @@
 
     <div class="body-page">
 
-      <!-- Шапка = Header
-      ___________________________________________ -->
+      <!-- ШАПКА = HEADER -->
       <header class="page-header" data-test="header">
-        <!-- __навигация__ -->
+
+        <!-- <<<Навигация>>> -->
         <nav class="navigation">
-          <!-- __<Логотип городка Седоны>__ -->
+          <!-- <логотип городка Седоны> -->
           <a class="header-logo-sedona" aria-current="page">
             <img
               class="logo-sedona"
@@ -28,7 +28,7 @@
               aria-hidden="true"
             >
           </a>
-          <!-- __<Основное меню>__ -->
+          <!-- <основное меню> -->
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current" aria-current="page">
@@ -36,7 +36,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">
+              <a class="navigation-link" href="#">
                 О Седоне
               </a>
             </li>
@@ -46,9 +46,9 @@
               </a>
             </li>
           </ul>
-          <!-- __<Пользовательское меню>__ -->
+          <!-- <пользовательское меню> -->
           <ul class="navigation-user-list">
-            <!-- __иконка "Поиск"__ -->
+            <!-- __иконка "поиск"__ -->
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">
                 <span class="visually-hidden">
@@ -71,7 +71,7 @@
                 </svg>
               </a>
             </li>
-            <!-- __иконка "Избранное"__ -->
+            <!-- __иконка "избранное"__ -->
             <li class="navigation-user-item">
               <a class="navigation-user-link heart-icon-group" href="#">
                 <span class="visually-hidden">
@@ -100,27 +100,29 @@
               </a>
             </li>
           </ul>
-          <!-- __<Кнопка "Хочу сюда!">__ -->
+          <!-- <кнопка "хочу сюда!"> -->
           <a class="btn navigation-btn" href="#">
             Хочу сюда!
           </a>
         </nav>
+
       </header>
 
-      <!-- Основное содержание = Main
-      ___________________________________________ -->
+      <!-- ОСНОВНОЕ СОДЕРЖАНИЕ = MAIN -->
       <main class="main-index" data-test="main">
-        <!-- Заголовок главной страницы h1 -->
+
+        <!-- <<<Заголовок главной страницы h1>>> -->
         <h1 class="visually-hidden">
           Городок Седона в Аризоне и его достопримечательности
         </h1>
-        <!-- Секция Hero -->
+
+        <!-- <<<Секция Hero>>> -->
         <section class="hero" data-test="hero">
-          <!-- Подзаголовок h2 -->
+          <!-- <подзаголовок h2> -->
           <h2 class="visually-hidden">
             Приглашение в городок Седона
           </h2>
-          <!-- Контентное изображение - логотип с различными шрифтами -->
+          <!-- __контентное изображение - логотип городка Седоны с различными шрифтами__ -->
           <img
             src="images/main-page/welcome.svg"
             width="458"
@@ -128,13 +130,14 @@
             alt="Welcome to the gorgeous Sedona. «Because the Grand Canyon sucks!»."
           >
         </section>
-        <!-- Секция "Блок преимуществ" -->
+
+        <!-- <<<Секция "Блок преимуществ">>> -->
         <section class="advantages" data-test="advantages">
-          <!-- Подзаголовок h2 -->
+          <!-- <подзаголовок h2> -->
           <h2 class="visually-hidden">
             Преимущества туризма в городке Седона
           </h2>
-          <!-- Текстовое описание -->
+          <!-- <текстовое описание> -->
           <div class="advantages-connotation">
             <p class="advantages-lead-title title">
               <strong>
@@ -145,16 +148,16 @@
               Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
             </p>
           </div>
-          <!-- Список премуществ -->
-          <!-- <<<первый ряд>>> -->
-          <div class="advantages-first-row">
-            <ul class="advantages-list">
-              <li class="advantages-item advantages-town">
-                <!-- Подзаголовок h3 -->
+          <!-- <список премуществ> -->
+          <ul class="advantages-list">
+            <!-- ___первый ряд___ -->
+            <li class="advantages-item advantages-item-wide">
+              <div class="advantages-item-container">
+                <!-- пункт h3 -->
                 <h3 class="advantages-title advantages-title-town subtitle">
                   Настоящий городок
                 </h3>
-                <!-- Декоративный рисунок -->
+                <!-- декоративный рисунок -->
                 <div class="advantages-strips advantages-town-strips">
                   <span class="visually-hidden">
                     Полоска
@@ -163,27 +166,27 @@
                     </em>
                   </span>
                 </div>
-                <!-- Текстовое описание -->
-                <p class="advantages-description advantages-description-town">
+                <!-- описание пункта -->
+                <p class="advantages-description">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
-              </li>
-            </ul>
-            <!-- Контентное изображение -->
-            <img
-              src="images/main-page/photo-1.jpg"
-              width="800"
-              height="384"
-              alt="На фоне гор деревянные домики с флагами в окружении цветов."
-            >
-          </div>
-          <!-- <<<второй ряд>>> -->
-          <div class="advantages-second-row">
-            <ul class="advantages-list">
-              <li class="advantages-item advantages-square">
+              </div>
+              <!-- ___контентное изображение___ -->
+              <img
+                src="images/main-page/photo-1.jpg"
+                width="800"
+                height="384"
+                alt="На фоне гор деревянные домики с флагами в окружении цветов."
+              >
+            </li>
+            <!-- ___второй ряд___ -->
+            <li class="advantages-item advantages-square">
+              <div class="advantages-item-container">
+                <!-- пункт h3 -->
                 <h3 class="advantages-title subtitle">
                   Небольшая площадь
                 </h3>
+                <!-- декоративный рисунок -->
                 <div class="advantages-strips advantages-square-strips">
                   <span class="visually-hidden">
                     Полоска
@@ -192,14 +195,19 @@
                     </em>
                   </span>
                 </div>
+                <!-- описание пункта -->
                 <p class="advantages-description">
                   Все достопримечательности находятся очень близко
                 </p>
-              </li>
-              <li class="advantages-item advantages-road">
+              </div>
+            </li>
+            <li class="advantages-item advantages-road">
+              <div class="advantages-item-container">
+                <!-- пункт h3 -->
                 <h3 class="advantages-title subtitle">
                   Красивая<br>дорога
                 </h3>
+                <!-- декоративный рисунок -->
                 <div class="advantages-strips advantages-road-strips">
                   <span class="visually-hidden">
                     Полоска
@@ -208,14 +216,19 @@
                     </em>
                   </span>
                 </div>
+                <!-- описание пункта -->
                 <p class="advantages-description">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
-              </li>
-              <li class="advantages-item advantages-tourists">
+              </div>
+            </li>
+            <li class="advantages-item advantages-tourists">
+              <div class="advantages-item-container">
+                <!-- пункт h3 -->
                 <h3 class="advantages-title subtitle">
                   Мало<br>туристов
                 </h3>
+                <!-- декоративный рисунок -->
                 <div class="advantages-strips advantages-tourists-strips">
                   <span class="visually-hidden">
                     Полоска
@@ -224,32 +237,45 @@
                     </em>
                   </span>
                 </div>
+                <!-- описание пункта -->
                 <p class="advantages-description">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
-              </li>
-            </ul>
-          </div>
-          <div class="advantages-third-row">
-            <img
-              src="images/main-page/photo-2.jpg"
-              width="800"
-              height="384"
-              alt="Мост Дьявола в окружении гор.">
-            <ul class="advantages-list">
-              <li class="advantages-item advantages-bridge">
-                <h3 class="advantages-title advantages-title-bridge subtitle">Там есть<br> мост Дьявола</h3>
+              </div>
+            </li>
+            <!-- ___третий ряд___ -->
+            <li class="advantages-item advantages-item-wide advantages-item-wide-reverse">
+              <div class="advantages-item-container">
+                <!-- пункт h3 -->
+                <h3 class="advantages-title advantages-title-bridge subtitle">
+                  Там есть<br> мост Дьявола
+                </h3>
+                <!-- декоративный рисунок -->
                 <div class="advantages-strips advantages-bridge-strips">
-                  <span class="visually-hidden">Полоска
-                    <em>(декоративный элемент)</em>
+                  <span class="visually-hidden">
+                    Полоска
+                    <em>
+                      (декоративный элемент)
+                    </em>
                   </span>
                 </div>
-                <p class="advantages-description advantages-description-bridge">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </li>
-            </ul>
-          </div>
+                <!-- описание пункта -->
+                <p class="advantages-description">
+                  Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                </p>
+              </div>
+              <!-- ___контентное изображение___ -->
+              <img
+                src="images/main-page/photo-2.jpg"
+                width="800"
+                height="384"
+                alt="Мост Дьявола в окружении гор."
+              >
+            </li>
+          </ul>
         </section>
-        <!-- Секция "Блок сервиса" -->
+
+        <!-- <<<Секция "Блок сервиса">>> -->
         <section class="services" data-test="services">
           <h2 class="visually-hidden">Сервис для туристов в городке Седона</h2>
           <div class="services-connotation">
@@ -275,31 +301,53 @@
             </ul>
           </div>
         </section>
-        <!-- Секция "Блок поиска" -->
+
+        <!-- <<<Секция "Блок поиска">>> -->
         <section class="search" data-test="search">
-          <h2 class="visually-hidden">Бронирование гостиницы в городке Седона</h2>
+          <!-- <подзаголовок h2> -->
+          <h2 class="visually-hidden">
+            Бронирование гостиницы в городке Седона
+          </h2>
+          <!-- <текстовое описание> -->
           <div class="search-connotation">
             <p class="search-lead-title title">
-              <strong>Заинтересовались?</strong>
+              <strong>
+                Заинтересовались?
+              </strong>
             </p>
-            <p class="search-lead-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="btn search-btn" href="#">Поиск гостиницы в Седоне</a>
+            <p class="search-lead-description">
+              Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+            </p>
+            <!-- ___кнопка - ссылка___ -->
+            <a class="btn search-btn" href="#">
+              Поиск гостиницы в Седоне
+            </a>
           </div>
         </section>
-        <!-- Секция "Блок подписки" -->
+
+        <!-- <<<Секция "Блок подписки">>> -->
         <section class="subscribe subscribe-fon" data-test="subscribe">
-          <!-- Заголовок секции "Блок подписки" -->
-          <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
+          <!-- <Заголовок секции "Блок подписки"> -->
+          <h2 class="visually-hidden">
+            Информация о туризме в городке Седона
+          </h2>
+          <!-- <Текстовое описание> -->
           <div class="subscribe-connotation">
             <p class="subscribe-lead-title title">
-              <strong>Подпишитесь на рассылку</strong>
+              <strong>
+                Подпишитесь на рассылку
+              </strong>
             </p>
-            <p class="subscribe-lead-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="subscribe-lead-description">
+              Только полезная информация и никакого спама, честное бойскаутское!
+            </p>
+            <!-- <Форма подписки> -->
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="user-email">
-                <span class="visually-hidden">Укажите вашу электронную почту</span>
+              <p class="subscribe-form-name">
+                <label for="user-email" class="visually-hidden">
+                  Укажите вашу электронную почту
+                </label>
                 <input
-                  class="subscribe-form-email"
                   type="email"
                   id="user-email"
                   name="user-email"
@@ -307,18 +355,22 @@
                   aria-label="Подписка на рассылку"
                   required
                 >
-              </label>
-              <button class="btn subscribe-btn" type="submit">Подписаться</button>
+              </p>
+              <button class="btn subscribe-btn" type="submit">
+                Подписаться
+              </button>
             </form>
           </div>
         </section>
+
       </main>
 
-      <!-- Подвал = Footer
-      ___________________________________________ -->
+      <!-- ПОДВАЛ = FOOTER -->
       <footer class="page-footer" data-test="footer">
+
         <div class="page-footer-wrapper">
-          <!-- Социальные каналы -->
+
+          <!-- <<<Социальные каналы>>> -->
           <section class="social">
             <h2 class="visually-hidden">Социальные каналы HTML Academy</h2>
             <ul class="social-list">
