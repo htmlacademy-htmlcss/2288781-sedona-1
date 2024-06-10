@@ -23,7 +23,8 @@ html *::after {
 }
 
 html {
-  height: 100%; /* стик футер */
+  height: 100%;
+  /* стик футер */
 }
 
 .visually-hidden {
@@ -40,7 +41,8 @@ html {
 }
 
 body {
-  height: 100%; /* стик футер */
+  height: 100%;
+  /* стик футер */
   margin: 0;
   padding: 0 40px;
 
@@ -60,7 +62,8 @@ body {
   flex-direction: column;
 
   width: 1200px;
-  min-height: 100%; /* стик футер */
+  min-height: 100%;
+  /* стик футер */
   margin: 0 auto;
   padding: 0;
 
@@ -121,7 +124,8 @@ body {
 .page-header {
   display: flex;
 
-  min-height: 100%; /* стик футер */
+  min-height: 100%;
+  /* стик футер */
   margin: 0;
   padding: 0 70px;
 }
@@ -146,7 +150,7 @@ body {
   padding: 0;
 }
 
-.navigation .header-logo-sedona{
+.navigation .header-logo-sedona {
   margin-right: 28px;
 
   opacity: 1;
@@ -308,6 +312,7 @@ body {
   outline: none;
   cursor: default;
 }
+
 /* Header=Шапка (навигация) - конец
 ============================================ */
 
@@ -319,10 +324,12 @@ body {
   display: flex;
   flex-direction: column;
 
-  flex-grow: 1; /* стик футер */
+  flex-grow: 1;
+  /* стик футер */
 
   width: 1200px;
-  min-height: 100%; /* стик футер */
+  min-height: 100%;
+  /* стик футер */
   margin: 0 auto;
   padding: 0;
 }
@@ -803,7 +810,7 @@ ____________________________________________ */
 }
 
 .subscribe-btn:hover,
-.subscribe-btn:focus-visible  {
+.subscribe-btn:focus-visible {
   background-color: #68a2ca;
 }
 
@@ -812,6 +819,7 @@ ____________________________________________ */
   color: #FFFFFF4D;
   opacity: 0.3;
 }
+
 /* Main=Основное содержание - конец
 ============================================
 */
@@ -822,11 +830,13 @@ ____________________________________________ */
 .page-footer {
   display: flex;
 
-  flex-grow: 1; /* стик футер */
+  flex-grow: 1;
+  /* стик футер */
   flex-shrink: 0;
 
   max-width: 1200px;
-  min-height: 100%; /* стик футер */
+  min-height: 100%;
+  /* стик футер */
   margin: 0;
   padding: 40px 70px 30px;
 
@@ -985,6 +995,7 @@ ____________________________________________ */
   fill: #7561574d;
   fill-opacity: 0.3;
 }
+
 /* Footer=Подвал - конец
 ============================================ */
 
@@ -1010,7 +1021,7 @@ ____________________________________________ */
   background-size: cover;
 }
 
-.filter-title  {
+.filter-title {
   margin: 0;
   padding: 0;
 
@@ -1249,13 +1260,17 @@ ____________________________________________ */
 
 .hotel-cards {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  padding: 50px 70px 60px;
-  margin-bottom: 40px;
-
+  margin-bottom: 16px;
 }
 
 .hotel-cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+
   margin: 0;
   padding: 0;
 
@@ -1267,7 +1282,7 @@ ____________________________________________ */
   flex-direction: row;
   flex-wrap: wrap;
 
-  width: 298px;
+  width: 300px;
   margin: 0;
   padding: 20px;
 
@@ -1281,7 +1296,7 @@ ____________________________________________ */
   text-decoration: none;
 }
 
-.hotel-cards-subtitul {
+.hotel-cards-subtitle {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -1310,7 +1325,7 @@ ____________________________________________ */
 }
 
 .rating-btn-lime {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 
