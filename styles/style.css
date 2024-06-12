@@ -816,7 +816,6 @@ ____________________________________________ */
   color: #FFFFFF4D;
   opacity: 0.3;
 }
-
 /* Main=Основное содержание - конец
 ============================================
 */
@@ -850,6 +849,11 @@ ____________________________________________ */
   padding: 0;
 
   box-sizing: border-box;
+
+  /* display: grid;
+  gap:
+  grid-template-columns: 142px 331px 115px; */
+
 }
 
 .social {
@@ -957,6 +961,7 @@ ____________________________________________ */
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  justify-self: end;
 
   flex-shrink: 0;
 
@@ -1263,6 +1268,12 @@ ____________________________________________ */
   margin-bottom: 16px;
 }
 
+.hotel-cards-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
 .hotel-cards-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1294,10 +1305,58 @@ ____________________________________________ */
 }
 
 .hotel-cards-subtitle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
   color: #000000;
+
+  text-align: left;
 }
+
+.price-wrapper {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 16px;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+}
+
+.hotel-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hotel-cards-stars {
+  display: inline-block;
+
+  height: 17px;
+
+  background: url(../images/stars/star4.svg);
+}
+
+.stars-4 {
+  width: 72px;
+}
+
+.stars-3 {
+  width: 66px;
+}
+
+.stars-2 {
+  width: 72px;
+}
+
+
 
 .more-detailed-btn {
   font-size: 16px;
