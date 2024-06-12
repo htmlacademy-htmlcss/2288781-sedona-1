@@ -19,12 +19,11 @@
 html *,
 html *::before,
 html *::after {
-  outline: 1px solid #6a16c9;
+  outline: 1px solid #920937;
 }
 
 html {
   height: 100%; /* стик футер */
-
 }
 
 .visually-hidden {
@@ -53,7 +52,6 @@ body {
 
   color: #333333;
   background: #f2f2f2;
-
   text-align: center;
 }
 
@@ -799,9 +797,6 @@ ____________________________________________ */
 }
 
 .subscribe-btn {
-  max-width: 232px;
-  min-height: 52px;
-
   background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
 }
@@ -1131,8 +1126,8 @@ ____________________________________________ */
   font-weight: 700;
   text-transform: capitalize;
 
-  text-align: left;
   color: #ffffff;
+  text-align: left;
 }
 
 .catalog-filter-list {
@@ -1149,35 +1144,49 @@ ____________________________________________ */
   color: #ffffff;
 }
 
-.control input {
+.control-label {
   font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 23px;
 
-  color: #000000;
+  color: #ffffff;
 }
 
+/* подблок "Кнопки" */
 .range-button {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+
+  min-width: 191px;
+  margin: 0;
+  padding: 0;
+  margin-left: 70px;
 }
 
+/* кнопка "Применить" */
 .catalog-filter-submit {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 
-  color: #ffffff;
+  width: 100%;
+  margin-bottom: 32px;
+
+  background-color: #82b3d3;
+  border-radius: 4px;
 }
 
+/* прозрачная кнопка "Сбросить*/
 .catalog-filter-reset {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
 
-  color: #ffffff;
+  width: 100%;
+
+  background-color: transparent;
+  border-radius: 4px;
 }
 
 /* Main -> Select (каталог)
@@ -1202,19 +1211,28 @@ ____________________________________________ */
   padding: 0;
 }
 
-.main-catalog-found {
-  width: 338px;
+.main-catalog-select-container .main-catalog-found {
+  min-width: 338px;
+  margin-right: auto;
+}
 
+.main-catalog-found,
+.catalog-result {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
+
+  color: #000000;
 }
 
-.main-catalog-selected {
+.select {
   display: flex;
   align-items: center;
 
-  width: 292px;
+  min-width: 292px;
+  margin: 0;
+  padding: 0;
   margin-left: auto;
   margin-right: 70px;
 }
@@ -1222,8 +1240,6 @@ ____________________________________________ */
 .selected-control {
   font-size: 18px;
   line-height: 21px;
-
-  color: #333333;
 }
 
 .hotel-cards-list {
@@ -1268,12 +1284,6 @@ ____________________________________________ */
   margin-bottom: 16px;
 }
 
-.hotel-cards-image {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-}
-
 .hotel-cards-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1285,23 +1295,14 @@ ____________________________________________ */
   list-style-type: none;
 }
 
-.hotel-cards-item {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-  width: 300px;
-  margin: 0;
-  padding: 20px;
-
-  color: #333333;
-
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-}
-
 .hotel-cards-link {
   text-decoration: none;
+}
+
+.hotel-cards-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
 
 .hotel-cards-subtitle {
@@ -1311,8 +1312,9 @@ ____________________________________________ */
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #000000;
+  text-decoration: none;
 
+  color: #000000;
   text-align: left;
 }
 
@@ -1321,6 +1323,47 @@ ____________________________________________ */
   justify-content: center;
 
   margin-bottom: 16px;
+}
+
+.hotel-cards-type {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: left;
+}
+
+.hotel-cards-price {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+
+  font-size: 18px;
+  line-height: 21px;
+
+  text-align: right;
+}
+
+.hotel-cards-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 300px;
+  margin: 0;
+  padding: 20px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
 }
 
 .btn-wrapper {
@@ -1356,27 +1399,17 @@ ____________________________________________ */
   width: 72px;
 }
 
-
-
 .more-detailed-btn {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
 
-  color: #ffffff;
-
-  text-decoration: none;
   background-color: #756157;
 }
 
 .rating-btn {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 700;
 
-  color: #ffffff;
-
-  text-decoration: none;
   background-color: #82b3d3;
 }
 
