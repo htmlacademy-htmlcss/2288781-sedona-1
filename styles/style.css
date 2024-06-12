@@ -1320,7 +1320,7 @@ ____________________________________________ */
 
 .price-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   margin-bottom: 16px;
 }
@@ -1355,7 +1355,7 @@ ____________________________________________ */
 
 .hotel-cards-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 
   width: 300px;
