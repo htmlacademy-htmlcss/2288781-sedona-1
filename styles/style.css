@@ -820,6 +820,8 @@ ____________________________________________ */
 ============================================ */
 .page-footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   flex-grow: 1;
   /* стик футер */
@@ -831,6 +833,7 @@ ____________________________________________ */
   margin: 0;
   padding: 40px 70px 30px;
 
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -844,18 +847,11 @@ ____________________________________________ */
   padding: 0;
 
   box-sizing: border-box;
-
-  /* display: grid;
-  gap:
-  grid-template-columns: 142px 331px 115px; */
-
 }
 
 .social {
   display: flex;
   align-items: center;
-
-  flex-shrink: 0;
 
   min-width: 142px;
   margin: 0;
@@ -875,6 +871,8 @@ ____________________________________________ */
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
   margin: 0;
   padding: 0;
@@ -883,6 +881,8 @@ ____________________________________________ */
 }
 
 .social-item {
+  min-width: 48px;
+  min-height: 40px;
   margin: 0;
   padding: 0;
 
@@ -893,16 +893,14 @@ ____________________________________________ */
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  width: 48px;
-  height: 40px;
+
   margin: 0;
-  padding: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 12px 11px;
 
   fill: #83b3d3;
   cursor: pointer;
@@ -951,28 +949,15 @@ ____________________________________________ */
   color: #7561574d;
 }
 
-.logo-htmlacademy {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  justify-self: end;
+.htmlacademy {
 
-  flex-shrink: 0;
-
-  min-width: 115px;
-  margin: 0 0 0 auto;
-  padding: 0;
 }
 
 .logo-htmlacademy-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
 
-  width: 115px;
-  min-height: 33px;
-  margin: 0;
+  min-width: 115px;
+  margin: 0 0 0 auto;
   padding: 0;
 
   color: #000000;
@@ -1007,6 +992,7 @@ ____________________________________________ */
   flex-direction: column;
 
   max-width: 1200px;
+  min-height: 412px;
   margin: 0;
   padding: 35px 70px 70px 70px;
 
@@ -1018,7 +1004,7 @@ ____________________________________________ */
   background-size: cover;
 }
 
-.filter-title {
+.filter-subtitle {
   margin: 0;
   padding: 0;
 
@@ -1033,7 +1019,10 @@ ____________________________________________ */
 .breadcrumbs-list {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
 
+  min-width: 114px;
+  min-height: 21px;
   margin: 8px 0 40px;
   padding: 0;
 
@@ -1043,13 +1032,17 @@ ____________________________________________ */
 
 .breadcrumbs-item {
   display: flex;
-  justify-content: center;
   align-items: center;
 
-  max-width: 13px;
-  max-height: 15px;
+  min-width: 13px;
+  min-height: 15px;
   margin: 0;
   padding: 0;
+  margin-right: 10px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .breadcrumbs-link {
@@ -1058,12 +1051,13 @@ ____________________________________________ */
 
   text-decoration: none;
   text-transform: capitalize;
+
   color: #ffffff;
 }
 
 .breadcrumbs-link-home {
-  min-width: 12px;
-  min-height: 12px;
+  width: 13px;
+  height: 12px;
   margin: 0;
   padding: 0 0 2px;
 
@@ -1072,76 +1066,70 @@ ____________________________________________ */
   background-position: center;
 }
 
-.breadcrumbs-link-position {
-  padding-left: 28px;
+.breadcrumbs-link-group {
+  display: flex;
+
+  width: 7px;
+  min-height: 9px;
+  margin: 0;
+  padding: 0;
 
   background-image: url("../images/breadcrumbs/arrow.svg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 13px 15px;
-  background-position: center left 10px;
 }
 
-/*
-.breadcrumbs-link-group:not(:disabled):hover {
+.breadcrumbs-link-home:hover,
+.breadcrumbs-link-group:hover {
   color: #ffffff99;
-  opacity: 0.7;
 }
 
-.breadcrumbs-link-group:not(:disabled):focus-visible {
+.breadcrumbs-link-home:focus-visible,
+.breadcrumbs-link-group:focus-visible {
   color: #ffffff;
-  opacity: 0.9;
 }
 
-.breadcrumbs-link-group:not(:disabled):active {
-  color: #ffffff4d;
-  opacity: 0.3;
+.breadcrumbs-link-home:active,
+.breadcrumbs-link-group:active {
+  color: #ffffff99;
 }
-*/
+
+.breadcrumbs-text {
+  margin-left: 18px;
+  font-weight: normal;
+}
+
+.catalog-filter-subtitle {
+  padding-bottom: 32px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
 
 .catalog-filter {
   display: flex;
+  align-items: center;
 }
 
-.catalog-filter-group-left {
-  width: 150px;
-  margin: 0;
+.catalog-filter-group{
+  width: 151px;
+  height: 157px;
   padding: 0;
-  margin-right: 70px;
 
   border-style: none;
-}
-
-.catalog-filter-group-right {
-  width: 288px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-
-  border-style: none;
-}
-
-.catalog-filter-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-transform: capitalize;
-
-  color: #ffffff;
-  text-align: left;
 }
 
 .catalog-filter-list {
   padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
 
-.catalog-filter-item {
   font-size: 18px;
+  font-style: normal;
   line-height: 23px;
 
-  text-align: left;
-  color: #ffffff;
+  list-style: none;
 }
 
 .control-label {
@@ -1150,6 +1138,26 @@ ____________________________________________ */
 
   color: #ffffff;
 }
+
+/* инфраструктура */
+.catalog-filter-group.infra {
+  margin-right: 70px;
+}
+
+.catalog-filter-group.preise {
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.filter-preise{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  font-family: inherit;
+}
+
+
 
 /* подблок "Кнопки" */
 .range-button {
@@ -1285,9 +1293,8 @@ ____________________________________________ */
 }
 
 .hotel-cards-list {
-  display: grid;
-  grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -1296,6 +1303,7 @@ ____________________________________________ */
 }
 
 .hotel-cards-link {
+  color: #000000;
   text-decoration: none;
 }
 
@@ -1397,6 +1405,22 @@ ____________________________________________ */
 
 .stars-2 {
   width: 72px;
+}
+
+.hotel-cards-rating {
+  display: inline-block;
+
+  width: 140px;
+  margin-left: auto;
+  padding: 8px 22px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
 }
 
 .more-detailed-btn {
