@@ -289,7 +289,7 @@
                   </span>
                   <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
                     xmlns="http://www.w3.org/2000/svg">
-                    <g id="Vector">
+                    <g id="vector">
                       <path d="M4 0H0V6H4V0Z" />
                       <path d="M16 0H12V6H16V0Z" />
                       <path d="M10 0H6V6H10V0Z" />
@@ -307,7 +307,7 @@
                   </span>
                   <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
                     xmlns="http://www.w3.org/2000/svg">
-                    <g id="Vector">
+                    <g id="vector">
                       <path d="M16 12H0V14H16V12Z" />
                       <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
                     </g>
@@ -321,7 +321,7 @@
                   </span>
                   <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
                     xmlns="http://www.w3.org/2000/svg">
-                    <g id="Vector">
+                    <g id="vector">
                       <path d="M2 0H0V2H2V0Z" />
                       <path d="M16 0H4V2H16V0Z" />
                       <path d="M2 4H0V6H2V4Z" />
@@ -336,6 +336,7 @@
               </li>
             </ul>
           </div>
+
           <!-- <блок "карточки гостиниц" -->
           <div class="hotel-cards">
             <!-- <список карточек гостиниц" -->
@@ -395,17 +396,8 @@
               </li>
 
               <!-- __карточка гостиницы (грид)__ -->
-              <li
-                class="hotel-cards-item"
-                style="display: grid;
-                      grid-template-columns:
-                      repeat(2, 140px);
-                      gap: 16px 20px;"
-              >
-                <a
-                  class="hotel-cards-link"
-                  style="grid-column: 1 / -1;"
-                  href="#">
+              <li class="hotel-cards-item">
+                <a class="hotel-cards-link" href="#">
                     <img
                       class="hotel-cards-image"
                       src="images/catalog/hotel-2.jpg"

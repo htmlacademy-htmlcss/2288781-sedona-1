@@ -1079,18 +1079,18 @@ ____________________________________________ */
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-link-home:hover,
-.breadcrumbs-link-group:hover {
+.breadcrumbs-link-home svg:hover ,
+.breadcrumbs-link-group svg:hover {
   color: #ffffff99;
 }
 
-.breadcrumbs-link-home:focus-visible,
-.breadcrumbs-link-group:focus-visible {
+.breadcrumbs-link-home svg:focus-visible,
+.breadcrumbs-link-group svg:focus-visible {
   color: #ffffff;
 }
 
-.breadcrumbs-link-home:active,
-.breadcrumbs-link-group:active {
+.breadcrumbs-link-home svg:active,
+.breadcrumbs-link-group svg:active {
   color: #ffffff99;
 }
 
@@ -1293,8 +1293,8 @@ ____________________________________________ */
 }
 
 .hotel-cards-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
 
   margin: 0;
   padding: 0;
@@ -1303,6 +1303,8 @@ ____________________________________________ */
 }
 
 .hotel-cards-link {
+  grid-column: 1 / -1;
+
   color: #000000;
   text-decoration: none;
 }
@@ -1362,13 +1364,20 @@ ____________________________________________ */
 }
 
 .hotel-cards-item {
-  display: flex;
+  display: grid;
+  grid-template-columns;
+  repeat(2, 140px);
+  gap: 16px 20px;
+
+
+
+  /* display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   width: 300px;
   margin: 0;
-  padding: 20px;
+  padding: 20px; */
 
   border: 1px solid #e6e6e6;
   border-radius: 4px;
