@@ -140,7 +140,7 @@
             <h2 class="visually-hidden">
               Опции бронирования
             </h2>
-            <!-- ___"инфраструктура"___ -->
+            <!-- ___"формы фильтрации"___ -->
             <form class="catalog-filter" action="https.//echo.htmlacademy.ru" method="get">
               <fieldset class="catalog-filter-group infra">
                 <legend class="catalog-filter-subtitle">
@@ -184,69 +184,70 @@
                   </li>
                 </ul>
               </fieldset>
-            <!-- ___"тип жилья"___ -->
-            <fieldset class="catalog-filter-group-left">
-              <legend class="catalog-filter-title">Тип Жилья:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotel-group" value="hotel" checked>
-                    <span class="control-mark control-label">Гостиница</span>
+              <!-- ___"тип жилья"___ -->
+              <fieldset class="catalog-filter-group preise">
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="hotel-group" value="hotel" checked>
+                      <span class="control-mark control-label">Гостиница</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="hotel-group" value="motel">
+                      <span class="control-mark control-label">Мотель</span>
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="hotel-group" value="apartment">
+                      <span class="control-mark control-label">Апартаменты</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <!-- ___"стоимость"___ -->
+              <fieldset class="catalog-filter-group-right">
+                <legend class="catalog-filter-title">Стоимость,
+                  <span>₽:</span>
+                </legend>
+                <div class="range-wrapper-input">
+                  <label class="catalog-filter-label" for="min-price-id">
+                    <span class="visually-hidden">Укажите начальный порог цены</span>
                   </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotel-group" value="motel">
-                    <span class="control-mark control-label">Мотель</span>
+                  <input class="field-price" type="number" value="0" name="min-price" id="min-price-id" min="0">
+                  <label class="catalog-filter-label" for="max-price-id">
+                    <span class="visually-hidden">Укажите конечный порог цены</span>
                   </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotel-group" value="apartment">
-                    <span class="control-mark control-label">Апартаменты</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <!-- ___"стоимость"___ -->
-            <fieldset class="catalog-filter-group-right">
-              <legend class="catalog-filter-title">Стоимость,
-                <span>₽:</span>
-              </legend>
-              <div class="range-wrapper-input">
-                <label class="catalog-filter-label" for="min-price-id">
-                  <span class="visually-hidden">Укажите начальный порог цены</span>
-                </label>
-                <input class="field-price" type="number" value="0" name="min-price" id="min-price-id" min="0">
-                <label class="catalog-filter-label" for="max-price-id">
-                  <span class="visually-hidden">Укажите конечный порог цены</span>
-                </label>
-                <input class="field-price" type="number" value="9000" name="max-price" id="max-price-id" min="0">
-              </div>
-              <div class="range">
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 226px">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену</span>
-                    </button>
+                  <input class="field-price" type="number" value="9000" name="max-price" id="max-price-id" min="0">
+                </div>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
+              </fieldset>
+              <!-- ___"кнопки"___ -->
+              <div class="range-button">
+                <button class="btn catalog-filter-submit" type="submit">
+                  Применить
+                </button>
+                <button class="btn catalog-filter-reset" type="reset">
+                  Сбросить
+                </button>
               </div>
-            </fieldset>
-            <!-- ___"кнопки"___ -->
-            <div class="range-button">
-              <button class="btn catalog-filter-submit" type="submit">
-                Применить
-              </button>
-              <button class="btn catalog-filter-reset" type="reset">
-                Сбросить
-              </button>
-            </div>
+            </form>
           </form>
-
+          
         </section>
 
         <!-- <<<Секция "Каталог гостиниц">>> -->
@@ -255,7 +256,7 @@
           <h2 class="visually-hidden">
             Cписок выбранных гостиниц в Седоне
           </h2>
-          <!-- <обёртка "каталога"> -->
+          <!-- <обёртка cекции "Каталог гостиниц"> -->
           <div class="main-catalog-select-container">
             <!-- __поисковый блок__ -->
             <p class="main-catalog-found">
@@ -265,7 +266,7 @@
               </span>
             </p>
             <!-- __блок сортировки__ -->
-            <div class="select sorting-type">
+            <div class="select">
               <select class="select-control" aria-label="Сортировка">
                 <option value="sheap">
                   Самые дешевые
@@ -277,8 +278,10 @@
                   Самые дорогие
                 </option>
               </select>
+              <span class="visually-hidden">
+                Сортировка (декоративный элемент)
+              </span>
             </div>
-
             <!-- __блок кнопок сортировки__ -->
             <ul class="card-grid-list">
               <li class="card-grid-item">
@@ -340,7 +343,6 @@
           <div class="hotel-cards">
             <!-- <список карточек гостиниц" -->
             <ul class="hotel-cards-list">
-
               <!-- __карточка гостиницы__ -->
               <li class="hotel-cards-item">
                 <!-- изображение карточки -->
@@ -352,49 +354,42 @@
                     height="212"
                     alt="Звездное небо у скалы в окрестностях Седоны."
                   >
-                  <!-- подзаголовок карточки h3 -->
-                  <h3 class="hotel-cards-subtitle">
-                    Amara Resort & Spa
-                  </h3>
                 </a>
-                <!-- описание карточки -->
-                <div class="price-wrapper">
-                  <p class="hotel-cards-type">
+                <!-- подзаголовок карточки h3 -->
+                <h3 class="hotel-cards-subtitle">
+                  Amara Resort & Spa
+                </h3>
+                <!-- место проживания -->
+                <p class="hotel-cards-type">
                     Гостиница
-                  </p>
-                  <p class="hotel-cards-price">
-                    От 4000
-                      <span>
-                        ₽
-                      </span></p>
-                </div>
+                </p>
+                <span class="hotel-cards-price">
+                  От 4000 ₽
+                </span>
                 <!-- кнопки карточки -->
-                <div class="btn-wrapper">
-                  <a class="btn more-detailed-btn" type="submit" href="#">
-                    Подробнее
-                  </a>
-                  <a class="btn rating-btn" type="submit" href="#">
-                    В избранное
-                  </a>
-                </div>
-                <!-- про звезды и рейтинги -->
-                <div class="hotel-wrapper">
-                  <p class="hotel-cards-stars stars-4">
-                    <!-- <<<__hotels-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****)__>>>  -->
-                    <span class="visually-hidden">
-                      Четырехзвездочный отель
-                    </span>
-                  </p>
-                  <a class="hotel-cards-rating">
-                    Рейтинг:
-                      <span>
-                        8.5
-                      </span>
-                  </a>
-                </div>
+                <a class="btn more-detailed-btn" type="submit" href="#">
+                  Подробнее
+                </a>
+                <a class="btn rating-btn" type="submit" href="#">
+                  В избранное
+                </a>
+                <!-- количество звезд -->
+                <p class="hotel-cards-stars first-class">
+                  <!-- <<<__hotels-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****)__>>>  -->
+                  <span class="visually-hidden">
+                    Четырехзвездочный отель
+                  </span>
+                </p>
+                <!-- рейтинг -->
+                <p class="hotel-cards-rating">
+                  Рейтинг:
+                  <span>
+                    8.5
+                  </span>
+                </p>
               </li>
 
-              <!-- __карточка гостиницы (грид)__ -->
+              <!-- __карточка гостиницы__ -->
               <li class="hotel-cards-item">
                 <a class="hotel-cards-link" href="#">
                     <img
@@ -417,7 +412,6 @@
                 </p>
                 <p class="hotel-cards-rating">Рейтинг: <span>9.2</span></p>
               </li>
-
               <li class="hotel-cards-item">
                 <a class="hotel-cards-link" href="#">
                   <img class="hotel-cards-image" src="images/catalog/hotel-3.jpg" width="300" height="212"
@@ -433,7 +427,6 @@
                 </p>
                 <a class="hotel-cards-rating">Рейтинг: <span>6.9</span></a>
               </li>
-
               <li class="hotel-cards-item">
                 <a class="hotel-cards-link" href="#">
                   <img class="hotel-cards-image" src="images/catalog/hotel-4.jpg" width="300" height="212"
@@ -449,7 +442,6 @@
                 </p>
                 <p class="hotel-cards-rating">Рейтинг: <span>5.0</span></p>
               </li>
-
             </ul>
 
           </div>
