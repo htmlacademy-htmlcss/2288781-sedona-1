@@ -16,12 +16,6 @@
 }
 
 /* Общие стили */
-/* body > *,
-body > *::before,
-body > *::after {
-  outline: 2px solid #127557;
-} */
-
 html *,
 html *::before,
 html *::after {
@@ -34,11 +28,13 @@ html {
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   border: 0;
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -161,8 +157,6 @@ body {
 
 .logo-sedona {
   position: relative;
-
-  display: block;
 
   margin-right: -2px;
   margin-bottom: -6px;
@@ -1337,36 +1331,68 @@ ____________________________________________ */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  margin: 0
+  padding: 0;
+  margin-bottom: 40px;
 }
 
 .hotel-cards-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
 
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
 
   list-style-type: none;
 }
 
 .hotel-cards-item {
-  width: 340px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
   background-color: #ffffff;
 
-  border: 1px solid #e6e6e6;
+  outline: 1px solid #e6e6e6;
   border-radius: 4px;
 }
 
 .hotel-cards-link {
-
-
-  color: #000000;
   text-decoration: none;
 }
+
+.hotel-cards-content {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px;
+}
+
+.hotel-cards-image-link,
+.hotel-cards-subtitle-link {
+  grid-column: 1 / -1;
+}
+
+.hotel-cards-texts {
+  grid-column: 1 / 3;
+  grid-row: 1 / -1;
+}
+
+.hotel-cards-type {
+
+}
+
+.hotel-cards-price {
+
+}
+
+.hotel-cards-btn {
+
+
+.hotel-cards-top {
+
+}
+
 
 .hotel-cards-image {
   display: block;

@@ -343,54 +343,69 @@
             </header>
           </div>
 
-          <!-- <блок "карточки гостиниц" -->
+          <!-- <блок "карточки гостиниц"> -->
           <div class="hotel-cards">
 
             <!-- <список карточек гостиниц" -->
             <ul class="hotel-cards-list">
               <li class="hotel-cards-item">
-                <!-- изображение карточки -->
-                <a class="hotel-cards-link" href="#">
-                  <img
-                    class="hotel-cards-image"
-                    src="images/catalog/hotel-1.jpg"
-                    width="300"
-                    height="212"
-                    alt="Звездное небо у скалы в окрестностях Седоны."
-                  >
-                </a>
-                <!-- подзаголовок карточки h3 -->
-                <h3 class="hotel-cards-subtitle">
-                  Amara Resort & Spa
-                </h3>
-                <!-- место проживания -->
-                <p class="hotel-cards-type">
-                    Гостиница
-                </p>
-                <span class="hotel-cards-price">
-                  От 4000 ₽
-                </span>
-                <!-- кнопки карточки -->
-                <a class="btn more-detailed-btn" type="submit" href="#">
-                  Подробнее
-                </a>
-                <a class="btn rating-btn" type="submit" href="#">
-                  В избранное
-                </a>
-                <!-- количество звезд -->
-                <p class="hotel-cards-stars first-class">
-                  <!-- <<<__hotels-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****)__>>>  -->
-                  <span class="visually-hidden">
-                    Четырехзвездочный отель
-                  </span>
-                </p>
-                <!-- рейтинг -->
-                <p class="hotel-cards-rating">
-                  Рейтинг:
-                  <span>
-                    8.5
-                  </span>
-                </p>
+                <div class="hotel-cards-content">
+                  <a class="hotel-cards-link hotel-cards-image-link" href="#">
+                    <!-- изображение карточки -->
+                    <img
+                      class="hotel-cards-image"
+                      src="images/catalog/hotel-1.jpg"
+                      width="300"
+                      height="212"
+                      alt="Звездное небо у скалы в окрестностях Седоны."
+                    >
+                  </a>
+                  <a class="hotel-cards-link hotel-cards-subtitle-link" href="#">
+                    <!-- подзаголовок карточки h3 -->
+                    <h3 class="hotel-cards-subtitle">
+                      Amara Resort & Spa
+                    </h3>
+                  </a>
+                  <div class="hotel-cards-texts">
+                    <!-- место проживания -->
+                    <p class="hotel-cards-link hotel-cards-type-link">
+                      Гостиница
+                    </p>
+                    <!-- стоимость бронирования -->
+                    <p class="hotel-cards-link hotel-cards-price-link">
+                      От 4000
+                      <span>
+                        ₽
+                      </span>
+                    </p>
+                  </div>
+                  <div class="hotel-cards-btn">
+                    <!-- кнопки карточки -->
+                    <a class="hotel-cards-link btn more-detailed-btn-link" type="submit" href="#">
+                      Подробнее
+                    </a>
+                    <a class="hotel-cards-link btn rating-btn-link" type="submit" href="#">
+                      В избранное
+                    </a>
+                  </div>
+                  <div class="hotel-cards-top">
+                    <!-- количество звезд -->
+                    <p class="hotel-cards-link hotel-cards-stars-link first-class">
+                      <!-- <<<__hotels-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****)__>>>  -->
+                      <span class="visually-hidden">
+                        Четырехзвездочный отель
+                      </span>
+                    </p>
+                    <!-- рейтинг -->
+                    <p class="hotel-cards-link hotel-cards-rating-link">
+                      Рейтинг:
+                      <span>
+                        8.5
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
               </li>
               <li class="hotel-cards-item">
                 <a class="hotel-cards-link" href="#">
@@ -626,6 +641,7 @@
       </footer>
 
     </div>
+
   </body>
 
 </html>
