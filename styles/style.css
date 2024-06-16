@@ -1611,7 +1611,7 @@ ____________________________________________ */
 }
 
 .modal-window {
-  position: relative
+  position: relative;
 
   min-width: 717px;
   min-height: 576px;
@@ -1672,7 +1672,7 @@ ____________________________________________ */
 
   background-color: #f2f2f2;
   border-radius: 50%;
-  outline: none
+  outline: none;
   border: none;
 
   z-index: 3;
