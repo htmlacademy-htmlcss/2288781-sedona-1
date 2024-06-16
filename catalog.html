@@ -247,103 +247,107 @@
               </div>
             </form>
           </form>
-          
         </section>
 
         <!-- <<<Секция "Каталог гостиниц">>> -->
         <section class="main-catalog-select" data-test="catalog">
-          <!-- <подзаголовок секции "каталог" h2> -->
+
+          <!-- <подзаголовок секции "каталог гостиниц" h2> -->
           <h2 class="visually-hidden">
-            Cписок выбранных гостиниц в Седоне
+            Фильтрация нужных гостиниц в Седоне
           </h2>
-          <!-- <обёртка cекции "Каталог гостиниц"> -->
+
+          <!-- <блок "выбор нужной гостиницы"> -->
           <div class="main-catalog-select-container">
-            <!-- __поисковый блок__ -->
-            <p class="main-catalog-found">
-              Найдено гостиниц:
-              <span class="catalog-result">
-                38
-              </span>
-            </p>
-            <!-- __блок сортировки__ -->
-            <div class="select">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="sheap">
-                  Самые дешевые
-                </option>
-                <option value="popular">
-                  Самые популярные
-                </option>
-                <option value="expensive">
-                  Самые дорогие
-                </option>
-              </select>
-              <span class="visually-hidden">
-                Сортировка (декоративный элемент)
-              </span>
-            </div>
-            <!-- __блок кнопок сортировки__ -->
-            <ul class="card-grid-list">
-              <li class="card-grid-item">
-                <a class="card-grid-link" href="#">
-                  <span class="visually-hidden">
-                    Показать карточки
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="vector">
-                      <path d="M4 0H0V6H4V0Z" />
-                      <path d="M16 0H12V6H16V0Z" />
-                      <path d="M10 0H6V6H10V0Z" />
-                      <path d="M4 8H0V14H4V8Z" />
-                      <path d="M16 8H12V14H16V8Z" />
-                      <path d="M10 8H6V14H10V8Z" />
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-grid-item">
-                <a class="card-grid-link" href="#">
-                  <span class="visually-hidden">
-                    Показать слайд
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="vector">
-                      <path d="M16 12H0V14H16V12Z" />
-                      <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-grid-item">
-                <a class="card-grid-link" href="#">
-                  <span class="visually-hidden">
-                    Показать список
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="vector">
-                      <path d="M2 0H0V2H2V0Z" />
-                      <path d="M16 0H4V2H16V0Z" />
-                      <path d="M2 4H0V6H2V4Z" />
-                      <path d="M16 4H4V6H16V4Z" />
-                      <path d="M2 8H0V10H2V8Z" />
-                      <path d="M16 8H4V10H16V8Z" />
-                      <path d="M2 12H0V14H2V12Z" />
-                      <path d="M16 12H4V14H16V12Z" />
-                    </g>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            <!-- шапка -->
+            <header class="main-catalog-select-header">
+              <!-- __поисковый блок__ -->
+              <p class="main-catalog-found">
+                Найдено гостиниц:
+                <span class="catalog-result">
+                  38
+                </span>
+              </p>
+              <!-- __блок сортировки__ -->
+              <div class="select">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="sheap">
+                    Самые дешевые
+                  </option>
+                  <option value="popular">
+                    Самые популярные
+                  </option>
+                  <option value="expensive">
+                    Самые дорогие
+                  </option>
+                </select>
+                <span class="visually-hidden">
+                  Сортировка (декоративный элемент)
+                </span>
+              </div>
+              <!-- __блок кнопок сортировки__ -->
+              <ul class="card-grid-list">
+                <li class="card-grid-item">
+                  <a class="card-grid-link" href="#">
+                    <span class="visually-hidden">
+                      Показать карточки
+                    </span>
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="vector">
+                        <path d="M4 0H0V6H4V0Z" />
+                        <path d="M16 0H12V6H16V0Z" />
+                        <path d="M10 0H6V6H10V0Z" />
+                        <path d="M4 8H0V14H4V8Z" />
+                        <path d="M16 8H12V14H16V8Z" />
+                        <path d="M10 8H6V14H10V8Z" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="card-grid-item">
+                  <a class="card-grid-link" href="#">
+                    <span class="visually-hidden">
+                      Показать слайд
+                    </span>
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="vector">
+                        <path d="M16 12H0V14H16V12Z" />
+                        <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="card-grid-item">
+                  <a class="card-grid-link" href="#">
+                    <span class="visually-hidden">
+                      Показать список
+                    </span>
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="vector">
+                        <path d="M2 0H0V2H2V0Z" />
+                        <path d="M16 0H4V2H16V0Z" />
+                        <path d="M2 4H0V6H2V4Z" />
+                        <path d="M16 4H4V6H16V4Z" />
+                        <path d="M2 8H0V10H2V8Z" />
+                        <path d="M16 8H4V10H16V8Z" />
+                        <path d="M2 12H0V14H2V12Z" />
+                        <path d="M16 12H4V14H16V12Z" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </header>
           </div>
 
           <!-- <блок "карточки гостиниц" -->
           <div class="hotel-cards">
+
             <!-- <список карточек гостиниц" -->
             <ul class="hotel-cards-list">
-              <!-- __карточка гостиницы__ -->
               <li class="hotel-cards-item">
                 <!-- изображение карточки -->
                 <a class="hotel-cards-link" href="#">
@@ -388,8 +392,6 @@
                   </span>
                 </p>
               </li>
-
-              <!-- __карточка гостиницы__ -->
               <li class="hotel-cards-item">
                 <a class="hotel-cards-link" href="#">
                     <img
@@ -446,7 +448,7 @@
 
           </div>
 
-          <!-- Блок "Пагинация" -->
+          <!-- <блок "пагинация"> -->
           <div class="pagination">
 
             <ol class="pagination-list">

@@ -16,6 +16,12 @@
 }
 
 /* Общие стили */
+/* body > *,
+body > *::before,
+body > *::after {
+  outline: 2px solid #127557;
+} */
+
 html *,
 html *::before,
 html *::after {
@@ -60,8 +66,7 @@ body {
   flex-direction: column;
 
   width: 1200px;
-  min-height: 100%;
-  /* стик футер */
+  min-height: 100%; /* стик футер */
   margin: 0 auto;
   padding: 0;
 
@@ -113,63 +118,75 @@ body {
 }
 
 
-/* ГЛАВНАЯ СТРАНИЦА */
+/* <<<ГЛАВНАЯ СТРАНИЦА>>> */
 
-/* Header=Шапка (навигация) - начало
+/* HEADER=ШАПКА (навигация) - начало
 ============================================ */
 .page-header {
-  display: flex;
-
+  width: 1200px;
   min-height: 100%; /* стик футер */
-
   margin: 0;
-  padding: 0 70px;
+  padding: 0;
+
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .navigation {
   position: relative;
 
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
 
-  width: 100%;
-  height: auto;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 70px;
+
+  box-sizing: border-box;
 }
 
 .header-logo-sedona {
   position: relative;
 
-  width: 140px;
   margin: 0;
   padding: 0;
+
+  cursor: pointer;
 }
 
 .navigation .header-logo-sedona {
   margin-right: 28px;
-
-  opacity: 1;
 }
 
 .logo-sedona {
   position: relative;
 
-  margin-bottom: -10px;
+  display: block;
+
+  margin-right: -2px;
+  margin-bottom: -6px;
+
+  z-index: 1;
+  opacity: 1;
 }
 
-.header-logo-sedona:hover img,
-.header-logo-sedona:focus-visible img {
+.logo-sedona:hover,
+.logo-sedona:focus-visible {
   opacity: 0.8;
 }
 
-.header-logo-sedona:active img {
+.logo-sedona:active {
   opacity: 0.5;
 }
 
 .navigation .navigation-list {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 
   min-width: 339px;
   margin: 0;
@@ -179,15 +196,16 @@ body {
 }
 
 .navigation-item {
-  position: relative;
-
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  align-self: stretch;
 }
 
 .navigation-link {
   position: relative;
-
-  display: block;
 
   margin: 0;
   padding: 20px 16px;
@@ -201,6 +219,7 @@ body {
   text-decoration: none;
 
   cursor: pointer;
+  opacity: 1;
 }
 
 .navigation-link:hover,
@@ -228,9 +247,15 @@ body {
 }
 
 .navigation .navigation-user-list {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 
+  max-width: 88px;
+  min-height: 64px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -242,31 +267,45 @@ body {
   position: relative;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
 
-  width: 44px;
-  height: 64px;
+  max-width: 44px;
+  min-height: auto;
+
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-user-link {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   min-width: 20px;
   min-height: 20px;
-  margin: 0;
   padding: 22px 12px;
 
-  color: #000000;
   fill: #000000;
 
   cursor: pointer;
 }
 
+.navigation-user-link:hover,
+.navigation-user-link:focus-visible {
+  fill: #756157;
+}
+
+.navigation-user-link:active {
+  fill: #7561574d;
+}
+
 .navigation-user-statistics {
   position: absolute;
   top: 11px;
-  right: 1px;
+  left: 22px;
 
-  margin: 11px 4px 33 px 20px;
+  margin: 0;
   padding: 5px 5px 5px 4px;
 
   font-size: 10px;
@@ -274,11 +313,28 @@ body {
   color: #ffffff;
 
   text-decoration: none;
+  text-align: center;
 
   border-radius: 10px;
   background-color: #7DB54F;
 
   z-index: 1;
+  opacity: 1;
+}
+
+.navigation-icon-group:hover {
+  fill: #756157;
+  opacity: 0.8;
+}
+
+.navigation-icon-group:focus-visible {
+  fill: #756157;
+  opacity: 0.5;
+}
+
+.navigation-icon-group:active {
+  fill: #7561574d;
+  opacity: 0.3;
 }
 
 .navigation .navigation-btn {
@@ -308,24 +364,20 @@ body {
   outline: none;
   cursor: default;
 }
-/* Header=Шапка (навигация) - конец
+/* HEADER=ШАПКА (навигация) - конец
 ============================================ */
 
 
-/* Main=Основное содержание - начало
+/* MAIN=ОСНОВНОЕ СОДЕРЖАНИЕ - начало
 ============================================ */
 .main-index,
 .main-catalog {
-  display: flex;
-  flex-direction: column;
-
   flex-grow: 1; /* стик футер */
-
 
   width: 1200px;
   min-height: 100%; /* стик футер */
 
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -811,49 +863,46 @@ ____________________________________________ */
   color: #FFFFFF4D;
   opacity: 0.3;
 }
-/* Main=Основное содержание - конец
-============================================
-*/
+/* MAIN=ОСНОВНОЕ СОДЕРЖАНИЕ - конец
+============================================ */
 
 
-/* Footer=Подвал - начало
+/* FOOTER=ПОДВАЛ - начало
 ============================================ */
 .page-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  flex-grow: 1;
-  /* стик футер */
+  flex-grow: 1; /* стик футер */
   flex-shrink: 0;
 
-  max-width: 1200px;
-  min-height: 100%;
-  /* стик футер */
+  width: 1200px;
+  min-height: 100%; /* стик футер */
   margin: 0;
-  padding: 40px 70px 30px;
+  padding: 0;
 
   color: #000000;
   background-color: #ffffff;
 }
 
 .page-footer-container {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  width: 1060px;
-  margin: 0;
-  padding: 0;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 70px 30px 70px;
 
   box-sizing: border-box;
 }
 
 .social {
   display: flex;
-  align-items: center;
+  /* justify-content: flex-start;
+  align-items: center; */
 
-  min-width: 142px;
+  max-width: 144px;
   margin: 0;
   padding: 0;
   margin-right: auto;
@@ -869,11 +918,14 @@ ____________________________________________ */
 }
 
 .social-list {
+  position: relative;
+
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
+  min-width: 48px;
+  min-height: 40px;
   margin: 0;
   padding: 0;
 
@@ -881,29 +933,27 @@ ____________________________________________ */
 }
 
 .social-item {
-  min-width: 48px;
-  min-height: 40px;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-  text-align: center;
+  align-self: stretch;
 }
 
 .social-link {
   position: relative;
 
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 
-
+  min-height: 100%;
   margin: 0;
-  padding: 12px 11px;
+  padding: 0 10px;
 
   fill: #83b3d3;
   cursor: pointer;
+  opacity: 1;
 }
 
 .social-link:hover,
@@ -913,6 +963,7 @@ ____________________________________________ */
 
 .social-link:active {
   fill: #68a2ca4d;
+  opacity: 0.3;
 }
 
 .phone {
@@ -920,8 +971,6 @@ ____________________________________________ */
   flex-wrap: wrap;
 
   min-width: 331px;
-  margin: 0 auto;
-  padding: 0 194px 0 195px;
 }
 
 .phone-link {
@@ -950,18 +999,25 @@ ____________________________________________ */
 }
 
 .htmlacademy {
+  display: flex;
+  flex-wrap: wrap;
 
+
+  margin: 0 0 0 auto;
+  padding: 0;
 }
 
 .logo-htmlacademy-link {
   display: block;
 
-  min-width: 115px;
-  margin: 0 0 0 auto;
-  padding: 0;
+  flex-shrink: 0;
+
+  max-width: 115px;
+  max-height: 34px;
 
   color: #000000;
   fill: #000000;
+  fill-opacity: 1;
 
   cursor: pointer;
 }
@@ -977,14 +1033,11 @@ ____________________________________________ */
   fill: #7561574d;
   fill-opacity: 0.3;
 }
-
-/* Footer=Подвал - конец
+/* FOOTER=ПОДВАЛ - конец
 ============================================ */
 
 
-/* Страница каталога
-============================================
-============================================ */
+/* <<<КАТАЛОГ>>> */
 
 /* Фильтр */
 .main-catalog-filter {
@@ -1079,18 +1132,18 @@ ____________________________________________ */
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-link-home svg:hover ,
-.breadcrumbs-link-group svg:hover {
+.breadcrumbs-link-home:hover svg,
+.breadcrumbs-link-group:hover svg {
   color: #ffffff99;
 }
 
-.breadcrumbs-link-home svg:focus-visible,
-.breadcrumbs-link-group svg:focus-visible {
+.breadcrumbs-link-home:focus-visible svg,
+.breadcrumbs-link-group:focus-visible svg {
   color: #ffffff;
 }
 
-.breadcrumbs-link-home svg:active,
-.breadcrumbs-link-group svg:active {
+.breadcrumbs-link-home:active svg,
+.breadcrumbs-link-group:active svg {
   color: #ffffff99;
 }
 
@@ -1238,17 +1291,17 @@ ____________________________________________ */
   border: 2px solid #e5e5e5;;
 }
 
-.selected-control {
+.select-control {
   display: flex;
   align-items: center;
 
-  appearance: none;
+  width: 100%;
 
-}
-
-.selected-control option {
   font-size: 18px;
   line-height: 21px;
+
+  appearance: none;
+
 }
 
 .card-grid-list {
@@ -1284,30 +1337,23 @@ ____________________________________________ */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  margin-bottom: 16px;
 }
 
 .hotel-cards-list {
-  display: grid;
-  grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 
   list-style-type: none;
 }
 
 .hotel-cards-item {
-  display: grid;
-  grid-template-columns: repeat(2, 140px);
-  gap: 16px;
-
-  max-width: 340px;
-  max-height: 438px;
-  margin: 0;
-  padding: 20px;
+  width: 340px;
+  margin-bottom: 20px;
 
   background-color: #ffffff;
 
@@ -1316,7 +1362,7 @@ ____________________________________________ */
 }
 
 .hotel-cards-link {
-  grid-column: 1 / -1;
+
 
   color: #000000;
   text-decoration: none;
@@ -1542,4 +1588,104 @@ ____________________________________________ */
   background-color: #ffffff;
   opacity: 0.3;
   color: #ffffff4d;
+}
+
+
+/* <<<МОДАЛЬНОЕ ОКНО>>> */
+.modal-none {
+  display: none;
+}
+
+.modal-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  background: #f2f2f2cc;
+  z-index: 3;
+}
+
+.modal-window {
+  position: relative
+
+  min-width: 717px;
+  min-height: 576px;
+  margin: 0;
+  padding: 64px 70px;
+
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: none;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 25px 50px 0 #00000026;
+}
+
+.modal-window-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 717px;
+  min-height: auto;
+  margin: 0 auto;
+  padding: 64px 70px;
+
+  text-align: left;
+}
+
+.modal-window-subtitle {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  color: #000000;
+  text-align: left;
+}
+
+.btn-modal-window-close {
+  position: absolute;
+  right: 52px;
+  top: 64px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+
+  background-image: url(../images/modal/cross.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  outline: none
+  border: none;
+
+  z-index: 3;
+}
+
+.btn-modal-window-close:hover {
+  background-color: #68a2ca;
+}
+
+.btn-modal-window-close:focus-visible {
+  background-color: #68a2ca;
+}
+
+.btn-modal-window-close:active {
+  background-color: #68a2ca;
 }
