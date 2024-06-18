@@ -930,17 +930,17 @@ ____________________________________________ */
 
   min-width: 1200px;
   margin: 0 auto;
-  padding: 40px 70px 30px 70px;
+  padding: 0 70px;
 
   box-sizing: border-box;
 }
 
 .social {
   display: flex;
-  /* justify-content: flex-start;
-  align-items: center; */
+  justify-content: flex-start;
+  align-items: center;
 
-  max-width: 144px;
+  width: 144px;
   margin: 0;
   padding: 0;
   margin-right: auto;
@@ -959,7 +959,7 @@ ____________________________________________ */
   position: relative;
 
   display: flex;
-  justify-content: center;
+  ustify-content: center;
   align-items: center;
 
   min-width: 48px;
@@ -1209,17 +1209,13 @@ ____________________________________________ */
 }
 
 /* Фильтр -> "filter = сам фильтр" */
-.catalog-filter {
+.catalog-filter-form {
   display: flex;
+  justify-content: space-between;
 
   width: 1060px;
   margin: 0;
   padding: 0;
-}
-
-.catalog-filter-form {
-  display: flex;
-  justify-content: space-between;
 
   box-sizing: border-box;
 }
@@ -1564,6 +1560,9 @@ ____________________________________________ */
   line-height: 21px;
 
   appearance: none;
+
+
+
 }
 
 .card-grid-list {
@@ -1626,6 +1625,8 @@ ____________________________________________ */
 .hotel-cards-link img {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+
+  display: block;
 
   min-width: 100%;
   object-fit: cover;
