@@ -136,106 +136,157 @@
           </ol>
 
           <!-- <блок "filter = фильтр"> -->
-          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
-            <h2 class="visually-hidden">
-              Опции бронирования
-            </h2>
+          <form class="catalog-filter-form" action="https.//echo.htmlacademy.ru" method="get" data-test="filter">
+
             <!-- ___"инфраструктура"___ -->
-            <form class="catalog-filter" action="https.//echo.htmlacademy.ru" method="get">
-              <fieldset class="catalog-filter-group infra">
-                <legend class="catalog-filter-subtitle">
-                  Инфраструктура:
-                </legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="checkbox"
-                        name="pool"
-                        value="pool"
-                        checked
-                      >
-                      Бассейн
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="checkbox"
-                        name="parking"
-                        value="parking"
-                        checked
-                      >
-                      Парковка
-                    </label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
-                      <input
-                        class="control-input"
-                        type="checkbox"
-                        name="wi-fi"
-                        value="wi-fi"
-                      >
-                      Wi-Fi
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-            <!-- ___"тип жилья"___ -->
-            <fieldset class="catalog-filter-group-left">
-              <legend class="catalog-filter-title">Тип Жилья:</legend>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-subtitle">
+                Инфраструктура:
+              </legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotel-group" value="hotel" checked>
-                    <span class="control-mark control-label">Гостиница</span>
+                  <label class="control checkbox">
+                    <input
+                      class="checkbox-input visually-hidden"
+                      type="checkbox"
+                      name="pool"
+                      checked
+                    >
+                    <span class="checkbox-label control-label control-mark">
+                      Бассейн
+                    </span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotel-group" value="motel">
-                    <span class="control-mark control-label">Мотель</span>
+                    <input
+                      class="checkbox-input visually-hidden"
+                      type="checkbox"
+                      name="parking"
+                      checked
+                    >
+                    <span class="checkbox-label control-label control-mark">
+                      Парковка
+                    </span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="hotel-group" value="apartment">
-                    <span class="control-mark control-label">Апартаменты</span>
+                    <input
+                      class="checkbox-input visually-hidden"
+                      type="checkbox"
+                      name="wi-fi"
+                    >
+                    <span class="checkbox-label control-label control-mark">
+                      Wi-Fi
+                    </span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <!-- ___"стоимость"___ -->
-            <fieldset class="catalog-filter-group-right">
-              <legend class="catalog-filter-title">Стоимость,
-                <span>₽:</span>
+
+            <!-- ___"тип жилья"___ -->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-subtitle">
+                Тип Жилья:
               </legend>
-              <div class="range-wrapper-input">
-                <label class="catalog-filter-label" for="min-price-id">
-                  <span class="visually-hidden">Укажите начальный порог цены</span>
-                </label>
-                <input class="field-price" type="number" value="0" name="min-price" id="min-price-id" min="0">
-                <label class="catalog-filter-label" for="max-price-id">
-                  <span class="visually-hidden">Укажите конечный порог цены</span>
-                </label>
-                <input class="field-price" type="number" value="9000" name="max-price" id="max-price-id" min="0">
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control radio">
+                    <input
+                      class="radio-input visually-hidden"
+                      type="radio"
+                      name="hotel-group"
+                      value="hotel"
+                      checked
+                    >
+                    <span class="control-label control-label">
+                      Гостиница
+                    </span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control radio">
+                    <input
+                      class="radio-input visually-hidden"
+                      type="radio"
+                      name="hotel-group"
+                      checked
+                    >
+                    <span class="control-label control-label">
+                      Мотель
+                    </span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control radio">
+                    <input
+                      class="radio-input visually-hidden"
+                      type="radio"
+                      name="hotel-group"
+                      checked
+                    >
+                    <span class="control-label control-label">
+                      Апартаменты
+                    </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- ___"стоимость"___ -->
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-subtitle">
+                Стоимость,
+                <span>
+                  ₽:
+                </span>
+              </legend>
+              <div class="range-inputs">
+                <div class="container-relative">
+                  <label class="filer-range-label" for="range-min">
+                    от
+                  </label>
+                  <input
+                    class="range-input range-min field"
+                    id="range-min"
+                    type="number"
+                    name="min-value"
+                    value="0"
+                  />
+                </div>
+                <div class="container-relative">
+                  <label class="filer-range-label" for="range-max">
+                    до
+                  </label>
+                  <input
+                    class="range-input range-max field"
+                    id="range-max"
+                    type="number"
+                    name="max-value"
+                    value="9000"
+                  />
+                </div>
               </div>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 226px">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену</span>
+                  <div class="range-selected">
+                    <button class="filter-range-handle handle-min" type="button">
+                      <span class="visually-hidden">
+                        Управление нижней границей стоимости.
+                      </span
+                      >
                     </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    <button class="filter-range-handle handle-max" type="button">
+                      <span class="visually-hidden"
+                        >Управление верхней границей стоимости.
+                      </span>
                     </button>
                   </div>
                 </div>
               </div>
             </fieldset>
+
             <!-- ___"кнопки"___ -->
             <div class="range-button">
               <button class="btn catalog-filter-submit" type="submit">
@@ -245,216 +296,315 @@
                 Сбросить
               </button>
             </div>
+
           </form>
 
         </section>
 
         <!-- <<<Секция "Каталог гостиниц">>> -->
         <section class="main-catalog-select" data-test="catalog">
-          <!-- <подзаголовок секции "каталог" h2> -->
+
+          <!-- <подзаголовок секции "каталог гостиниц" h2> -->
           <h2 class="visually-hidden">
-            Cписок выбранных гостиниц в Седоне
+            Опции бронирования гостиниц
           </h2>
-          <!-- <обёртка "каталога"> -->
+
+          <!-- <блок "селектор"> -->
           <div class="main-catalog-select-container">
-            <!-- __поисковый блок__ -->
-            <p class="main-catalog-found">
-              Найдено гостиниц:
-              <span class="catalog-result">
-                38
-              </span>
-            </p>
-            <!-- __блок сортировки__ -->
-            <div class="select sorting-type">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="sheap">
-                  Самые дешевые
-                </option>
-                <option value="popular">
-                  Самые популярные
-                </option>
-                <option value="expensive">
-                  Самые дорогие
-                </option>
-              </select>
-            </div>
 
-            <!-- __блок кнопок сортировки__ -->
-            <ul class="card-grid-list">
-              <li class="card-grid-item">
-                <a class="card-grid-link" href="#">
-                  <span class="visually-hidden">
-                    Показать карточки
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="vector">
-                      <path d="M4 0H0V6H4V0Z" />
-                      <path d="M16 0H12V6H16V0Z" />
-                      <path d="M10 0H6V6H10V0Z" />
-                      <path d="M4 8H0V14H4V8Z" />
-                      <path d="M16 8H12V14H16V8Z" />
-                      <path d="M10 8H6V14H10V8Z" />
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-grid-item">
-                <a class="card-grid-link" href="#">
-                  <span class="visually-hidden">
-                    Показать слайд
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="vector">
-                      <path d="M16 12H0V14H16V12Z" />
-                      <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-grid-item">
-                <a class="card-grid-link" href="#">
-                  <span class="visually-hidden">
-                    Показать список
-                  </span>
-                  <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="vector">
-                      <path d="M2 0H0V2H2V0Z" />
-                      <path d="M16 0H4V2H16V0Z" />
-                      <path d="M2 4H0V6H2V4Z" />
-                      <path d="M16 4H4V6H16V4Z" />
-                      <path d="M2 8H0V10H2V8Z" />
-                      <path d="M16 8H4V10H16V8Z" />
-                      <path d="M2 12H0V14H2V12Z" />
-                      <path d="M16 12H4V14H16V12Z" />
-                    </g>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+              <!-- __поисковый блок__ -->
+              <p class="main-catalog-found">
+                Найдено гостиниц:
+                <span class="catalog-result">
+                  38
+                </span>
+              </p>
 
-          <!-- <блок "карточки гостиниц" -->
-          <div class="hotel-cards">
-            <!-- <список карточек гостиниц" -->
-            <ul class="hotel-cards-list">
+              <!-- __блок сортировки__ -->
+              <div class="select">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="sheap">
+                    Самые дешевые
+                  </option>
+                  <option value="popular">
+                    Самые популярные
+                  </option>
+                  <option value="expensive">
+                    Самые дорогие
+                  </option>
+                </select>
+                <span class="visually-hidden">
+                  Сортировка (декоративный элемент)
+                </span>
+              </div>
 
-              <!-- __карточка гостиницы__ -->
-              <li class="hotel-cards-item">
-                <!-- изображение карточки -->
-                <a class="hotel-cards-link" href="#">
-                  <img
-                    class="hotel-cards-image"
-                    src="images/catalog/hotel-1.jpg"
-                    width="300"
-                    height="212"
-                    alt="Звездное небо у скалы в окрестностях Седоны."
-                  >
-                  <!-- подзаголовок карточки h3 -->
-                  <h3 class="hotel-cards-subtitle">
-                    Amara Resort & Spa
-                  </h3>
-                </a>
-                <!-- описание карточки -->
-                <div class="price-wrapper">
-                  <p class="hotel-cards-type">
-                    Гостиница
-                  </p>
-                  <p class="hotel-cards-price">
-                    От 4000
-                      <span>
-                        ₽
-                      </span></p>
-                </div>
-                <!-- кнопки карточки -->
-                <div class="btn-wrapper">
-                  <a class="btn more-detailed-btn" type="submit" href="#">
-                    Подробнее
-                  </a>
-                  <a class="btn rating-btn" type="submit" href="#">
-                    В избранное
-                  </a>
-                </div>
-                <!-- про звезды и рейтинги -->
-                <div class="hotel-wrapper">
-                  <p class="hotel-cards-stars stars-4">
-                    <!-- <<<__hotels-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****)__>>>  -->
+              <!-- __блок кнопок сортировки__ -->
+              <ul class="card-grid-list">
+                <li class="card-grid-item">
+                  <a class="card-grid-link card-grid-link-current btn-card-grid-link" href="#">
                     <span class="visually-hidden">
-                      Четырехзвездочный отель
+                      Показать карточки
                     </span>
-                  </p>
-                  <a class="hotel-cards-rating">
-                    Рейтинг:
-                      <span>
-                        8.5
-                      </span>
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="vector">
+                        <path d="M4 0H0V6H4V0Z" />
+                        <path d="M16 0H12V6H16V0Z" />
+                        <path d="M10 0H6V6H10V0Z" />
+                        <path d="M4 8H0V14H4V8Z" />
+                        <path d="M16 8H12V14H16V8Z" />
+                        <path d="M10 8H6V14H10V8Z" />
+                      </g>
+                    </svg>
                   </a>
-                </div>
-              </li>
-
-              <!-- __карточка гостиницы (грид)__ -->
-              <li class="hotel-cards-item">
-                <a class="hotel-cards-link" href="#">
-                    <img
-                      class="hotel-cards-image"
-                      src="images/catalog/hotel-2.jpg"
-                      width="300"
-                      height="212"
-                      alt="Радуга на фоне темного неба у скалы в окрестностях Седоны."
-                    >
-                    <h3 class="hotel-cards-subtitle">
-                      Villas-at-Poco-Diablo
-                    </h3>
-                </a>
-                <span class="hotel-cards-type">Гостиница</span>
-                <b class="hotel-cards-price">От 5000 <span>₽</span></b>
-                <a class="btn more-detailed-btn" type="submit" href="#">Подробнее</a>
-                <button class="btn rating-btn rating-btn-lime" type="submit" href="#">В избранном</button>
-                <p class="hotel-cards-stars stars-4">
-                  <span class="visually-hidden">Четырехзвездочный отель</span>
-                </p>
-                <p class="hotel-cards-rating">Рейтинг: <span>9.2</span></p>
-              </li>
-
-              <li class="hotel-cards-item">
-                <a class="hotel-cards-link" href="#">
-                  <img class="hotel-cards-image" src="images/catalog/hotel-3.jpg" width="300" height="212"
-                    alt="Рассвет у остроконечной скалы в окрестностях Седоны.">
-                  <h3 class="hotel-cards-subtitle">Desert Quail Inn</h3>
-                </a>
-                <p class="hotel-cards-type">Гостиница</p>
-                <p class="hotel-cards-price">От 2500 <span>₽</span></p>
-                <a class="btn more-detailed-btn" type="submit" href="#">Подробнее</a>
-                <a class="btn rating-btn" type="submit" href="#">В избранное</a>
-                <p class="hotel-cards-stars stars-3">
-                  <span class="visually-hidden">Трехзвездочный отель</span>
-                </p>
-                <a class="hotel-cards-rating">Рейтинг: <span>6.9</span></a>
-              </li>
-
-              <li class="hotel-cards-item">
-                <a class="hotel-cards-link" href="#">
-                  <img class="hotel-cards-image" src="images/catalog/hotel-4.jpg" width="300" height="212"
-                    alt="Лунное освещение у скалы в окрестностях Седоны.">
-                  <h3 class="hotel-cards-subtitle">GreenTree Inn</h3>
-                </a>
-                <p class="hotel-cards-type">Гостиница</p>
-                <p class="hotel-cards-price">От 1500 <span>₽</span>₽</p>
-                <a class="btn more-detailed-btn" type="submit" href="#">Подробнее</a>
-                <a class="btn rating-btn" type="submit" href="#">В избранное</a>
-                <p class="hotel-cards-stars stars-2">
-                  <span class="visually-hidden">Двухзвездочный отель</span>
-                </p>
-                <p class="hotel-cards-rating">Рейтинг: <span>5.0</span></p>
-              </li>
-
-            </ul>
+                </li>
+                <li class="card-grid-item">
+                  <a class="card-grid-link" href="#">
+                    <span class="visually-hidden">
+                      Показать слайд
+                    </span>
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="vector">
+                        <path d="M16 12H0V14H16V12Z" />
+                        <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="card-grid-item">
+                  <a class="card-grid-link" href="#">
+                    <span class="visually-hidden">
+                      Показать список
+                    </span>
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="vector">
+                        <path d="M2 0H0V2H2V0Z" />
+                        <path d="M16 0H4V2H16V0Z" />
+                        <path d="M2 4H0V6H2V4Z" />
+                        <path d="M16 4H4V6H16V4Z" />
+                        <path d="M2 8H0V10H2V8Z" />
+                        <path d="M16 8H4V10H16V8Z" />
+                        <path d="M2 12H0V14H2V12Z" />
+                        <path d="M16 12H4V14H16V12Z" />
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
 
           </div>
 
-          <!-- Блок "Пагинация" -->
+          <!-- <блок "карточки гостиниц"> -->
+          <ul class="hotel-cards">
+
+            <!-- Гостиница Amara Resort & Spa -->
+            <li class="hotel-cards-item">
+              <!-- изображение гостиницы -->
+              <a class="hotel-cards-link" href="#">
+                <img
+                  src="images/catalog/hotel-1.jpg"
+                  width="300"
+                  height="212"
+                  alt="Звездное небо у скалы в окрестностях Седоны."
+                >
+              </a>
+              <!-- подзаголовок карточки h3 -->
+              <a class="hotel-cards-subtitle-link" href="#">
+                <h3 class="hotel-cards-subtitle">
+                  Amara Resort & Spa
+                </h3>
+              </a>
+              <!-- место проживания -->
+              <span class="hotel-cards-type">
+                Гостиница
+              </span>
+              <!-- стоимость бронирования -->
+              <p class="hotel-cards-price">
+                От 4000
+                <span>
+                  ₽
+                </span>
+              </p>
+              <!-- кнопки карточки -->
+              <a class="btn more-detailed-btn" type="submit" href="#">
+                Подробнее
+              </a>
+              <a class="btn rating-btn" type="submit" href="#">
+                В избранное
+              </a>
+              <!-- количество звезд -->
+              <!-- <<<__hotel-cards-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****). ?Либо &#9733;__>>>  -->
+              <p class="hotel-cards-stars first-class">
+                <span class="visually-hidden">
+                  Четырехзвездочный отель
+                </span>
+              </p>
+              <!-- рейтинг -->
+              <p class="hotel-cards-rating">
+                Рейтинг:
+                <span>
+                  8.5
+                </span>
+              </p>
+            </li>
+
+            <!-- Гостиница Villas-at-Poco-Diablo -->
+            <li class="hotel-cards-item">
+              <!-- изображение гостиницы -->
+              <a class="hotel-cards-link" href="#">
+                <img
+                  src="images/catalog/hotel-2.jpg"
+                  width="300"
+                  height="212"
+                  alt="Радуга на фоне темного неба у скалы в окрестностях Седоны."
+                >
+              </a>
+              <!-- подзаголовок карточки h3 -->
+              <a class="hotel-cards-subtitle-link" href="#">
+                <h3 class="hotel-cards-subtitle">
+                  Villas-at-Poco-Diablo
+                </h3>
+              </a>
+              <!-- место проживания -->
+              <span class="hotel-cards-type">
+                Гостиница
+              </span>
+              <!-- стоимость бронирования -->
+              <p class="hotel-cards-price">
+                От 5000
+                <span>
+                  ₽
+                </span>
+              </p>
+              <!-- кнопки карточки -->
+              <a class="btn more-detailed-btn" type="submit" href="#">
+                Подробнее
+              </a>
+              <a class="btn rating-btn rating-btn-lime" type="submit" href="#">
+                В избранном
+              </a>
+              <!-- количество звезд -->
+              <!-- <<<__hotel-cards-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****). ?Либо &#9733;__>>>  -->
+              <p class="hotel-cards-stars first-class">
+                <span class="visually-hidden">
+                  Четырехзвездочный отель
+                </span>
+              </p>
+              <p class="hotel-cards-rating">
+                Рейтинг:
+                <span>
+                  9.2
+                </span>
+              </p>
+            </li>
+
+            <!-- Гостиница Desert Quail Inn -->
+            <li class="hotel-cards-item">
+              <!-- изображение гостиницы -->
+              <a class="hotel-cards-link" href="#">
+                <img
+                  src="images/catalog/hotel-3.jpg"
+                  width="300"
+                  height="212"
+                  alt="Рассвет у остроконечной скалы в окрестностях Седоны."
+                >
+              </a>
+              <!-- подзаголовок карточки h3 -->
+              <a class="hotel-cards-subtitle-link" href="#">
+                <h3 class="hotel-cards-subtitle">
+                  Desert Quail Inn
+                </h3>
+              </a>
+              <!-- место проживания -->
+              <span class="hotel-cards-type">
+                Гостиница
+              </span>
+              <!-- стоимость бронирования -->
+              <p class="hotel-cards-price">
+                От 2500
+                <span>
+                  ₽
+                </span>
+              </p>
+              <!-- кнопки карточки -->
+              <a class="btn more-detailed-btn" type="submit" href="#">
+                Подробнее
+              </a>
+              <a class="btn rating-btn" type="submit" href="#">
+                В избранное
+              </a>
+              <!-- количество звезд -->
+              <!-- <<<__hotel-cards-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****). ?Либо &#9733;__>>>  -->
+              <p class="hotel-cards-stars comfort">
+                <span class="visually-hidden">
+                  Трехзвездочный отель
+                </span>
+              </p>
+              <!-- рейтинг -->
+              <p class="hotel-cards-rating">
+                Рейтинг:
+                <span>
+                  6.9
+                </span>
+              </p>
+            </li>
+
+            <!-- Гостиница GreenTree Inn -->
+            <li class="hotel-cards-item">
+              <!-- изображение гостиницы -->
+              <a class="hotel-cards-link" href="#">
+                <img
+                  src="images/catalog/hotel-4.jpg"
+                  width="300"
+                  height="212"
+                  alt="Лунное освещение у скалы в окрестностях Седоны."
+                >
+              </a>
+              <!-- подзаголовок карточки h3 -->
+              <a class="hotel-cards-subtitle-link" href="#">
+                <h3 class="hotel-cards-subtitle">
+                  GreenTree Inn
+                </h3>
+              </a>
+              <!-- место проживания -->
+              <span class="hotel-cards-type">
+                Гостиница
+              </span>
+              <!-- стоимость бронирования -->
+              <p class="hotel-cards-price">
+                От 1500
+                <span>
+                  ₽
+                </span>
+              </p>
+              <!-- кнопки карточки -->
+              <a class="btn more-detailed-btn" type="submit" href="#">
+                Подробнее
+              </a>
+              <a class="btn rating-btn" type="submit" href="#">
+                В избранное
+              </a>
+              <!-- количество звезд -->
+              <!-- <<<__hotel-cards-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****). ?Либо &#9733;__>>>  -->
+              <p class="hotel-cards-stars standard">
+                <span class="visually-hidden">
+                  Двухзвездочный отель
+                </span>
+              </p>
+              <!-- рейтинг -->
+              <p class="hotel-cards-rating">
+                Рейтинг:
+                <span>
+                  5.0
+                </span>
+              </p>
+            </li>
+
+          </ul>
+
+          <!-- <блок "пагинация"> -->
           <div class="pagination">
 
             <ol class="pagination-list">
@@ -632,6 +782,7 @@
       </footer>
 
     </div>
+
   </body>
 
 </html>
