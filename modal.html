@@ -6,179 +6,134 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-  <body class="modal-window-block modal-window-none">
-
-    <div class="modal-window" data-test="modal">
-
-      <!-- подзаголовок модального окна h2 -->
-      <h2 class="modal-window-subtitle">
-        Поиск гостиницы в Седоне
-      </h2>
-
-      <!-- круглая кнопка "Закрыть окно" -->
-      <button class="btn-modal-window-close">
-        <span class="visually-hidden">
-          Закрыть окно
-        </span>
-      </button>
-
-      <!-- формы модального окна -->
-      <section class="modal-window-form" action="https://echo.htmlacademy.ru" method="post">
-
-        <!-- __дата заезда__ -->
-        <form class="modal-window-form">
-          <label class="modal-window-label" for="arrival-date">
-              Дата заезда:
-          </label>
-          <input
-            class="modal-window-input"
-            type="text"
-            id="arrival-date"
-            name="arrival-date"
-            value="27 апреля 2020"
-            placeholder="Укажите дату"
-            aria-label="Указание даты заезда"
-            required
-          >
-          <p class="info-text">
-            <span class="error-text">
-              Мы не можем отправить вас в прошлое.
+  <body>
+    <div class="body-page">
+      <!-- Заголовок модального окна h1-->
+      <h1 class="title visually-hidden">
+        Бронирование гостиницы в Седоне с помощью модального окна
+      </h1>
+      <!-- Модальное окно -->
+      <div class="modal-container modal-container-hidden">
+        <div class="modal modal-dialog" data-test="modal">
+          <button class="modal-close-button" type="button">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.49 1.783 13.199.49 7.49 6.198 1.783.491.49 1.783 6.198 7.49.49 13.198l1.293 1.293L7.49 8.783l5.708 5.708 1.293-1.293-5.708-5.707 5.708-5.708Z"
+              />
+            </svg>
+            <span class="visually-hidden">
+              Закрыть модальное окно
             </span>
-          </p>
-        </form>
-
-        <!-- __дата выезда__ -->
-        <form class="modal-window-form">
-          <label class="modal-window-label" for="date-departure">
-              Дата выезда:
-          </label>
-          <input
-            class="modal-window-input"
-            type="text"
-            id="date-departure"
-            name="date-departure"
-            value="1 сентября 2023"
-            placeholder="Укажите дату"
-            aria-label="Указание даты выезда"
-            required
-          >
-          <p class="info-text">
-            <span class="freedom-text">
-              На эти даты есть свободные номера. Пока есть.
-            </span>
-          </p>
-        </form>
-
-        <!-- __люди__ -->
-        <div class="modal-window-group-people">
-
-          <!-- <<<взрослые>>> -->
-          <form class="modal-window-person">
-            <label class="modal-window-label" for="adults">
-              Взрослые:
-            </label>
-            <div class="modal-window-person-btn">
-              <button type="button" class="btn-person-minus">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="2"
-                  viewBox="0 0 14 2"
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">
+              Поиск гостиницы в Седоне
+            </h2>
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <!-- Дата Заезда: -->
+              <div class="field-group">
+                <label class="arrival" for="arrival">
+                  Дата Заезда:
+                </label>
+                <input
+                  class="arrival-form"
+                  type="text"
+                  id="arrival"
+                  name="arrival-date"
+                  placeholder="27 апреля 2020"
                 >
-                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
-                </svg>
-                <span class="visually-hidden">
-                  Минус
+                <span class="date-error">
+                  Мы не можем отправить вас в прошлое.
                 </span>
-              </button>
-              <input
-                class="modal-window-person-input"
-                type="number"
-                id="adults"
-                name="adults"
-                value="2"
-                placeholder="2"
-                aria-label="Количество взрослых - двое"
-                required
-              >
-              <button type="button" class="btn-person-plus">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                >
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
-                </svg>
-                <span class="visually-hidden">
-                  Плюс
-                </span>
-              </button>
-            </div>
-          </form>
-
-          <!-- <<<дети>>> -->
-          <form class="modal-window-person">
-            <label class="modal-window-label" for="children">
-              Дети:
-              <!-- <дополнительная информация> -->
-              <div class="info">
-                <button class="btn-info">
-                  <span class="visually-hidden">
-                    Посмотреть дополнительная информацию
-                  </span>
-                </button>
-                <p class="info-text" role="info" id="info-label">
-                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                </p>
               </div>
-            </label>
-            <div class="modal-window-person-btn">
-              <button type="button" class="btn-person-minus">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="2"
-                  viewBox="0 0 14 2"
+              <!-- Дата Выезда: -->
+              <div class="field-group">
+                <label class="leaving" for="leaving">Дата Выезда:</label>
+                <input
+                  class="leaving-form"
+                  type="text"
+                  id="leaving"
+                  name="leaving-date"
+                  placeholder="1 сентября 2023"
                 >
-                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
-                </svg>
-                <span class="visually-hidden">
-                  Минус
+                <span class="places">
+                  На эти даты есть свободные номера. Пока есть.
                 </span>
+              </div>
+              <!-- Взрослые: -->
+              <div class="adults">
+                <div class="adults-field">
+                  <label class="field-adults" for="adults">
+                    Взрослые:
+                  </label>
+                </div>
+                <div class="adults-button">
+                  <button class="button-minus-a button-number" type="button">
+                    <span class="visually-hidden">
+                      Меньше
+                    </span>
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v2h14V0H0Z"
+                      />
+                    </svg>
+                  </button>
+                  <input class="adults-input" type="number" id="adults" name="number-adults" value="2">
+                  <button class="button-plus-a button-number" type="button">
+                    <span class="visually-hidden">
+                      Больше
+                    </span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- Дети: -->
+              <div class="children">
+                <div class="children-warning">
+                  <label class="field-children" for="children">
+                    Дети:
+                  </label>
+                  <div class="tooltip">
+                    <button class="warning" type="button" aria-labelledby="warning-children-age">
+                      <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" fill="#fff"
+                      />
+                      </svg>
+                    </button>
+                    <span class="warning-text" id="warning-children-age">
+                      Укажите количество детей, <br> которые будут с вами, возраст <br> которых от 6 до 18 лет. Дети <br>
+                      до 6 лет размещаются <br> бесплатно.
+                    </span>
+                  </div>
+                </div>
+                <div class="children-button">
+                  <button class="button-minus button-number" type="button">
+                    <span class="visually-hidden">Меньше</span>
+                    <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v2h14V0H0Z" />
+                    </svg>
+                  </button>
+                  <input class="children-input" type="number" id="children" name="number-children" value="2">
+                  <button class="button-plus button-number" type="button">
+                    <span class="visually-hidden">Больше</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- Кнопки -->
+              <button class="button find-form-button" type="submit">
+                Найти
               </button>
-              <input
-                class="modal-window-person-input"
-                type="number"
-                id="children"
-                name="children"
-                value="2"
-                placeholder="2"
-                aria-label="Количество детей - двое"
-                required
-              >
-              <button type="button" class="btn-person-plus">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                >
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
-                </svg>
-                <span class="visually-hidden">
-                  Плюс
-                </span>
-              </button>
-            </div>
-          </form>
-
+            </form>
+          </section>
         </div>
-
-      </section>
-
+      </div>
     </div>
-
   </body>
-
 </html>
