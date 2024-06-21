@@ -2412,6 +2412,7 @@ ____________________________________________ */
 }
 
 .tooltip-toggle {
+  position: absolute;
   display: block;
 
   width: 26px;
@@ -2425,6 +2426,8 @@ ____________________________________________ */
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  color: #ffffff;
+  fill: #ffffff;
 }
 
 .tooltip-text {
