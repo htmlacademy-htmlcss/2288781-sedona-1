@@ -660,15 +660,15 @@ ____________________________________________ */
 }
 
 .services-item-home::before {
-  background-image: url("../images/services-icon/services-icon-home.svg");
+  background-image: url("../images/services-icon/housing.svg");
 }
 
 .services-item-food::before {
-  background-image: url("../images/services-icon/services-icon-food.svg");
+  background-image: url("../images/services-icon/eating.svg");
 }
 
 .services-item-souvenirs::before {
-  background-image: url("../images/services-icon/services-icon-souvenirs.svg");
+  background-image: url("../images/services-icon/souvenir.svg");
 }
 
 .services-title {
@@ -1236,11 +1236,10 @@ ____________________________________________ */
 }
 
 .filter-max span {
-  font-family: "pt sans", sans-serif;
   font-size: 18px;
-  font-weight: 400;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.3);
+
+  color: #0000004d;
   position: absolute;
   right: 19px;
   top: 14px;
@@ -1253,8 +1252,7 @@ ____________________________________________ */
 
   font-size: 18px;
   line-height: 24px;
-  color: rgba(0, 0, 0, 0.3);
-
+  color: #0000004d;
 }
 
 .filter-min:hover {
@@ -1334,7 +1332,7 @@ ____________________________________________ */
 
 .button-submit:active {
   background-color: #68a2ca;
-  color: rgba(255, 255, 255, 0.3);
+  color: #ffffff4d;
 }
 
 .button-reset {
@@ -1481,7 +1479,6 @@ ____________________________________________ */
 }
 
 .select-control {
-
   width: 292px;
   min-height: 46px;
   margin-right: 72px;
@@ -1573,7 +1570,7 @@ ____________________________________________ */
   height: 14px;
   padding: 22px 21px;
 
-  background-image: url("../images/select-icon/slide.svg");
+  background-image: url("../images/select-icon/slideshow.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
