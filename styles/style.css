@@ -159,7 +159,6 @@ body {
 
   display: block;
 
-  max-width: 100%;
   height: auto;
   margin-right: -2px;
   margin-bottom: -6px;
@@ -210,6 +209,7 @@ body {
 
   display: block;
 
+  width: auto;
   margin: 0;
   padding: 20px 16px;
 
@@ -260,11 +260,10 @@ body {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
 
-  max-width: 88px;
-  max-height: 64px;
+  min-width: 200px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -1609,7 +1608,6 @@ ____________________________________________ */
 
 .hotel-cards-item {
   display: grid;
-  grid-template-rows: 232px 28px 21px 36px auto;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
 
