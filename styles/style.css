@@ -2274,7 +2274,7 @@ ____________________________________________ */
   margin-top: 20px;
 }
 
-.modal-person-block {
+.modal-person-container {
   grid-column: 1/-1;
 
   display: flex;
