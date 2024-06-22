@@ -39,6 +39,7 @@ html {
 body {
   height: 100%; /* стик футер */
 
+  min-width: 1020px;
   margin: 0;
   padding: 0 40px;
 
@@ -808,13 +809,8 @@ ____________________________________________ */
   display: flex;
 
   width: 452px;
-  min-height: 52px;
   margin: 0;
   padding: 0;
-
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
 
   background-color: #f2f2f2;
   border: none;
@@ -830,9 +826,11 @@ ____________________________________________ */
 
   font-size: 18px;
   line-height: 24px;
+  word-wrap: break-word;
 
-  border-radius: 4px 0 0 4px;
+  color: #000000;
   border: none;
+  opacity: 0.6;
 }
 
 .subscribe-form-input:hover {
@@ -1950,6 +1948,7 @@ ____________________________________________ */
   align-items: center;
 
   min-width: 1200px;
+  min-height: 50px;
   margin: 0 auto;
   padding: 40px 70px 30px;
 
@@ -2022,25 +2021,31 @@ ____________________________________________ */
 }
 
 .social-link:disabled svg {
-  color: rgba(104, 162, 202, 0.2);
+  color: #68a2ca33;
 }
 
 .phone {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-  min-width: 331px;
+  width: 331px;
 }
 
 .phone-link {
+  position: absolute;
   margin: 0 auto;
   padding: 0;
+  padding-bottom: ;
 
-  font-style: normal;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  word-wrap: break-word;
 
   color: #000000;
 
@@ -2061,7 +2066,7 @@ ____________________________________________ */
 }
 
 .phone-link:disabled, .footer-link:disabled {
-  color: rgba(117, 97, 87, 0.5);
+  color: #75615780;
 }
 
 .htmlacademy {
