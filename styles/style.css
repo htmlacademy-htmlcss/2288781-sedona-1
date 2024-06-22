@@ -828,6 +828,9 @@ ____________________________________________ */
   margin: 0;
   padding: 0 0 0 20px;
 
+  font-size: 18px;
+  line-height: 24px;
+
   border-radius: 4px 0 0 4px;
   border: none;
 }
@@ -1351,10 +1354,13 @@ ____________________________________________ */
   color: #ffffff4d;
 }
 
-.control-input {
+.control {
   font-size: 18px;
   line-height: 23px;
+}
 
+
+.control-input {
   color: #3f5e72;
   background-color: #ffffff;
 }
@@ -1508,13 +1514,16 @@ ____________________________________________ */
 
 .choose-icons {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 
+  min-width: 200px;
   margin: 0;
   padding: 0;
+  margin-left: auto;
 
-  list-style: none;
+  list-style-type: none;
+  gap: 8px;
 }
 
 .choose-icon:hover {
@@ -1532,15 +1541,12 @@ ____________________________________________ */
 .choose-icon {
   width: 45px;
   height: 45px;
+  margin: 0;
+  padding: 0;
 
   border: solid 2px #e5e5e5;
   border-radius: 4px;
   list-style: none;
-}
-
-.choose-icon:nth-last-child(2),
-.choose-icon:nth-last-child(3) {
-  margin-right: 8px;
 }
 
 .choose-icon-active {
@@ -1640,6 +1646,7 @@ ____________________________________________ */
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  word-wrap: break-word;
 
   color: #000000;
   text-align: left;
@@ -2205,10 +2212,9 @@ ____________________________________________ */
   padding: 23px 21px;
   padding-right: 50px;
 
-  font: inherit;
-  font-weight: 700;
+  font-size: 18px;
   line-height: 24px;
-  border-radius: 4px;
+  font-weight: 700;
 
   color: #000000;
   border: none;
@@ -2217,6 +2223,7 @@ ____________________________________________ */
   background-image: url("../images/modal/date.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  border-radius: 4px;
 }
 
 .modal-input:hover {
