@@ -2095,14 +2095,14 @@ ____________________________________________ */
   fill: #7561574d;
   fill-opacity: 0.3;
 }
-
 /* F O O T E R  =  П О Д В А Л - конец
 ====================================== */
+
 
 /* M O D A L  =  М О Д А Л Ь Н О Е  О К Н О - начало
 ==================================================== */
 
-.modal-block {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -2151,7 +2151,7 @@ ____________________________________________ */
   border-radius: 50%;
   cursor: pointer;
   background-color: #f2f2f2;
-  background-image: url("../images/modal/cross.png");
+  background-image: url("../images/modal/cross.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -2285,7 +2285,7 @@ ____________________________________________ */
 .modal-person-group {
   display: flex;
 
-  width: 112px;
+  width: 111px;
 
   gap: 2px;
   border-radius: 4px;
@@ -2407,7 +2407,7 @@ ____________________________________________ */
 
 .tooltip {
   position: absolute;
-  right: -37px;
+  right: -10px;
   top: 3px;
 }
 
@@ -2421,13 +2421,15 @@ ____________________________________________ */
   border-radius: 50%;
   border: none;
 
-  background-image: url("../images/modal/info.png");
+  background-image: url("../images/modal/info.svg");
   background-color: #83b3d3;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   color: #ffffff;
   fill: #ffffff;
+
+  text-align: left;
 }
 
 .tooltip-text {
@@ -2451,6 +2453,7 @@ ____________________________________________ */
   z-index: 4;
 
   transform: translateX(-50%);
+  text-align: left;
 }
 
 .tooltip-text::before {
