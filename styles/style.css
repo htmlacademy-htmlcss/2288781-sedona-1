@@ -1474,8 +1474,6 @@ ____________________________________________ */
 
   margin: 0;
   padding: 50px 70px 60px;
-
-  border-bottom: 1px solid #e6e6e6;
 }
 
 .choose-type {
@@ -1644,6 +1642,7 @@ ____________________________________________ */
   margin-bottom: 40px;
 
   list-style-type: none;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .hotel-cards-item {
