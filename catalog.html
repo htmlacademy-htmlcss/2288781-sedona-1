@@ -105,7 +105,7 @@
           <div class="filters" data-test="filter">
             <h3 class="subtitle visually-hidden">Выбор нужной гостиницы в городке Седоны</h3>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <fieldset class="catalog-filter-group catalog-filter-infrastructure">
+              <fieldset class="catalog-filter-group">
                 <legend class=" catalog-filter-subtitle">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -229,34 +229,34 @@
         <section class="main-catalog-select" data-test="catalog">
           <h2 class="visually-hidden">Опции бронирования гостиниц</h2>
           <!-- <блок "селектор"> -->
-          <div class="main-catalog-select-container">
-            <div class="choose-type">
-              <p class="found-hotels">Найдено гостиниц:
-                <span>38</span>
-              </p>
-              <select class="select-control" aria-label="Сортировка" disabled>
-                <option class="select-control-item" value="cheap">Сначала дешевые</option>
-                <option class="select-control-item" value="popular">Сначала популярные</option>
-                <option class="select-control-item" value="expensive">Сначала дорогие</option>
+          <div class="choose-type">
+            <p class="found-hotels">Найдено гостиниц: 38</p>
+            <div class="found-hotels-container">
+              <select class="select-control" aria-label="Сортировка">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
               </select>
               <ul class="choose-icons">
-                <li class="choose-icon choose-icon-active">
+                <li class="choose-icon">
                   <button type="button" class="btn-tile">
                     <span class="visually-hidden">Показать карточки</span>
                   </button>
                 </li>
                 <li class="choose-icon">
-                  <button type="button" class="button-big-list">
+                  <button type="button" class="btn-slideshow">
                     <span class="visually-hidden">Показать слайд</span>
                   </button>
                 </li>
                 <li class="choose-icon">
-                  <button type="button" class="button-small-list">
+                  <button type="button" class="btn-list">
                     <span class="visually-hidden">Показать список</span>
                   </button>
                 </li>
               </ul>
+
             </div>
+
           </div>
           <!-- <блок "карточки гостиниц">
           <<<__hotel-cards-stars: tourist(*), standard (**), comfort(***), first-class (****), luxury(*****).__>>>  -->
@@ -388,9 +388,9 @@
         </section>
         <!-- <<<Секция "Блок подписки">>> -->
         <section class="subscribe" data-test="subscribe">
-          <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
           <div class="subscribe-connotation">
-            <p class="subscribe-lead-title title">Подпишитесь на рассылку</p>
+            <h2 class="visually-hidden">Информация о туризме в городке Седона</h2>
+            <p class="subscribe-lead-subtitle subtitle">Подпишитесь на рассылку</p>
             <p class="subscribe-lead-description">
               Только полезная информация и никакого спама, честное бойскаутское!
             </p>
