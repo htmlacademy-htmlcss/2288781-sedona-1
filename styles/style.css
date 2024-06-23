@@ -312,7 +312,7 @@ body {
 .navigation-icon-group:active svg,
 .navigation-icon-group:active span {
   fill: #7561574d;
-  fill-opacity: 0.1;
+  fill-opacity: 0.3;
 }
 
 .navigation-user-statistics {
@@ -1547,7 +1547,6 @@ ____________________________________________ */
   padding: 0;
 
   list-style-type: none;
-
 }
 
 .choose-icon {
@@ -1557,22 +1556,25 @@ ____________________________________________ */
 
   width: 48px;
   height: 48px;
+  margin: 0;
+  padding: 0;
 
-  border: solid 2px #e5e5e5;
+
+  outline: solid 2px #e5e5e5;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .choose-icon:first-child {
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 
 .choose-icon:hover {
-  border: solid 2px #000000;
+  outline: solid 2px #000000;
 }
 
 .choose-icon:focus {
-  border: solid 2px #68a2ca;
+  outline: solid 2px #68a2ca;
 }
 
 .btn-tile {
@@ -1586,6 +1588,7 @@ ____________________________________________ */
   background-position: center;
   background-color: #ffffff;
   border: none;
+  outline: none;
 }
 
 .btn-slideshow {
@@ -1635,6 +1638,7 @@ ____________________________________________ */
 
   margin: 0;
   padding: 20px;
+  padding-bottom: 0;
 
   justify-content: center;
   background-color: #ffffff;
