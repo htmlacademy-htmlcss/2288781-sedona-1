@@ -141,6 +141,7 @@ body {
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   width: 140px;
@@ -171,7 +172,7 @@ body {
 
 .logo-sedona:focus-visible {
   opacity: 0.8;
-  outline: 2px solid #68a2ca;
+  outline: 2px solid #8daab8;
 }
 
 .logo-sedona:active {
@@ -228,12 +229,12 @@ body {
 
 .navigation-link:focus-visible {
   color: #756257;
-  outline: 2px solid #68a2ca;
+  outline: 2px solid #8daab8;
 }
 
 .navigation-link:active {
   color: #756257;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .navigation-link-current::before {
@@ -302,7 +303,7 @@ body {
 .navigation-icon-group:hover svg,
 .navigation-icon-group:hover span {
   fill: #756157;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .navigation-user-link:focus-visible svg,
@@ -310,14 +311,14 @@ body {
 .navigation-icon-group:focus-visible span {
   fill: #756157;
   outline: 2px solid #68a2ca;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .navigation-user-link:active svg,
 .navigation-icon-group:active svg,
 .navigation-icon-group:active span {
   fill: #7561574d;
-  fill-opacity: 0.3;
+  fill-opacity: 0.5;
 }
 
 .navigation-user-statistics {
@@ -361,7 +362,7 @@ body {
 
 .navigation-btn:focus-visible {
   background-color: #615048;
-  outline: 2px solid transparent;
+  outline: 2px solid #8daab8;
 }
 
 .navigation-btn:active {
