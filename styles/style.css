@@ -57,6 +57,7 @@ body {
   padding: 0;
 
   text-align: center;
+  background-color: #ffffff;
   box-shadow: 0 0 15px #00000033;
 }
 
@@ -108,8 +109,6 @@ body {
   background-color: #e5e5e5;
   pointer-events: none;
 }
-
-
 
 /* HEADER */
 .page-header {
@@ -496,7 +495,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  width: 400px;
+  max-width: 400px;
   min-height: 385px;
   padding: 0 85px;
 
@@ -505,7 +504,8 @@ body {
 
 .advantages-item img {
   display: block;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantages-subtitle,
@@ -542,6 +542,8 @@ body {
   display: flex;
   background-color: #82b3d3;
 }
+
+.advantages
 
 .advantages-item-wide .advantages-subtitle-white,
 .advantages-item-wide .advantages-description {
@@ -581,8 +583,7 @@ body {
   color: #333333;
 }
 
-/* Main -> Services
-____________________________________________ */
+/* Main -> Services */
 .services {
   display: flex;
   flex-direction: column;
@@ -1650,6 +1651,7 @@ ____________________________________________ */
 .hotel-cards-item {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px, 1fr;
   gap: 16px 20px;
 
   margin: 0;
@@ -1664,7 +1666,7 @@ ____________________________________________ */
 }
 
 .hotel-cards-link img {
-  grid-column: 1 / -1;
+  grid-column: span 2;
   grid-row: 1 / 2;
 
   display: block;
@@ -1676,7 +1678,7 @@ ____________________________________________ */
 }
 
 .hotel-cards-subtitle-link {
-  grid-column: 1 / -1;
+  grid-column: span 2;
   grid-row: 2 / 3;
 
   margin: 0;
@@ -1691,15 +1693,15 @@ ____________________________________________ */
   margin: 0;
   padding: 0;
 
+  font-family: inherit;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  word-wrap: break-word;
 }
 
 .hotel-cards-type {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  /* grid-row: 3 / 4; */
 
   max-width: 140px;
   margin: 0;
@@ -2039,9 +2041,7 @@ ____________________________________________ */
 }
 
 .social-list {
-  display: grid;
-  grid-template-columns: repeat(3, 47px);
-  grid-template-rows: 40px;
+  display: flex;
 
   margin: 0;
   padding: 0;
@@ -2067,7 +2067,7 @@ ____________________________________________ */
   align-items: center;
 
   width: 100%;
-  min-height: 40px;
+  height: 40px;
   margin: 0;
   padding: 0 10px;
 
@@ -2094,7 +2094,12 @@ ____________________________________________ */
 }
 
 .contacts {
-  margin-top: 7px;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .phone {
@@ -2110,22 +2115,23 @@ ____________________________________________ */
 
 .phone-link {
   position: absolute;
-  margin: 0 auto;
-  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 100%;
   min-height: 40px;
+  margin: 0 auto;
+  padding: 0;
 
   font-size: 40px;
   line-height: 40px;
   font-style: normal;
   text-transform: uppercase;
   text-decoration: none;
-  word-wrap: break-word;
 
   color: #000000;
-
-  text-align: center;
   cursor: pointer;
 }
 
@@ -2156,7 +2162,6 @@ ____________________________________________ */
   margin: 0;
   padding: 0;
   margin-left: auto;
-  margin-top: 7px;
 }
 
 .logo-htmlacademy-link {
