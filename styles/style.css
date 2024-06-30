@@ -81,7 +81,6 @@ body {
   text-transform: uppercase;
 }
 
-
 .btn {
   display: inline-block;
   margin: 0;
@@ -542,8 +541,6 @@ body {
   display: flex;
   background-color: #82b3d3;
 }
-
-.advantages
 
 .advantages-item-wide .advantages-subtitle-white,
 .advantages-item-wide .advantages-description {
@@ -2188,11 +2185,8 @@ ____________________________________________ */
   fill: #7561574d;
   fill-opacity: 0.3;
 }
-/* F O O T E R  =  П О Д В А Л - конец */
 
-
-/* M O D A L  =  М О Д А Л Ь Н О Е  О К Н О - начало
-==================================================== */
+/* MODAL */
 .modal-container {
   position: fixed;
   top: 0;
@@ -2587,4 +2581,3 @@ ____________________________________________ */
   color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
-/* M O D A L  =  М О Д А Л Ь Н О Е  О К Н О - конец */
