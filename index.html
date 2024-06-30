@@ -19,7 +19,6 @@
               width="140"
               height="70"
               alt="Логотип городка Седоны."
-              aria-hidden="true"
             >
           </a>
           <ul class="navigation-list">
@@ -62,20 +61,22 @@
                   width="18"
                   height="17"
                   viewBox="0 0 18 17"
-                  fill="currentColor">
+                  fill="currentColor"
+                >
                   <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z" />
                 </svg>
               </a>
             </li>
           </ul>
-          <a class="btn navigation-btn" href="#">Хочу сюда!</a>
+          <a class="btn navigation-btn" href="#" >Хочу сюда!</a>
         </nav>
       </header>
       <main class="main-index" data-test="main">
-        <h1 class="foretitle visually-hidden">Городок Седона в Аризоне и его достопримечательности</h1>
         <!-- <<<Секция Hero>>> -->
         <section class="hero" data-test="hero">
-          <h2 class="title visually-hidden">Приглашение в городок Седона</h2>
+          <h1 class="title foretitle visually-hidden">
+            Городок Седона в Аризоне и его достопримечательности
+          </h1>
           <img
             src="images/main-page/welcome.svg"
             width="458"
@@ -85,9 +86,11 @@
         </section>
         <!-- <<<Секция "Блок преимуществ">>> -->
         <section class="advantages" data-test="advantages">
-          <h2 class="title visually-hidden">Преимущества туризма в городке Седона</h2>
+          <h2 class="title visually-hidden">
+            Преимущества туризма в городке Седона
+          </h2>
           <div class="advantages-container">
-            <p class="title advantages-lead-title">
+            <p class="title">
               Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
             </p>
             <p class="advantages-lead-description">
@@ -97,7 +100,7 @@
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-wide">
               <div class="advantages-item-container">
-                <h3 class="subtitle advantages-subtitle-white">Настоящий городок</h3>
+                <h3 class="title subtitle advantages-subtitle-white">Настоящий городок</h3>
                 <p class="advantages-description">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
@@ -148,47 +151,42 @@
               >
             </li>
           </ul>
-        </section>
-        <!-- <<<Секция "Блок сервиса">>> -->
-        <section class="services" data-test="services">
           <div class="services-container">
-            <h2 class="title services-lead-subtitle">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
+            <p class="title">
+              Приезжайте в Седону отдохнуть в комфорте и уюте!
+            </p>
             <p class="services-lead-description">
               Опытный персонал и качественное обслуживание!
             </p>
           </div>
-          <div class="services-row">
-            <ul class="services-list">
-              <li class="services-item services-item-grey services-item-home">
-                <h3 class="services-subtitle subtitle">Жильё</h3>
-                <p class="services-description-home">
-                  Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!
-                </p>
-              </li>
-              <li class="services-item services-item-food">
-                <h3 class="services-subtitle subtitle">Еда</h3>
-                <p class="services-description-food">
-                  Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
-                </p>
-              </li>
-              <li class="services-item services-item-grey services-item-souvenirs">
-                <h3 class="services-subtitle subtitle">Сувениры</h3>
-                <p class="services-description-souvenirs">
-                  Не только китайского,<br>но и настоящего местного производства!
-                </p>
-              </li>
-            </ul>
-          </div>
+          <ul class="services-list">
+            <li class="services-item services-item-grey services-item-home">
+              <h3 class="title subtitle services-subtitle">Жильё</h3>
+              <p class="services-description-home">
+                Рекомендуем пожить<br>в настоящем мотеле,<br> всё как в кино!
+              </p>
+            </li>
+            <li class="services-item services-item-food">
+              <h3 class="title subtitle services-subtitle">Еда</h3>
+              <p class="services-description-food">
+                Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+            <li class="services-item services-item-grey services-item-souvenirs">
+              <h3 class="title subtitle services-subtitle">Сувениры</h3>
+              <p class="services-description-souvenirs">
+                Не только китайского,<br>но и настоящего местного производства!
+              </p>
+            </li>
+          </ul>
         </section>
         <!-- <<<Секция "Блок поиска">>> -->
         <section class="search" data-test="search">
-          <div class="search-connotation">
-            <h2 class="title search-lead-subtitle">Заинтересовались?</h2>
-            <p class="search-lead-description">
-              Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
-            <a class="btn search-btn" href="#">Поиск гостиницы в Седоне</a>
-          </div>
+          <h2 class="title">Заинтересовались?</h2>
+          <p class="search-lead-description">
+            Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <a class="btn search-btn" href="#">Поиск гостиницы в Седоне</a>
         </section>
         <!-- <<<Секция "Блок подписки">>> -->
         <section class="subscribe subscribe-fon" data-test="subscribe">
@@ -270,7 +268,7 @@
           </section>
         </div>
       </footer>
-      <div class="modal-container modal-none">
+      <dialog class="modal-container modal-none" open>
         <div class="modal-window">
           <button class="modal-close" type="button">
             <span class="visually-hidden">Закрыть модальное окно</span>
@@ -336,7 +334,7 @@
             <button class="btn btn-secondary modal-button" type="submit">Найти</button>
           </form>
         </div>
-      </div>
+      </dialog>
     </div>
   </body>
 
