@@ -77,7 +77,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-group" href="/" aria-current="page">
+              <a class="breadcrumbs-link breadcrumbs-link-group" aria-current="page">
                 <span class="visually-hidden">Вход на начальную страницу каталога (декоративный элемент)</span>
                 <span class="breadcrumbs-text">Гостиницы</span>
               </a>
@@ -88,7 +88,7 @@
             <h2 class="title visually-hidden">Выбор нужной гостиницы в городке Седоны</h2>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="catalog-filter-group">
-                <legend class=" catalog-filter-subtitle">Инфраструктура:</legend>
+                <legend class="title subtitle catalog-filter-subtitle">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -111,7 +111,7 @@
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group catalog-filter-type">
-                <legend class="catalog-filter-subtitle">Тип Жилья:</legend>
+                <legend class="title subtitle catalog-filter-subtitle">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -134,18 +134,29 @@
                   </li>
                 </ul>
               </fieldset>
+
               <fieldset class="catalog-filter-price">
-                <legend class="catalog-filter-subtitle">Стоимость,
+                <legend class="title subtitle catalog-filter-subtitle">Стоимость,
                   <span>₽:</span>
                 </legend>
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="filter-min">
-                      <input class="range-input range-min" type="number" value="0" name="min-price">
+                      <input
+                        class="range-input range-min"
+                        type="number"
+                        value="0"
+                        name="min-price"
+                      >
                       <span>от</span>
                     </label>
                     <label class="filter-max">
-                      <input class="range-input range-max" type="number" value="9000" name="max-price">
+                      <input
+                        class="range-input range-max"
+                        type="number"
+                        value="9000"
+                        name="max-price"
+                      >
                       <span>до</span>
                     </label>
                   </div>
@@ -161,6 +172,7 @@
                   </div>
                 </div>
               </fieldset>
+
               <div class="catalog-filter">
                 <button class="btn btn-forms button-submit" type="submit">Применить</button>
                 <button class="btn btn-forms button-reset" type="reset">Сбросить</button>
