@@ -1,6 +1,5 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - страница каталога гостиниц (верстка О. Г. Арефьевой)</title>
@@ -8,7 +7,6 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
   </head>
-
   <body>
     <div class="body-page">
       <header class="page-header" data-test="header">
@@ -19,7 +17,6 @@
               width="140"
               height="70"
               alt="Логотип городка Седоны."
-              role="img"
             >
           </a>
           <ul class="navigation-list">
@@ -30,7 +27,7 @@
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="/" aria-current="page" aria-hidden="true" focusable="false">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="/" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user-list">
@@ -73,7 +70,7 @@
         <section class="main-catalog-filter" aria-label="breadcrumbs" data-test="filter">
           <h1 class="title foretitle filter-foretitle">Гостиницы Седоны</h1>
           <!-- <блок "breadcrumbs = хлебные крошки"> -->
-          <ol class="breadcrumbs-list" role="list">
+          <ol class="breadcrumbs-list">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Переход на главную страницу (декоративный элемент)</span>
@@ -88,7 +85,7 @@
           </ol>
           <!-- <блок "filters = фильтры"> -->
           <div class="filters">
-            <h3 class="subtitle visually-hidden">Выбор нужной гостиницы в городке Седоны</h3>
+            <h2 class="title visually-hidden">Выбор нужной гостиницы в городке Седоны</h2>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="catalog-filter-group">
                 <legend class=" catalog-filter-subtitle">Инфраструктура:</legend>
@@ -173,7 +170,7 @@
         </section>
         <!-- <<<Секция "Каталог гостиниц">>> -->
         <section class="main-catalog-select" data-test="catalog">
-          <h2 class="visually-hidden">Опции бронирования гостиниц</h2>
+          <h2 class="visually-hidden">Опции бронирования гостиниц в городке Седоны</h2>
           <!-- <блок "селектор"> -->
           <div class="choose-type">
             <p class="found-hotels">Найдено гостиниц: 38</p>
@@ -418,5 +415,4 @@
       </footer>
     </div>
   </body>
-
 </html>
