@@ -1127,7 +1127,7 @@ _________________________ */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center
+  align-items: center;
 
   max-width: 288px;
   min-height: 160px;
@@ -1149,8 +1149,6 @@ _________________________ */
 .filter-min,
 .filter-max {
   position: relative;
-
-  display: block;
 
   margin: 0;
   padding: 0;
@@ -1260,7 +1258,7 @@ _________________________ */
 }
 
 .range-input:active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   background-color: #f2f2f2;
 }
 
@@ -2307,8 +2305,6 @@ _________________________ */
   background-repeat: no-repeat;
   background-position: right 20px center;
   border-radius: 4px;
-  box-sizing: border-box;
-
 }
 
 .modal-input:hover,
@@ -2396,7 +2392,6 @@ _________________________ */
 
   width: 28px;
   padding: 14px 0;
-  padding-right: 50px;
 
   font-family: inherit;
   font-size: 18px;
